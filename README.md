@@ -22,6 +22,9 @@ Details will publish soon.
 
 
 
-Development : https://github.com/nexbitproject/nexbit
+Development :
+https://github.com/nexbitproject/nexbit
+
 https://nexbit.io/ 
 Nexbit chain.
+
