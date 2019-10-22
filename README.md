@@ -15,7 +15,16 @@ implementation of Nexbit.
 ****************
 
 Details will publish soon.
+```bash
+nodes:
+1. nbc1.npay.life
+2. nbc2.npay.life
+3. nbc3.npay.life
+4. nbc4.npay.life
 
+more nodes will host soon. Pleaase in your /nexbit.conf/ file addnodes for faster sync.
+
+```
 
 
 
