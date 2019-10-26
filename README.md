@@ -1,5 +1,5 @@
 Nexbit Chain | An Optimistic Blockchain Project
-Based on enery efficient POS model.
+
 
 *************
 Building Nexbit
