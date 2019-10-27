@@ -21,6 +21,9 @@ nodes:
 2. nbc2.npay.life
 3. nbc3.npay.life
 4. nbc4.npay.life
+5. 68.183.253.3
+6. 68.183.247.125
+7. 68.183.254.141
 
 more nodes will host soon. Pleaase in your /nexbit.conf/ file addnodes for faster sync.
 
