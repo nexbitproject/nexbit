@@ -17,11 +17,9 @@ implementation of Nexbit.
 Nexbit Chain Official Whitelisted nodes are below;
 ```bash
 Below are the only official whitelisted nodes
-*************************************
+*********************************************
 IPv4 Nodes
 *************
-```bash
-
 addnode=178.62.46.37
 addnode=139.59.3.93
 addnode=139.59.81.183
