@@ -32,8 +32,10 @@ addnode=206.189.117.70
 
 Download wallet from here: https://github.com/nexbitproject/wallet
 
-```bash
+
 Dependencies for Linux users
+---------------------------
+```bash
 sudo apt-get -qq update
 sudo apt-get -qq upgrade
 sudo apt-get -qq autoremove
