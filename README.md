@@ -32,7 +32,23 @@ addnode=206.189.117.70
 
 Download wallet from here: https://github.com/nexbitproject/wallet
 
+```bash
+Dependencies for Linux users
+sudo apt-get -qq update
+sudo apt-get -qq upgrade
+sudo apt-get -qq autoremove
+sudo apt-get -qq install wget htop xz-utils build-essential libtool autoconf automake software-properties-common
+sudo apt-get -qq install protobuf-compiler git pkg-config aptitude
+sudo apt-get install build-essential libtool autotools-dev automake pkg-config libssl-dev libevent-dev bsdmainutils git cmake libboost-all-dev libgmp3-dev
+sudo apt-get install software-properties-common
+sudo add-apt-repository ppa:bitcoin/bitcoin
+sudo apt-get update
+sudo apt-get install libdb4.8-dev libdb4.8++-dev
+sudo apt-get install libdb5.3++-dev
+sudo apt-get install libminiupnpc-dev
 
+
+```
 
 Development :
 https://github.com/nexbitproject/nexbit
