@@ -30,7 +30,7 @@ addnode=206.189.117.70
 
 ```
 
-
+Download wallet from here: https://github.com/nexbitproject/wallet
 
 
 
