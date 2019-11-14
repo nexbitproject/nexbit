@@ -1,5 +1,7 @@
 Nexbit Chain | An Optimistic Blockchain Project
-CEO NEXBIT.IO | QPay Global | nDEX Network
+***********************************************
+
+NEXBIT.IO | QPay Global | nDEX Network
 Nexbit Project
 ==============
 NEXBIT Coin (NBC)
