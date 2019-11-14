@@ -1,10 +1,10 @@
 Nexbit Chain | An Optimistic Blockchain Project
-----------------------------------------------
+-----------------
 
 NEXBIT.IO | QPay Global | nDEX Network | Nexbit Project
--------------------------------------------------------
+------------------------------
 NEXBIT Coin (NBC)
------------------
+-----------
 Nexbit Chain Details
 Algorithm: Scrypt
 Block Type: Proof-of-Work/Proof-of-Stake
@@ -20,10 +20,9 @@ Coin Supply: 365500000 coins
 Project Web: https://nexbit.io
 Github: https://github.com/nexbitproject
 Windows Wallet: https://github.com/nexbitproject/wallet/releases
-More :https://github.com/nexbitproject/nexbit/blob/master/README.md
-
+Web: https://nexbit.io
 Official Whitelisted Nodes
---------------------------
+-------------------
 167.71.78.206
 157.245.76.203
 167.172.239.154
@@ -36,7 +35,7 @@ Official Whitelisted Nodes
 165.22.219.149
 
 Projects (Details will publish)
--------------------------------
+------------------------
 1. https://platform.nexbit.io
 2. https://nexbit.pro
 3. https://nexbit.club
@@ -45,19 +44,19 @@ Projects (Details will publish)
 6. https://nPay.life
 
 Coin Distributions
-------------------
-# Bounty & Promotions : 5%
-# Private Sale : 5%
-# Public POOL: 70%
-# Project Marketing: 5%
-# Project Team: 15%
+--------------
+Bounty & Promotions : 5%
+Private Sale : 5%
+Public POOL: 70%
+Project Marketing: 5%
+Project Team: 15%
 
 Coin Sale
-----------
-# Private Sale: sale starts : 13th November - 20th November 2019
+--------
+Private Sale: sale starts : 13th November - 20th November 2019
 
 Social & Infos
---------------
+----------
 
 ✅ Technical: https://medium.com/@nDEXNetwork/pos-and-utxos-model-of-nexbit-coin-nbc-ndt-coin-9d3441261d49
 ✅ Reddit: https://www.reddit.com/user/NEXBITPRO/
@@ -67,13 +66,13 @@ Social & Infos
 ✅ Github: https://github.com/nexbitproject
 
 Attention Please
-----------------
+-----------
 🥁🥁🥁🥁🥁
-----------------
+-----------
 Dear community of newly growing blockchain ecosystem. We are not doing any IEO/ICO and our reserved funds (75% from that) will be used to make a staking pool (hosted in AWS or any cloud) for future protection and stabilization of network. Earned  PoS coin from that POOL will be distributed automatically every week/monthend to every live hosted nodes and that will be 30%, 30% we keep for continous development (PoS earned) and 20% will be used for life long community growing program.
 
 And the final 20% will be burned forever for controlling  coins inflamation.
----------------------------------------------------------------------------
+------------------------------------------------
 
 ✅ Many people from our community want to get listed NBC in 2/3 exchanges
 ✅ Just only for this reason we decided to sell out 5% 18000000 NBC
@@ -95,7 +94,7 @@ And the final 20% will be burned forever for controlling  coins inflamation.
 
 
 Download wallet from here: https://github.com/nexbitproject/wallet
-------------------------------------------------------------------
+----------------------------------------------
 
 
 Dependencies for Linux users
@@ -118,6 +117,7 @@ sudo apt-get install libminiupnpc-dev
 
 ```
 # Русский формат
+
 Проект Nextbit
 --------------
 Nexbit Coin (NBC)
@@ -161,11 +161,11 @@ Github: https://github.com/nexbitproject
 
 Распределение монет
 --------------------
-# Щедрость и акции: 5%
-# Частная продажа: 5%
-# Общественный бассейн: 70%
-# Проектный маркетинг: 5%
-# Команда проекта: 15%
+Щедрость и акции: 5%
+Частная продажа: 5%
+Общественный бассейн: 70%
+Проектный маркетинг: 5%
+Команда проекта: 15%
 
 Продажа монет
 --------------
@@ -181,13 +181,13 @@ Github: https://github.com/nexbitproject
 ✅ Github: https://github.com/nexbitproject
 
 Внимание пожалуйста
--------------------
+----------
 🥁🥁🥁🥁🥁
--------------------
+----------
 Уважаемое сообщество вновь растущей блокчейн-экосистемы. Мы не делаем IEO / ICO, и наши зарезервированные средства (75% от этого) будут использоваться для создания пула размещения (размещенного в AWS или любом облаке) для будущей защиты и стабилизации сети. Заработанная PoS-монета из этого POOL будет автоматически распределяться каждую неделю / месяц по всем живым размещенным узлам, и это будет 30%, 30% мы оставим для непрерывного развития (заработок PoS), а 20% будут использованы для пожизненной программы развития сообщества.
 
 И последние 20% будут сожжены навсегда за контроль над воспалением монет.
--------------------------------------------------------------------------
+-------------------------------------------
 ✅ Многие люди из нашего сообщества хотят попасть в список NBC на 2/3 биржах
 ✅ Только по этой причине мы решили продать 5% 18000000 NBC
     Price Продажная цена будет КОНФИДЕНЦИАЛЬНОЙ и ЧАСТНОЙ
@@ -205,7 +205,7 @@ Github: https://github.com/nexbitproject
     И 10% ИСПОЛЬЗУЕТСЯ ДЛЯ МАРКЕТИНГА / РЕКЛАМЫ И 40% ИСПОЛЬЗУЕТСЯ ДЛЯ МАРКЕТИНГА.
 ✅ Никто не может MD / PM мне предложить цену и количество.
 
-# 🔥🔥Как синхронизировать: https://t.me/nexbitofficial/3039
+ 🔥🔥Как синхронизировать: https://t.me/nexbitofficial/3039
 
 Thank You
 Lead Developer, Co-Founder
