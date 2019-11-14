@@ -9,20 +9,32 @@ NEXBIT Coin (NBC)
 -----------
 Nexbit Chain Details
 Algorithm: Scrypt
+
 Block Type: Proof-of-Work/Proof-of-Stake
+
 Coin Name: Nexbit
+
 Coin Abbreviation: NBC
+
 Address Letter: N
+
 Address Letter Testnet: N
+
 RPC Port: 13519
+
 P2P Port: 13520
+
 Block Reward: 500 coins
+
 Block Reward: (PoS)  50 coins
+
 Coin Supply: 365500000 coins
+
 Project Web: https://nexbit.io
 Github: https://github.com/nexbitproject
 Windows Wallet: https://github.com/nexbitproject/wallet/releases
 Web: https://nexbit.io
+
 Official Whitelisted Nodes
 -------------------
 167.71.78.206
