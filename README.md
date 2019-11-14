@@ -356,6 +356,6 @@ https://nexbit.io
 PGP: B3E38C4A2BBDBA1E
 
 ```bash
-                    Made with ❤️ from Bangladesh. Copyright 2018-2019 "Nexbit Project" under the license of MIT.
+         Made with ❤️ from Bangladesh. Copyright 2018-2019 "Nexbit Project" under the license of MIT.
 
 ```
