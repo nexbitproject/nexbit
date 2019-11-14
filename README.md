@@ -8,6 +8,7 @@ NEXBIT.IO | QPay Global | nDEX Network | Nexbit Project
 NEXBIT Coin (NBC)
 -----------
 Nexbit Chain Details
+```bash
 Algorithm: Scrypt
 
 Block Type: Proof-of-Work/Proof-of-Stake
@@ -29,7 +30,7 @@ Block Reward: 500 coins
 Block Reward: (PoS)  50 coins
 
 Coin Supply: 365500000 coins
-
+```
 Project Web: https://nexbit.io
 
 Github: https://github.com/nexbitproject
@@ -41,6 +42,7 @@ Web: https://nexbit.io
 
 Official Whitelisted Nodes
 -------------------
+```bash
 167.71.78.206
 
 157.245.76.203
@@ -60,7 +62,7 @@ Official Whitelisted Nodes
 159.65.136.159
 
 165.22.219.149
-
+```
 
 Projects (Details will publish)
 ------------------------
@@ -196,7 +198,7 @@ Nexbit Coin (NBC)
 Алгоритм: Скрипт
 
 Тип блока: Доказательство работы / Доказательство кола
-
+```bash
 Название монеты: Nexbit
 
 Сокращение монеты: NBC
@@ -214,7 +216,7 @@ RPC порт: 13519
 Вознаграждение за блок: (PoS) 50 монет
 
 Поставка монет: 365500000 монет
-
+```
 Веб-сайт проекта: https://nexbit.io
 
 Github: https://github.com/nexbitproject
@@ -224,7 +226,7 @@ Github: https://github.com/nexbitproject
 
 Официальные узлы в белом списке
 ------------------------------
-
+```bash
 167.71.78.206
 
 157.245.76.203
@@ -244,7 +246,7 @@ Github: https://github.com/nexbitproject
 159.65.136.159
 
 165.22.219.149
-
+```
 
 Проекты (подробности опубликую)
 -------------------------------
@@ -339,11 +341,17 @@ Github: https://github.com/nexbitproject
  🔥🔥Как синхронизировать: https://t.me/nexbitofficial/3039
 
 Thank You
+T. Rahaman
+-----
 Lead Developer, Co-Founder
+
 Nexbit Chain Project
+---
 https://nexbit.io
+
 PGP: B3E38C4A2BBDBA1E
+--
 ```bash
-                                  Made with ❤️ from Bangladesh. Copyright 2018-2019. MIT.
+                            Made with ❤️ from Bangladesh. Copyright 2018-2019. MIT.
 
 ```
