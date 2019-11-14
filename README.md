@@ -339,18 +339,22 @@ Github: https://github.com/nexbitproject
 
 
  🔥🔥Как синхронизировать: https://t.me/nexbitofficial/3039
+ ------
+
+
 
 Thank You
+
 T. Rahaman
------
+
 Lead Developer, Co-Founder
 
 Nexbit Chain Project
----
+
 https://nexbit.io
 
 PGP: B3E38C4A2BBDBA1E
---
+
 ```bash
                             Made with ❤️ from Bangladesh. Copyright 2018-2019. MIT.
 
