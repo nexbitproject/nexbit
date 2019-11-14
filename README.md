@@ -1,9 +1,8 @@
 Nexbit Chain | An Optimistic Blockchain Project
 ***********************************************
 
-NEXBIT.IO | QPay Global | nDEX Network
-Nexbit Project
-==============
+NEXBIT.IO | QPay Global | nDEX Network | Nexbit Project
+*******************************************************
 NEXBIT Coin (NBC)
 **********
 Nexbit Chain Details
