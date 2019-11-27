@@ -1,0 +1,1 @@
+/usr/bin/cc   -rdynamic CMakeFiles/test_monkey.dir/test_monkey.c.o  -o test_monkey libcommon.a libdecoder.a ../libqrencode.a 

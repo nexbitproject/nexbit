@@ -1,0 +1,2 @@
+/usr/bin/ar qc libqrencode.a  CMakeFiles/qrencode.dir/qrencode.c.o CMakeFiles/qrencode.dir/qrinput.c.o CMakeFiles/qrencode.dir/bitstream.c.o CMakeFiles/qrencode.dir/qrspec.c.o CMakeFiles/qrencode.dir/rsecc.c.o CMakeFiles/qrencode.dir/split.c.o CMakeFiles/qrencode.dir/mask.c.o CMakeFiles/qrencode.dir/mqrspec.c.o CMakeFiles/qrencode.dir/mmask.c.o
+/usr/bin/ranlib libqrencode.a

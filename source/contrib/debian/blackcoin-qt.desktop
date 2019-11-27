@@ -1,12 +1,12 @@
 [Desktop Entry]
 Encoding=UTF-8
-Name=Nexbit
-Comment=Nexbit P2P Cryptocurrency
-Comment[fr]=Nexbit, monnaie virtuelle cryptographique pair à pair
-Comment[tr]=Nexbit, eşten eşe kriptografik sanal para birimi
-Exec=/usr/bin/nexbit-qt
+Name=NexbitCoin
+Comment=NexbitCoin P2P Cryptocurrency
+Comment[fr]=NexbitCoin, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=NexbitCoin, eşten eşe kriptografik sanal para birimi
+Exec=/usr/bin/nexbitcoin-qt
 Terminal=false
 Type=Application
 Icon=/usr/share/pixmaps/bitcoin80.xpm
-MimeType=x-scheme-handler/nexbit;
+MimeType=x-scheme-handler/nexbitcoin;
 Categories=Office;

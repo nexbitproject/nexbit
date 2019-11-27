@@ -1,0 +1,1 @@
+/usr/bin/cc   -rdynamic CMakeFiles/test_mqrspec.dir/test_mqrspec.c.o  -o test_mqrspec libcommon.a libdecoder.a ../libqrencode.a 

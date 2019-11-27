@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ndex/Work/QUANTAEX19/Project/NBC/git-project/qrencode-4.0.2/config.h
+
+/home/ndex/Work/QUANTAEX19/Project/NBC/git-project/qrencode-4.0.2/qrenc.c
+config.h
+/home/ndex/Work/QUANTAEX19/Project/NBC/git-project/qrencode-4.0.2/config.h
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+getopt.h
+-
+errno.h
+-
+png.h
+-
+qrencode.h
+/home/ndex/Work/QUANTAEX19/Project/NBC/git-project/qrencode-4.0.2/qrencode.h
+
+/home/ndex/Work/QUANTAEX19/Project/NBC/git-project/qrencode-4.0.2/qrencode.h
+

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libdecoder.a  CMakeFiles/decoder.dir/decoder.c.o CMakeFiles/decoder.dir/datachunk.c.o CMakeFiles/decoder.dir/rsecc_decoder.c.o
+/usr/bin/ranlib libdecoder.a

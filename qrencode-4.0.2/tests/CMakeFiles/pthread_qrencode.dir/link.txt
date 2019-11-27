@@ -1,0 +1,1 @@
+/usr/bin/cc   -rdynamic CMakeFiles/pthread_qrencode.dir/pthread_qrencode.c.o  -o pthread_qrencode libcommon.a ../libqrencode.a -lpthread 

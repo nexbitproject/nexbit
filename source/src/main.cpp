@@ -22,7 +22,7 @@ using namespace std;
 using namespace boost;
 
 #if defined(NDEBUG)
-# error "Nexbit cannot be compiled without assertions."
+# error "NexbitCoin cannot be compiled without assertions."
 #endif
 
 //
@@ -77,7 +77,7 @@ map<uint256, set<uint256> > mapOrphanTransactionsByPrev;
 // Constant stuff for coinbase transactions we create:
 CScript COINBASE_FLAGS;
 
-const string strMessageMagic = "Nexbit Signed Message:\n";
+const string strMessageMagic = "NexbitCoin Signed Message:\n";
 
 //////////////////////////////////////////////////////////////////////////////
 //
@@ -2639,7 +2639,7 @@ struct CImportingNow
 
 void ThreadImport(std::vector<boost::filesystem::path> vImportFiles)
 {
-    RenameThread("nexbit-loadblk");
+    RenameThread("nexbitcoin-loadblk");
 
     CImportingNow imp;
 

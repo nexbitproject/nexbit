@@ -3,22 +3,22 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About Nexbit</source>
-        <translation>Despre Nexbit</translation>
+        <source>About NexbitCoin</source>
+        <translation>Despre NexbitCoin</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;Nexbit&lt;/b&gt; version</source>
-        <translation>Versiune &lt;b&gt;Nexbit&lt;/b&gt;</translation>
+        <source>&lt;b&gt;NexbitCoin&lt;/b&gt; version</source>
+        <translation>Versiune &lt;b&gt;NexbitCoin&lt;/b&gt;</translation>
     </message>
     <message>
         <location line="+41"/>
         <source>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2012-2014 The NovaCoin developers
-Copyright © 2014 The Nexbit developers</source>
+Copyright © 2014 The NexbitCoin developers</source>
         <translation>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2012-2014 The NovaCoin developers
-Copyright © 2014 The Nexbit developers</translation>
+Copyright © 2014 The NexbitCoin developers</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -60,8 +60,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-43"/>
-        <source>These are your Nexbit addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Acestea sunt adresele Nexbit pentru a primi plăți. Poate doriți sa dați o adresa noua fiecarui expeditor pentru a putea ține evidența la cine efectuează plăti.</translation>
+        <source>These are your NexbitCoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Acestea sunt adresele NexbitCoin pentru a primi plăți. Poate doriți sa dați o adresa noua fiecarui expeditor pentru a putea ține evidența la cine efectuează plăti.</translation>
     </message>
     <message>
         <location line="+53"/>
@@ -75,8 +75,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign a message to prove you own a Nexbit address</source>
-        <translation>Semnează un mesaj pentru a dovedi că dețineti o adresă Nexbit</translation>
+        <source>Sign a message to prove you own a NexbitCoin address</source>
+        <translation>Semnează un mesaj pentru a dovedi că dețineti o adresă NexbitCoin</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -90,8 +90,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-10"/>
-        <source>Verify a message to ensure it was signed with a specified Nexbit address</source>
-        <translation>Verifică un mesaj pentru a vă asigura că a fost semnat cu o anumită adresă Nexbit</translation>
+        <source>Verify a message to ensure it was signed with a specified NexbitCoin address</source>
+        <translation>Verifică un mesaj pentru a vă asigura că a fost semnat cu o anumită adresă NexbitCoin</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -258,8 +258,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+82"/>
-        <source>Nexbit will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
-        <translation>Nexbit se va inchide pentru a termina procesul de encriptie. Amintiți-vă, criptarea portofelul dumneavoastră nu poate proteja pe deplin monedele dvs. de a fi furate de  infectarea cu malware a computerului.</translation>
+        <source>NexbitCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
+        <translation>NexbitCoin se va inchide pentru a termina procesul de encriptie. Amintiți-vă, criptarea portofelul dumneavoastră nu poate proteja pe deplin monedele dvs. de a fi furate de  infectarea cu malware a computerului.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -352,8 +352,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about Nexbit</source>
-        <translation>Arată informații despre Nexbit</translation>
+        <source>Show information about NexbitCoin</source>
+        <translation>Arată informații despre NexbitCoin</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -392,13 +392,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-55"/>
-        <source>Send coins to a Nexbit address</source>
-        <translation>Trimite monede către o adresă Nexbit</translation>
+        <source>Send coins to a NexbitCoin address</source>
+        <translation>Trimite monede către o adresă NexbitCoin</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>Modify configuration options for Nexbit</source>
-        <translation>Modifică opțiuni de configurare pentru Nexbit</translation>
+        <source>Modify configuration options for NexbitCoin</source>
+        <translation>Modifică opțiuni de configurare pentru NexbitCoin</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -438,8 +438,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="-214"/>
         <location line="+555"/>
-        <source>Nexbit</source>
-        <translation>Nexbit</translation>
+        <source>NexbitCoin</source>
+        <translation>NexbitCoin</translation>
     </message>
     <message>
         <location line="-555"/>
@@ -448,8 +448,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+193"/>
-        <source>&amp;About Nexbit</source>
-        <translation>Despre Nexbit</translation>
+        <source>&amp;About NexbitCoin</source>
+        <translation>Despre NexbitCoin</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -500,13 +500,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+0"/>
         <location line="+58"/>
-        <source>Nexbit client</source>
-        <translation>Clientul Nexbit</translation>
+        <source>NexbitCoin client</source>
+        <translation>Clientul NexbitCoin</translation>
     </message>
     <message numerus="yes">
         <location line="+70"/>
-        <source>%n active connection(s) to Nexbit network</source>
-        <translation><numerusform>%n conexiune activă la reteaua Nexbit</numerusform><numerusform>%n conexiuni active la reteaua Nexbit</numerusform><numerusform>%n conexiuni active la reteaua Nexbit</numerusform></translation>
+        <source>%n active connection(s) to NexbitCoin network</source>
+        <translation><numerusform>%n conexiune activă la reteaua NexbitCoin</numerusform><numerusform>%n conexiuni active la reteaua NexbitCoin</numerusform><numerusform>%n conexiuni active la reteaua NexbitCoin</numerusform></translation>
     </message>
     <message>
         <location line="+488"/>
@@ -600,8 +600,8 @@ Adresa: %4
     <message>
         <location line="-15"/>
         <location line="+15"/>
-        <source>URI can not be parsed! This can be caused by an invalid Nexbit address or malformed URI parameters.</source>
-        <translation>URI nu poate fi parsatt! Cauza poate fi o adresa Nexbit invalidă sau parametrii URI malformați.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid NexbitCoin address or malformed URI parameters.</source>
+        <translation>URI nu poate fi parsatt! Cauza poate fi o adresa NexbitCoin invalidă sau parametrii URI malformați.</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -723,8 +723,8 @@ Adresa: %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+104"/>
-        <source>A fatal error occurred. Nexbit can no longer continue safely and will quit.</source>
-        <translation>A apărut o eroare fatală. Nexbit nu mai poate continua în condiții de siguranță și va iesi.</translation>
+        <source>A fatal error occurred. NexbitCoin can no longer continue safely and will quit.</source>
+        <translation>A apărut o eroare fatală. NexbitCoin nu mai poate continua în condiții de siguranță și va iesi.</translation>
     </message>
 </context>
 <context>
@@ -999,8 +999,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid Nexbit address.</source>
-        <translation>Adresa introdusă &quot;%1&quot; nu este o adresă Nexbit validă</translation>
+        <source>The entered address &quot;%1&quot; is not a valid NexbitCoin address.</source>
+        <translation>Adresa introdusă &quot;%1&quot; nu este o adresă NexbitCoin validă</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1018,8 +1018,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     <message>
         <location filename="../guiutil.cpp" line="+426"/>
         <location line="+12"/>
-        <source>Nexbit-Qt</source>
-        <translation>Nexbit-Qt</translation>
+        <source>NexbitCoin-Qt</source>
+        <translation>NexbitCoin-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -1091,13 +1091,13 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start Nexbit after logging in to the system.</source>
-        <translation>Pornește Nexbit imdiat după logarea în sistem</translation>
+        <source>Automatically start NexbitCoin after logging in to the system.</source>
+        <translation>Pornește NexbitCoin imdiat după logarea în sistem</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start Nexbit on system login</source>
-        <translation>$Pornește Nexbit la logarea în sistem</translation>
+        <source>&amp;Start NexbitCoin on system login</source>
+        <translation>$Pornește NexbitCoin la logarea în sistem</translation>
     </message>
     <message>
         <location line="+21"/>
@@ -1106,8 +1106,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the Nexbit client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Deschide automat portul pentru cientul Nexbit pe router. Aces lucru este posibil doara daca routerul suporta UPnP si este activat</translation>
+        <source>Automatically open the NexbitCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Deschide automat portul pentru cientul NexbitCoin pe router. Aces lucru este posibil doara daca routerul suporta UPnP si este activat</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1136,7 +1136,7 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location line="-57"/>
-        <source>Connect to the Nexbit network through a SOCKS5 proxy (e.g. when connecting through Tor).</source>
+        <source>Connect to the NexbitCoin network through a SOCKS5 proxy (e.g. when connecting through Tor).</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1181,8 +1181,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting Nexbit.</source>
-        <translation>Limba interfeței utilizator poate fi setat aici. Această setare va avea efect după repornirea Nexbit.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting NexbitCoin.</source>
+        <translation>Limba interfeței utilizator poate fi setat aici. Această setare va avea efect după repornirea NexbitCoin.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -1238,8 +1238,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting Nexbit.</source>
-        <translation>Aceasta setare va avea efect dupa repornirea Nexbit.</translation>
+        <source>This setting will take effect after restarting NexbitCoin.</source>
+        <translation>Aceasta setare va avea efect dupa repornirea NexbitCoin.</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1257,8 +1257,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     <message>
         <location line="+46"/>
         <location line="+247"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Nexbit network after a connection is established, but this process has not completed yet.</source>
-        <translation>Informatia afisata poate fi depasita.  Portofel se sincronizează automat cu rețeaua Nexbit după ce se stabilește o conexiune, dar acest proces nu s-a finalizat încă.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the NexbitCoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Informatia afisata poate fi depasita.  Portofel se sincronizează automat cu rețeaua NexbitCoin după ce se stabilește o conexiune, dar acest proces nu s-a finalizat încă.</translation>
     </message>
     <message>
         <location line="-173"/>
@@ -1331,7 +1331,7 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
-        <source>Cannot start nexbit: click-to-pay handler</source>
+        <source>Cannot start nexbitcoin: click-to-pay handler</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -1501,8 +1501,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the Nexbit-Qt help message to get a list with possible Nexbit command-line options.</source>
-        <translation>Afișa mesajul de ajutor Nexbit-Qt pentru a obține o listă cu posibile opțiuni de linie de comandă Nexbit.</translation>
+        <source>Show the NexbitCoin-Qt help message to get a list with possible NexbitCoin command-line options.</source>
+        <translation>Afișa mesajul de ajutor NexbitCoin-Qt pentru a obține o listă cu posibile opțiuni de linie de comandă NexbitCoin.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1521,13 +1521,13 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location line="-104"/>
-        <source>Nexbit - Debug window</source>
-        <translation>Nexbit - fereastră depanare</translation>
+        <source>NexbitCoin - Debug window</source>
+        <translation>NexbitCoin - fereastră depanare</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>Nexbit Core</source>
-        <translation>Nexbit Core</translation>
+        <source>NexbitCoin Core</source>
+        <translation>NexbitCoin Core</translation>
     </message>
     <message>
         <location line="+256"/>
@@ -1536,8 +1536,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the Nexbit debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Deschideti fisierul de depanare Nexbit din folderul curent. Acest lucru poate dura cateva secunde pentru fisiere de log mari.</translation>
+        <source>Open the NexbitCoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Deschideti fisierul de depanare NexbitCoin din folderul curent. Acest lucru poate dura cateva secunde pentru fisiere de log mari.</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -1546,8 +1546,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-28"/>
-        <source>Welcome to the Nexbit RPC console.</source>
-        <translation>Bine ati venit la consola Nexbit RPC.</translation>
+        <source>Welcome to the NexbitCoin RPC console.</source>
+        <translation>Bine ati venit la consola NexbitCoin RPC.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1717,8 +1717,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="-171"/>
-        <source>Enter a Nexbit address (e.g. NcLtRAC6SdkZYmt54tXE8rpZbiHdGv2fnk)</source>
-        <translation>Introduceți o adresă Nexbit(ex:NcLtRAC6SdkZYmt54tXE8rpZbiHdGv2fnk)</translation>
+        <source>Enter a NexbitCoin address (e.g. NcLtRAC6SdkZYmt54tXE8rpZbiHdGv2fnk)</source>
+        <translation>Introduceți o adresă NexbitCoin(ex:NcLtRAC6SdkZYmt54tXE8rpZbiHdGv2fnk)</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -1812,8 +1812,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location line="+241"/>
-        <source>WARNING: Invalid Nexbit address</source>
-        <translation>Atenție: Adresă Nexbit invalidă</translation>
+        <source>WARNING: Invalid NexbitCoin address</source>
+        <translation>Atenție: Adresă NexbitCoin invalidă</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -1886,8 +1886,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a Nexbit address (e.g. NcLtRAC6SdkZYmt54tXE8rpZbiHdGv2fnk)</source>
-        <translation>Introduceți o adresă Nexbit(ex:NcLtRAC6SdkZYmt54tXE8rpZbiHdGv2fnk)</translation>
+        <source>Enter a NexbitCoin address (e.g. NcLtRAC6SdkZYmt54tXE8rpZbiHdGv2fnk)</source>
+        <translation>Introduceți o adresă NexbitCoin(ex:NcLtRAC6SdkZYmt54tXE8rpZbiHdGv2fnk)</translation>
     </message>
 </context>
 <context>
@@ -1947,8 +1947,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this Nexbit address</source>
-        <translation>Semnează un mesaj pentru a dovedi că dețineti o adresă Nexbit</translation>
+        <source>Sign the message to prove you own this NexbitCoin address</source>
+        <translation>Semnează un mesaj pentru a dovedi că dețineti o adresă NexbitCoin</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -1979,8 +1979,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified Nexbit address</source>
-        <translation>Verifică un mesaj pentru a vă asigura că a fost semnat cu o anumită adresă Nexbit</translation>
+        <source>Verify the message to ensure it was signed with the specified NexbitCoin address</source>
+        <translation>Verifică un mesaj pentru a vă asigura că a fost semnat cu o anumită adresă NexbitCoin</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -1990,8 +1990,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a Nexbit address (e.g. NcLtRAC6SdkZYmt54tXE8rpZbiHdGv2fnk)</source>
-        <translation>Introduceți o adresă Nexbit(ex:NcLtRAC6SdkZYmt54tXE8rpZbiHdGv2fnk)</translation>
+        <source>Enter a NexbitCoin address (e.g. NcLtRAC6SdkZYmt54tXE8rpZbiHdGv2fnk)</source>
+        <translation>Introduceți o adresă NexbitCoin(ex:NcLtRAC6SdkZYmt54tXE8rpZbiHdGv2fnk)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -2000,8 +2000,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter Nexbit signature</source>
-        <translation>Introduceti semnatura Nexbit</translation>
+        <source>Enter NexbitCoin signature</source>
+        <translation>Introduceti semnatura NexbitCoin</translation>
     </message>
     <message>
         <location line="+85"/>
@@ -2579,8 +2579,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+8"/>
-        <source>Nexbit version</source>
-        <translation>Versiune Nexbit</translation>
+        <source>NexbitCoin version</source>
+        <translation>Versiune NexbitCoin</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2589,8 +2589,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or nexbitd</source>
-        <translation>Trimite comanda catre server sau nexbitd</translation>
+        <source>Send command to -server or nexbitcoind</source>
+        <translation>Trimite comanda catre server sau nexbitcoind</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2609,13 +2609,13 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Specify configuration file (default: nexbit.conf)</source>
-        <translation>Specifica fisier de configurare(implicit: nexbit.conf)</translation>
+        <source>Specify configuration file (default: nexbitcoin.conf)</source>
+        <translation>Specifica fisier de configurare(implicit: nexbitcoin.conf)</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: nexbitd.pid)</source>
-        <translation>Speficica fisier pid(implicit: nexbit.pid)</translation>
+        <source>Specify pid file (default: nexbitcoind.pid)</source>
+        <translation>Speficica fisier pid(implicit: nexbitcoin.pid)</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2632,13 +2632,13 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=nexbitrpc
+rpcuser=nexbitcoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Nexbit Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;NexbitCoin Alert&quot; admin@foo.com
 </source>
         <translation type="unfinished"/>
     </message>
@@ -2739,8 +2739,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Nexbit Alert&quot; admin@foo.c
     </message>
     <message>
         <location line="+46"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Nexbit will not work properly.</source>
-        <translation>Atentie: Va rugam verificati ca timpul si data calculatorului sunt corete. Daca timpul este gresit Nexbit nu va functiona corect.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong NexbitCoin will not work properly.</source>
+        <translation>Atentie: Va rugam verificati ca timpul si data calculatorului sunt corete. Daca timpul este gresit NexbitCoin nu va functiona corect.</translation>
     </message>
     <message>
         <location line="-19"/>
@@ -3034,7 +3034,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Nexbit Alert&quot; admin@foo.c
     </message>
     <message>
         <location line="+8"/>
-        <source>Initialization sanity check failed. Nexbit is shutting down.</source>
+        <source>Initialization sanity check failed. NexbitCoin is shutting down.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3089,13 +3089,13 @@ for example: alertnotify=echo %%s | mail -s &quot;Nexbit Alert&quot; admin@foo.c
     </message>
     <message>
         <location line="+4"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of Nexbit</source>
-        <translation>Eroare la încărcarea wallet.dat: Portofelul necesita o versiune mai noua de Nexbit</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of NexbitCoin</source>
+        <translation>Eroare la încărcarea wallet.dat: Portofelul necesita o versiune mai noua de NexbitCoin</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Wallet needed to be rewritten: restart Nexbit to complete</source>
-        <translation>A fost nevoie de rescrierea portofelului: restartați Nexbit pentru a finaliza</translation>
+        <source>Wallet needed to be rewritten: restart NexbitCoin to complete</source>
+        <translation>A fost nevoie de rescrierea portofelului: restartați NexbitCoin pentru a finaliza</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3154,8 +3154,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Nexbit Alert&quot; admin@foo.c
     </message>
     <message>
         <location line="+131"/>
-        <source>Unable to bind to %s on this computer. Nexbit is probably already running.</source>
-        <translation>Imposibil de conectat %s pe acest computer. Cel mai probabil Nexbit ruleaza</translation>
+        <source>Unable to bind to %s on this computer. NexbitCoin is probably already running.</source>
+        <translation>Imposibil de conectat %s pe acest computer. Cel mai probabil NexbitCoin ruleaza</translation>
     </message>
     <message>
         <location line="-108"/>
@@ -3184,7 +3184,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Nexbit Alert&quot; admin@foo.c
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. Nexbit is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s. NexbitCoin is probably already running.</source>
         <translation type="unfinished"/>
     </message>
     <message>

@@ -1,16 +1,16 @@
-Nexbit Chain | An Optimistic Blockchain Project
+NexbitCoin Chain | An Optimistic Blockchain Project
 Based on enery efficient POS model.
 
 ===============================================
-Building Nexbit
+Building NexbitCoin
 
-See doc/readme-qt.rst for instructions on building Nexbit QT,
+See doc/readme-qt.rst for instructions on building NexbitCoin QT,
 the intended-for-end-users, nice-graphical-interface, reference
-implementation of Nexbit.
+implementation of NexbitCoin.
 
-See doc/build-*.txt for instructions on building nexbitd,
+See doc/build-*.txt for instructions on building nexbitcoind,
 the intended-for-services, no-graphical-interface, reference
-implementation of Nexbit.
+implementation of NexbitCoin.
 
 ================================================
 
@@ -22,6 +22,6 @@ Details will publish soon.
 
 
 
-Development : https://github.com/nexbitproject/nexbit
+Development : https://github.com/nexbitcoinproject/nexbitcoin
 
-https://nexbit.io/ aims to continue on Nexbit chain.
+https://nexbitcoin.io/ aims to continue on NexbitCoin chain.

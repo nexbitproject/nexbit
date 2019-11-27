@@ -3,22 +3,22 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About Nexbit</source>
+        <source>About NexbitCoin</source>
         <translation>Tietoa Nexbitista</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;Nexbit&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;Nexbit&lt;/b&gt;-asiakasohjelman versio</translation>
+        <source>&lt;b&gt;NexbitCoin&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;NexbitCoin&lt;/b&gt;-asiakasohjelman versio</translation>
     </message>
     <message>
         <location line="+41"/>
         <source>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2012-2014 The NovaCoin developers
-Copyright © 2014 The Nexbit developers</source>
+Copyright © 2014 The NexbitCoin developers</source>
         <translation>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2012-2014 The NovaCoin developers
-Copyright © 2014 The Nexbit developers</translation>
+Copyright © 2014 The NexbitCoin developers</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -66,8 +66,8 @@ Tämä tuote sisältää OpenSSL-projektin kehittämää ohjelmistoa OpenSSL-ty�
     </message>
     <message>
         <location line="-43"/>
-        <source>These are your Nexbit addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Nämä ovat Nexbit-osoitteesi rahansiirtojen vastaanottoa varten. Jos haluat, voit antaa jokaiselle lähettäjälle oman osoitteen jotta voit pitää kirjaa sinulle rahaa siirtäneistä henkilöistä.</translation>
+        <source>These are your NexbitCoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Nämä ovat NexbitCoin-osoitteesi rahansiirtojen vastaanottoa varten. Jos haluat, voit antaa jokaiselle lähettäjälle oman osoitteen jotta voit pitää kirjaa sinulle rahaa siirtäneistä henkilöistä.</translation>
     </message>
     <message>
         <location line="+53"/>
@@ -81,8 +81,8 @@ Tämä tuote sisältää OpenSSL-projektin kehittämää ohjelmistoa OpenSSL-ty�
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign a message to prove you own a Nexbit address</source>
-        <translation>Allekirjoita viesti osoittaaksesi Nexbit-osoitteesi omistajuus</translation>
+        <source>Sign a message to prove you own a NexbitCoin address</source>
+        <translation>Allekirjoita viesti osoittaaksesi NexbitCoin-osoitteesi omistajuus</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -96,8 +96,8 @@ Tämä tuote sisältää OpenSSL-projektin kehittämää ohjelmistoa OpenSSL-ty�
     </message>
     <message>
         <location line="-10"/>
-        <source>Verify a message to ensure it was signed with a specified Nexbit address</source>
-        <translation>Vahvista viesti varmistaaksesi että kyseinen Nexbit-osoitteesi on allekirjoittanut sen</translation>
+        <source>Verify a message to ensure it was signed with a specified NexbitCoin address</source>
+        <translation>Vahvista viesti varmistaaksesi että kyseinen NexbitCoin-osoitteesi on allekirjoittanut sen</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -264,8 +264,8 @@ Tämä tuote sisältää OpenSSL-projektin kehittämää ohjelmistoa OpenSSL-ty�
     </message>
     <message>
         <location line="+82"/>
-        <source>Nexbit will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
-        <translation>Nexbit-ohjelma sulkee itsensä päättääkseen salauksen luonnin. Muista, että lompakon salaaminen ei täysin turvaa kolikoitasi haittaohjelmien aiheuttamien varkauksien uhalta.</translation>
+        <source>NexbitCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
+        <translation>NexbitCoin-ohjelma sulkee itsensä päättääkseen salauksen luonnin. Muista, että lompakon salaaminen ei täysin turvaa kolikoitasi haittaohjelmien aiheuttamien varkauksien uhalta.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -358,7 +358,7 @@ Tämä tuote sisältää OpenSSL-projektin kehittämää ohjelmistoa OpenSSL-ty�
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about Nexbit</source>
+        <source>Show information about NexbitCoin</source>
         <translation>Näytä tietoja Nexbitista</translation>
     </message>
     <message>
@@ -398,12 +398,12 @@ Tämä tuote sisältää OpenSSL-projektin kehittämää ohjelmistoa OpenSSL-ty�
     </message>
     <message>
         <location line="-55"/>
-        <source>Send coins to a Nexbit address</source>
-        <translation>Lähetä kolikoita Nexbit-osoitteeseen</translation>
+        <source>Send coins to a NexbitCoin address</source>
+        <translation>Lähetä kolikoita NexbitCoin-osoitteeseen</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>Modify configuration options for Nexbit</source>
+        <source>Modify configuration options for NexbitCoin</source>
         <translation>Mukauta asiakasohjelman asetuksia</translation>
     </message>
     <message>
@@ -444,8 +444,8 @@ Tämä tuote sisältää OpenSSL-projektin kehittämää ohjelmistoa OpenSSL-ty�
     <message>
         <location line="-214"/>
         <location line="+555"/>
-        <source>Nexbit</source>
-        <translation>Nexbit</translation>
+        <source>NexbitCoin</source>
+        <translation>NexbitCoin</translation>
     </message>
     <message>
         <location line="-555"/>
@@ -454,7 +454,7 @@ Tämä tuote sisältää OpenSSL-projektin kehittämää ohjelmistoa OpenSSL-ty�
     </message>
     <message>
         <location line="+193"/>
-        <source>&amp;About Nexbit</source>
+        <source>&amp;About NexbitCoin</source>
         <translation>&amp;Tietoa Nexbitista</translation>
     </message>
     <message>
@@ -506,13 +506,13 @@ Tämä tuote sisältää OpenSSL-projektin kehittämää ohjelmistoa OpenSSL-ty�
     <message>
         <location line="+0"/>
         <location line="+58"/>
-        <source>Nexbit client</source>
-        <translation>Nexbit-asiakasohjelma</translation>
+        <source>NexbitCoin client</source>
+        <translation>NexbitCoin-asiakasohjelma</translation>
     </message>
     <message numerus="yes">
         <location line="+70"/>
-        <source>%n active connection(s) to Nexbit network</source>
-        <translation><numerusform>%n aktiivinen yhteys Nexbit-verkkoon</numerusform><numerusform>%n aktiivista yhteyttä Nexbit-verkkoon</numerusform></translation>
+        <source>%n active connection(s) to NexbitCoin network</source>
+        <translation><numerusform>%n aktiivinen yhteys NexbitCoin-verkkoon</numerusform><numerusform>%n aktiivista yhteyttä NexbitCoin-verkkoon</numerusform></translation>
     </message>
     <message>
         <location line="+488"/>
@@ -605,8 +605,8 @@ Osoite: %4</translation>
     <message>
         <location line="-15"/>
         <location line="+15"/>
-        <source>URI can not be parsed! This can be caused by an invalid Nexbit address or malformed URI parameters.</source>
-        <translation>URI-merkkijonoa ei voida jäsentää! Tämä voi johtua väärästä Nexbit-osoitteesta tai väärässä muodossa olevista URI-parametreistä.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid NexbitCoin address or malformed URI parameters.</source>
+        <translation>URI-merkkijonoa ei voida jäsentää! Tämä voi johtua väärästä NexbitCoin-osoitteesta tai väärässä muodossa olevista URI-parametreistä.</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -728,8 +728,8 @@ Osoite: %4</translation>
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+104"/>
-        <source>A fatal error occurred. Nexbit can no longer continue safely and will quit.</source>
-        <translation>Virhe kohdattu. Nexbit-asiakasohjelma ei voi enää jatkaa turvallisesti ja se suljetaan.</translation>
+        <source>A fatal error occurred. NexbitCoin can no longer continue safely and will quit.</source>
+        <translation>Virhe kohdattu. NexbitCoin-asiakasohjelma ei voi enää jatkaa turvallisesti ja se suljetaan.</translation>
     </message>
 </context>
 <context>
@@ -1004,8 +1004,8 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid Nexbit address.</source>
-        <translation>Syöttämäsi osoite &quot;%1&quot; ei ole hyväksytty Nexbit-osoite.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid NexbitCoin address.</source>
+        <translation>Syöttämäsi osoite &quot;%1&quot; ei ole hyväksytty NexbitCoin-osoite.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1023,8 +1023,8 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
     <message>
         <location filename="../guiutil.cpp" line="+426"/>
         <location line="+12"/>
-        <source>Nexbit-Qt</source>
-        <translation>Nexbit-Qt</translation>
+        <source>NexbitCoin-Qt</source>
+        <translation>NexbitCoin-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -1096,13 +1096,13 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start Nexbit after logging in to the system.</source>
-        <translation>Käynnistä Nexbit-asiakasohjelma automaattisesti kun olet kirjautunut järjestelmään.</translation>
+        <source>Automatically start NexbitCoin after logging in to the system.</source>
+        <translation>Käynnistä NexbitCoin-asiakasohjelma automaattisesti kun olet kirjautunut järjestelmään.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start Nexbit on system login</source>
-        <translation>%Käynnistä Nexbit-asiakasohjelma kirjautuessasi</translation>
+        <source>&amp;Start NexbitCoin on system login</source>
+        <translation>%Käynnistä NexbitCoin-asiakasohjelma kirjautuessasi</translation>
     </message>
     <message>
         <location line="+21"/>
@@ -1111,8 +1111,8 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the Nexbit client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Avaa Nexbit-asiakkaalle automaattisesti portti reitittimestä. Tämä toimii vain, kun reitittimesi tukee UPnP:tä ja se on aktivoituna.</translation>
+        <source>Automatically open the NexbitCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Avaa NexbitCoin-asiakkaalle automaattisesti portti reitittimestä. Tämä toimii vain, kun reitittimesi tukee UPnP:tä ja se on aktivoituna.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1141,8 +1141,8 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
     </message>
     <message>
         <location line="-57"/>
-        <source>Connect to the Nexbit network through a SOCKS5 proxy (e.g. when connecting through Tor).</source>
-        <translation>Yhdistä Nexbit-verkkoon SOCKS5-välityspalvelimen kautta (esim. kun yhdistetään Tor:lla).</translation>
+        <source>Connect to the NexbitCoin network through a SOCKS5 proxy (e.g. when connecting through Tor).</source>
+        <translation>Yhdistä NexbitCoin-verkkoon SOCKS5-välityspalvelimen kautta (esim. kun yhdistetään Tor:lla).</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1186,8 +1186,8 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting Nexbit.</source>
-        <translation>Käyttöliittymän kieli voidaan valita tästä. Tämä asetus tulee voimaan vasta Nexbit-asiakasohjelman uudelleenkäynnistyksen jälkeen.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting NexbitCoin.</source>
+        <translation>Käyttöliittymän kieli voidaan valita tästä. Tämä asetus tulee voimaan vasta NexbitCoin-asiakasohjelman uudelleenkäynnistyksen jälkeen.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -1243,8 +1243,8 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting Nexbit.</source>
-        <translation>Tämä asetus tulee voimaan vasta Nexbit-asiakasohjelman uudelleenkäynnistyksen jälkeen.</translation>
+        <source>This setting will take effect after restarting NexbitCoin.</source>
+        <translation>Tämä asetus tulee voimaan vasta NexbitCoin-asiakasohjelman uudelleenkäynnistyksen jälkeen.</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1262,8 +1262,8 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
     <message>
         <location line="+46"/>
         <location line="+247"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Nexbit network after a connection is established, but this process has not completed yet.</source>
-        <translation>Näytettävät tiedot voivat olla vanhentuneet. Lompakkosi synkronoituu automaattisesti Nexbit-verkon kanssa kun yhteys on muodostettu, mutta tätä prosessia ei ole viety vielä päätökseen.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the NexbitCoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Näytettävät tiedot voivat olla vanhentuneet. Lompakkosi synkronoituu automaattisesti NexbitCoin-verkon kanssa kun yhteys on muodostettu, mutta tätä prosessia ei ole viety vielä päätökseen.</translation>
     </message>
     <message>
         <location line="-173"/>
@@ -1336,8 +1336,8 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
-        <source>Cannot start nexbit: click-to-pay handler</source>
-        <translation>Nexbit-asiakasohjelmaa ei voida käynnistää: klikkaa maksaaksesi-käsittelijä</translation>
+        <source>Cannot start nexbitcoin: click-to-pay handler</source>
+        <translation>NexbitCoin-asiakasohjelmaa ei voida käynnistää: klikkaa maksaaksesi-käsittelijä</translation>
     </message>
 </context>
 <context>
@@ -1506,8 +1506,8 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the Nexbit-Qt help message to get a list with possible Nexbit command-line options.</source>
-        <translation>Näytä Nexbit-Qt:n avustusohje saadaksesi listan käytettävistä Nexbitin komentokehotteen määritteistä.</translation>
+        <source>Show the NexbitCoin-Qt help message to get a list with possible NexbitCoin command-line options.</source>
+        <translation>Näytä NexbitCoin-Qt:n avustusohje saadaksesi listan käytettävistä Nexbitin komentokehotteen määritteistä.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1526,12 +1526,12 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
     </message>
     <message>
         <location line="-104"/>
-        <source>Nexbit - Debug window</source>
-        <translation>Nexbit - Debug-ikkuna</translation>
+        <source>NexbitCoin - Debug window</source>
+        <translation>NexbitCoin - Debug-ikkuna</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>Nexbit Core</source>
+        <source>NexbitCoin Core</source>
         <translation>Nexbitin ydin</translation>
     </message>
     <message>
@@ -1541,8 +1541,8 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the Nexbit debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Avaa Nexbit-asiakasohjelman debug-lokitiedosto nykyisestä hakemistostaan. Tämä voi kestää muutaman sekunnin avattaessa suuria lokitiedostoja.</translation>
+        <source>Open the NexbitCoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Avaa NexbitCoin-asiakasohjelman debug-lokitiedosto nykyisestä hakemistostaan. Tämä voi kestää muutaman sekunnin avattaessa suuria lokitiedostoja.</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -1551,7 +1551,7 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-28"/>
-        <source>Welcome to the Nexbit RPC console.</source>
+        <source>Welcome to the NexbitCoin RPC console.</source>
         <translation>Tervetuloa Nexbitin RPC-konsoliin.</translation>
     </message>
     <message>
@@ -1722,8 +1722,8 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="-171"/>
-        <source>Enter a Nexbit address (e.g. NcLtRAC6SdkZYmt54tXE8rpZbiHdGv2fnk)</source>
-        <translation>Syötä Nexbit-osoite (esim. NcLtRAC6SdkZYmt54tXE8rpZbiHdGv2fnk)</translation>
+        <source>Enter a NexbitCoin address (e.g. NcLtRAC6SdkZYmt54tXE8rpZbiHdGv2fnk)</source>
+        <translation>Syötä NexbitCoin-osoite (esim. NcLtRAC6SdkZYmt54tXE8rpZbiHdGv2fnk)</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -1817,8 +1817,8 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
     </message>
     <message>
         <location line="+241"/>
-        <source>WARNING: Invalid Nexbit address</source>
-        <translation>VAROITUS: Epäkelpo Nexbit-osoite</translation>
+        <source>WARNING: Invalid NexbitCoin address</source>
+        <translation>VAROITUS: Epäkelpo NexbitCoin-osoite</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -1891,8 +1891,8 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a Nexbit address (e.g. NcLtRAC6SdkZYmt54tXE8rpZbiHdGv2fnk)</source>
-        <translation>Syötä Nexbit-osoite (esim. NcLtRAC6SdkZYmt54tXE8rpZbiHdGv2fnk)</translation>
+        <source>Enter a NexbitCoin address (e.g. NcLtRAC6SdkZYmt54tXE8rpZbiHdGv2fnk)</source>
+        <translation>Syötä NexbitCoin-osoite (esim. NcLtRAC6SdkZYmt54tXE8rpZbiHdGv2fnk)</translation>
     </message>
 </context>
 <context>
@@ -1952,8 +1952,8 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this Nexbit address</source>
-        <translation>Allekirjoita viesti vahvistaaksesi, että omistat tämän Nexbit-osoitteen</translation>
+        <source>Sign the message to prove you own this NexbitCoin address</source>
+        <translation>Allekirjoita viesti vahvistaaksesi, että omistat tämän NexbitCoin-osoitteen</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -1984,8 +1984,8 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified Nexbit address</source>
-        <translation>Vahvista viesti varmistaaksesi että se on allekirjoitettu kyseisellä Nexbit-osoitteella</translation>
+        <source>Verify the message to ensure it was signed with the specified NexbitCoin address</source>
+        <translation>Vahvista viesti varmistaaksesi että se on allekirjoitettu kyseisellä NexbitCoin-osoitteella</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -1995,8 +1995,8 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a Nexbit address (e.g. NcLtRAC6SdkZYmt54tXE8rpZbiHdGv2fnk)</source>
-        <translation>Syötä Nexbit-osoite (esim. NcLtRAC6SdkZYmt54tXE8rpZbiHdGv2fnk)</translation>
+        <source>Enter a NexbitCoin address (e.g. NcLtRAC6SdkZYmt54tXE8rpZbiHdGv2fnk)</source>
+        <translation>Syötä NexbitCoin-osoite (esim. NcLtRAC6SdkZYmt54tXE8rpZbiHdGv2fnk)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -2005,8 +2005,8 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter Nexbit signature</source>
-        <translation>Syötä Nexbit-allekirjoitus</translation>
+        <source>Enter NexbitCoin signature</source>
+        <translation>Syötä NexbitCoin-allekirjoitus</translation>
     </message>
     <message>
         <location line="+85"/>
@@ -2584,7 +2584,7 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+8"/>
-        <source>Nexbit version</source>
+        <source>NexbitCoin version</source>
         <translation>Nexbitin versio</translation>
     </message>
     <message>
@@ -2594,8 +2594,8 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or nexbitd</source>
-        <translation>Syötä komento kohteeseen -server tai nexbitd</translation>
+        <source>Send command to -server or nexbitcoind</source>
+        <translation>Syötä komento kohteeseen -server tai nexbitcoind</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2614,13 +2614,13 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Specify configuration file (default: nexbit.conf)</source>
-        <translation>Määritä asetustiedosto (oletus: nexbit.conf)</translation>
+        <source>Specify configuration file (default: nexbitcoin.conf)</source>
+        <translation>Määritä asetustiedosto (oletus: nexbitcoin.conf)</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: nexbitd.pid)</source>
-        <translation>Määritä prosessitiedosto (oletus: nexbit.pid)</translation>
+        <source>Specify pid file (default: nexbitcoind.pid)</source>
+        <translation>Määritä prosessitiedosto (oletus: nexbitcoin.pid)</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2637,21 +2637,21 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=nexbitrpc
+rpcuser=nexbitcoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Nexbit Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;NexbitCoin Alert&quot; admin@foo.com
 </source>
         <translation>%s, sinun on asetettava rpcpassword asetustiedostoon:
 %s
-On suositeltavaa, että käytät seuraavaa arvottua salasanaa: rpcuser=nexbitrpc
+On suositeltavaa, että käytät seuraavaa arvottua salasanaa: rpcuser=nexbitcoinrpc
 rpcpassword=%s
 (Sinun ei tarvitse muistaa tätä salasanaa) Käyttäjänimen ja salasanan EI TULE OLLA SAMOJA.
 Jos tiedostoa ei ole olemassa, luo se asettaen samalla omistajan lukuoikeudet.
-On myös suositeltavaa asettaa alertnotify jolloin olet tiedotettu ongelmista; esimerkiksi: alertnotify=echo %%s | mail -s &quot;Nexbit Alert&quot; admin@foo.com
+On myös suositeltavaa asettaa alertnotify jolloin olet tiedotettu ongelmista; esimerkiksi: alertnotify=echo %%s | mail -s &quot;NexbitCoin Alert&quot; admin@foo.com
 </translation>
     </message>
     <message>
@@ -2751,8 +2751,8 @@ On myös suositeltavaa asettaa alertnotify jolloin olet tiedotettu ongelmista; e
     </message>
     <message>
         <location line="+46"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Nexbit will not work properly.</source>
-        <translation>Varoitus: Tarkista, että tietokoneesi aika ja päivämäärä ovat oikeassa! Jos kellosi on väärässä, Nexbit ei toimi oikein.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong NexbitCoin will not work properly.</source>
+        <translation>Varoitus: Tarkista, että tietokoneesi aika ja päivämäärä ovat oikeassa! Jos kellosi on väärässä, NexbitCoin ei toimi oikein.</translation>
     </message>
     <message>
         <location line="-19"/>
@@ -3046,8 +3046,8 @@ On myös suositeltavaa asettaa alertnotify jolloin olet tiedotettu ongelmista; e
     </message>
     <message>
         <location line="+8"/>
-        <source>Initialization sanity check failed. Nexbit is shutting down.</source>
-        <translation>Käyttöönottotarkistus epäonnistui. Nexbit-asiakasohjelma suljetaan.</translation>
+        <source>Initialization sanity check failed. NexbitCoin is shutting down.</source>
+        <translation>Käyttöönottotarkistus epäonnistui. NexbitCoin-asiakasohjelma suljetaan.</translation>
     </message>
     <message>
         <location line="+20"/>
@@ -3101,13 +3101,13 @@ On myös suositeltavaa asettaa alertnotify jolloin olet tiedotettu ongelmista; e
     </message>
     <message>
         <location line="+4"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of Nexbit</source>
-        <translation>Virhe ladattaessa wallet.dat-tiedostoa: Lompakko tarvitsee uudemman version Nexbit-asiakasohjelmasta</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of NexbitCoin</source>
+        <translation>Virhe ladattaessa wallet.dat-tiedostoa: Lompakko tarvitsee uudemman version NexbitCoin-asiakasohjelmasta</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Wallet needed to be rewritten: restart Nexbit to complete</source>
-        <translation>Lompakko on kirjoitettava uudelleen: käynnistä Nexbit-asiakasohjelma uudelleen päättääksesi toiminnon</translation>
+        <source>Wallet needed to be rewritten: restart NexbitCoin to complete</source>
+        <translation>Lompakko on kirjoitettava uudelleen: käynnistä NexbitCoin-asiakasohjelma uudelleen päättääksesi toiminnon</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3166,8 +3166,8 @@ On myös suositeltavaa asettaa alertnotify jolloin olet tiedotettu ongelmista; e
     </message>
     <message>
         <location line="+131"/>
-        <source>Unable to bind to %s on this computer. Nexbit is probably already running.</source>
-        <translation>Ei voitu liittää %s tällä tietokoneella. Nexbit-asiakasohjelma on jo ehkä päällä.</translation>
+        <source>Unable to bind to %s on this computer. NexbitCoin is probably already running.</source>
+        <translation>Ei voitu liittää %s tällä tietokoneella. NexbitCoin-asiakasohjelma on jo ehkä päällä.</translation>
     </message>
     <message>
         <location line="-108"/>
@@ -3196,8 +3196,8 @@ On myös suositeltavaa asettaa alertnotify jolloin olet tiedotettu ongelmista; e
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. Nexbit is probably already running.</source>
-        <translation>Lukkotiedostoa ei voida saada haltuun datahakemistossa %s. Nexbit on ehkä jo käynnissä.</translation>
+        <source>Cannot obtain a lock on data directory %s. NexbitCoin is probably already running.</source>
+        <translation>Lukkotiedostoa ei voida saada haltuun datahakemistossa %s. NexbitCoin on ehkä jo käynnissä.</translation>
     </message>
     <message>
         <location line="+4"/>

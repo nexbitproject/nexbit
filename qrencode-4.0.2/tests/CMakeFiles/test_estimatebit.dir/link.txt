@@ -1,0 +1,1 @@
+/usr/bin/cc   -rdynamic CMakeFiles/test_estimatebit.dir/test_estimatebit.c.o  -o test_estimatebit libcommon.a ../libqrencode.a 

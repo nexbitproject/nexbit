@@ -1,0 +1,1 @@
+/usr/bin/cc   -rdynamic CMakeFiles/test_split.dir/test_split.c.o  -o test_split libcommon.a ../libqrencode.a 

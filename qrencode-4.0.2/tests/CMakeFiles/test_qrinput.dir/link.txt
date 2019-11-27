@@ -1,0 +1,1 @@
+/usr/bin/cc   -rdynamic CMakeFiles/test_qrinput.dir/test_qrinput.c.o  -o test_qrinput libcommon.a libdecoder.a ../libqrencode.a 

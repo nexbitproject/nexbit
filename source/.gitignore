@@ -1,7 +1,7 @@
 src/*.exe
-src/nexbit
-src/nexbitd
-src/test_nexbit
+src/nexbitcoin
+src/nexbitcoind
+src/test_nexbitcoin
 src/build.h
 .*.swp
 *.*~*
@@ -10,11 +10,11 @@ src/build.h
 *.orig
 *.o
 *.patch
-.nexbit
+.nexbitcoin
 #compilation and Qt preprocessor part
 *.qm
 Makefile
-nexbit-qt
+nexbitcoin-qt
 #resources cpp
 qrc_*.cpp
 #qt creator

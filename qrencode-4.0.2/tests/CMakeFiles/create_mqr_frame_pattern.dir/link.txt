@@ -1,0 +1,1 @@
+/usr/bin/cc   -rdynamic CMakeFiles/create_mqr_frame_pattern.dir/create_mqr_frame_pattern.c.o  -o create_mqr_frame_pattern libcommon.a /usr/lib/x86_64-linux-gnu/libpng.so ../libqrencode.a /usr/lib/x86_64-linux-gnu/libz.so 

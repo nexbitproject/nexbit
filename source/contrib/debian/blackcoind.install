@@ -1,2 +1,2 @@
-debian/bin/nexbitd usr/bin
-src/nexbitd usr/lib/nexbit
+debian/bin/nexbitcoind usr/bin
+src/nexbitcoind usr/lib/nexbitcoin

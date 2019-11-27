@@ -1,0 +1,1 @@
+/usr/bin/cc   -rdynamic CMakeFiles/test_mask.dir/test_mask.c.o  -o test_mask libcommon.a libdecoder.a ../libqrencode.a 

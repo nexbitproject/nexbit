@@ -7,23 +7,23 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleGetInfoString</key>
-	<string>Nexbit-Qt</string>
+	<string>NexbitCoin-Qt</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleExecutable</key>
-	<string>Nexbit-Qt</string>
+	<string>NexbitCoin-Qt</string>
 	<key>CFBundleIdentifier</key>
-	<string>co.nexbit.Nexbit-Qt</string>
+	<string>co.nexbitcoin.NexbitCoin-Qt</string>
         <key>CFBundleURLTypes</key>
         <array>
           <dict>
             <key>CFBundleTypeRole</key>
             <string>Editor</string>
             <key>CFBundleURLName</key>
-            <string>co.nexbit.NexbitPayment</string>
+            <string>co.nexbitcoin.NexbitPayment</string>
             <key>CFBundleURLSchemes</key>
             <array>
-              <string>nexbit</string>
+              <string>nexbitcoin</string>
             </array>
           </dict>
         </array>

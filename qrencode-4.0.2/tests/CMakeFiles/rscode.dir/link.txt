@@ -1,0 +1,2 @@
+/usr/bin/ar qc librscode.a  CMakeFiles/rscode.dir/rscode.c.o
+/usr/bin/ranlib librscode.a

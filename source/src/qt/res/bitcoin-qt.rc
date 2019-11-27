@@ -19,13 +19,13 @@ BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
             VALUE "CompanyName",        "NEXBIT.IO"
-            VALUE "FileDescription",    "Nexbit-Qt (OSS GUI client for Nexbit)"
+            VALUE "FileDescription",    "NexbitCoin-Qt (OSS GUI client for NexbitCoin)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "nexbit-qt"
-            VALUE "LegalCopyright",     "2009-2019 The Bitcoin developers, 2012-2014 The NovaCoin & PPCoin developers, 2014 The BlackCoin developers, 2019 The Nexbit developers"
+            VALUE "InternalName",       "nexbitcoin-qt"
+            VALUE "LegalCopyright",     "2009-2019 The Bitcoin developers, 2012-2014 The NovaCoin & PPCoin developers, 2014 The NexbitCoin developers, 2019 The NexbitCoin developers"
             VALUE "LegalTrademarks1",   "Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "nexbit-qt.exe"
-            VALUE "ProductName",        "Nexbit-Qt"
+            VALUE "OriginalFilename",   "nexbitcoin-qt.exe"
+            VALUE "ProductName",        "NexbitCoin-Qt"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

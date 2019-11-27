@@ -1,0 +1,1 @@
+/usr/bin/cc   -rdynamic CMakeFiles/test_bitstream.dir/test_bitstream.c.o  -o test_bitstream libcommon.a ../libqrencode.a 

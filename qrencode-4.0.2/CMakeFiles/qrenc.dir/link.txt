@@ -1,0 +1,1 @@
+/usr/bin/cc   -rdynamic CMakeFiles/qrenc.dir/qrenc.c.o  -o qrencode libqrencode.a /usr/lib/x86_64-linux-gnu/libpng.so /usr/lib/x86_64-linux-gnu/libz.so 

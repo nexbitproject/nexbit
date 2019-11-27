@@ -1,5 +1,5 @@
-nexbit-qt usr/bin
+nexbitcoin-qt usr/bin
 share/pixmaps/bitcoin32.xpm usr/share/pixmaps
 share/pixmaps/bitcoin80.xpm usr/share/pixmaps
-debian/nexbit-qt.desktop usr/share/applications
-debian/nexbit-qt.protocol usr/share/kde4/services/
+debian/nexbitcoin-qt.desktop usr/share/applications
+debian/nexbitcoin-qt.protocol usr/share/kde4/services/
