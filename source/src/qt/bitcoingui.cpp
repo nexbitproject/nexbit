@@ -146,8 +146,8 @@ BitcoinGUI::BitcoinGUI(QWidget *parent):
     frameBlocks->setSizePolicy(QSizePolicy::Preferred, QSizePolicy::Preferred);
     frameBlocks->setStyleSheet("QWidget { background: none; margin-bottom: 5px; }");
     QHBoxLayout *frameBlocksLayout = new QHBoxLayout(frameBlocks);
-    frameBlocksLayout->setContentsMargins(3,0,3,0);
-    frameBlocksLayout->setSpacing(3);
+    frameBlocksLayout->setContentsMargins(4,0,4,0);
+    frameBlocksLayout->setSpacing(4);
     frameBlocksLayout->setAlignment(Qt::AlignHCenter);
     labelEncryptionIcon = new QLabel();
     labelStakingIcon = new QLabel();
@@ -174,10 +174,10 @@ BitcoinGUI::BitcoinGUI(QWidget *parent):
 
     // Progress bar and label for blocks download
     progressBarLabel = new QLabel();
-    progressBarLabel->setVisible(false);
+    progressBarLabel->setVisible(true);
     progressBar = new QProgressBar();
     progressBar->setAlignment(Qt::AlignCenter);
-    progressBar->setVisible(false);
+    progressBar->setVisible(true);
 
     if (!fUseBlackTheme)
     {
@@ -573,7 +573,7 @@ void BitcoinGUI::setNumBlocks(int count)
         overviewPage->showOutOfSyncWarning(false);
 
         progressBarLabel->setVisible(false);
-        progressBar->setVisible(false);
+        progressBar->setVisible(true);
     }
     else
     {

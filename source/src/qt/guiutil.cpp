@@ -83,7 +83,7 @@ void setupAmountWidget(QLineEdit *widget, QWidget *parent)
 
 bool parseBitcoinURI(const QUrl &uri, SendCoinsRecipient *out)
 {
-    // NovaCoin: check prefix
+    // Nexbit: check prefix
     if(uri.scheme() != QString("nexbit"))
         return false;
 
@@ -494,4 +494,3 @@ void SetBlackThemeQSS(QApplication& app)
 }
 
 } // namespace GUIUtil
-

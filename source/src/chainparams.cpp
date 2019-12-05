@@ -90,10 +90,12 @@ public:
         vSeeds.push_back(CDNSSeedData("167.172.239.154", "167.172.239.154"));
         vSeeds.push_back(CDNSSeedData("165.227.225.78", "165.227.225.78"));
         vSeeds.push_back(CDNSSeedData("157.230.99.176", "157.230.99.176"));
-        vSeeds.push_back(CDNSSeedData("npay.life", "nseed.npay.life"));
-        vSeeds.push_back(CDNSSeedData("quantaex.com", "nseed.quantaex.com"));
-        vSeeds.push_back(CDNSSeedData("nexbit.io", "nseed.nexbit.io"));
-        vSeeds.push_back(CDNSSeedData("bitbd.com", "nseed.bitbd.co"));
+        vSeeds.push_back(CDNSSeedData("206.189.117.70", "206.189.117.70"));
+        vSeeds.push_back(CDNSSeedData("167.71.140.104", "167.71.140.104"));
+        vSeeds.push_back(CDNSSeedData("138.197.135.237", "138.197.135.237"));
+        vSeeds.push_back(CDNSSeedData("159.65.136.159", "159.65.136.159"));
+        vSeeds.push_back(CDNSSeedData("165.22.219.149", "165.22.219.149"));
+
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 54);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 53);
