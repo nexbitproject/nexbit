@@ -90,7 +90,7 @@ void Shutdown()
     TRY_LOCK(cs_Shutdown, lockShutdown);
     if (!lockShutdown) return;
 
-    RenameThread("nexbitcoin-shutoff");
+    RenameThread("nexbit-shutoff");
     mempool.AddTransactionsUpdated(1);
     StopRPCThreads();
 #ifdef ENABLE_WALLET
@@ -161,22 +161,22 @@ std::string HelpMessage()
 {
     string strUsage = _("Options:") + "\n";
     strUsage += "  -?                     " + _("This help message") + "\n";
-    strUsage += "  -conf=<file>           " + _("Specify configuration file (default: nexbitcoin.conf)") + "\n";
-    strUsage += "  -pid=<file>            " + _("Specify pid file (default: nexbitcoind.pid)") + "\n";
-    strUsage += "  -datadir=<dir>         " + _("Specify data directory") + "\n";
-    strUsage += "  -wallet=<dir>          " + _("Specify wallet file (within data directory)") + "\n";
+    strUsage += "  -conf=<file>           " + _("Specify NEXBIT configuration file (default: nexbit.conf)") + "\n";
+    strUsage += "  -pid=<file>            " + _("Specify NEXBIT pid file (default: nexbitd.pid)") + "\n";
+    strUsage += "  -datadir=<dir>         " + _("Specify NEXBIT data directory") + "\n";
+    strUsage += "  -wallet=<dir>          " + _("Specify NEXBIT wallet file (within data directory)") + "\n";
     strUsage += "  -dbcache=<n>           " + _("Set database cache size in megabytes (default: 25)") + "\n";
     strUsage += "  -dblogsize=<n>         " + _("Set database disk log size in megabytes (default: 100)") + "\n";
-    strUsage += "  -timeout=<n>           " + _("Specify connection timeout in milliseconds (default: 5000)") + "\n";
-    strUsage += "  -proxy=<ip:port>       " + _("Connect through SOCKS5 proxy") + "\n";
-    strUsage += "  -tor=<ip:port>         " + _("Use proxy to reach tor hidden services (default: same as -proxy)") + "\n";
-    strUsage += "  -dns                   " + _("Allow DNS lookups for -addnode, -seednode and -connect") + "\n";
+    strUsage += "  -timeout=<n>           " + _("Specify NEXBIT connection timeout in milliseconds (default: 5000)") + "\n";
+    strUsage += "  -proxy=<ip:port>       " + _("Connect NEXBIT through SOCKS5 proxy") + "\n";
+    strUsage += "  -tor=<ip:port>         " + _("NEXBIT use proxy to reach tor hidden services (default: same as -proxy)") + "\n";
+    strUsage += "  -dns                   " + _("Allow NEXBIT to DNS lookups for -addnode, -seednode and -connect") + "\n";
     strUsage += "  -port=<port>           " + _("Listen for connections on <port> (default: 13520 or testnet: 23520)") + "\n";
     strUsage += "  -maxconnections=<n>    " + _("Maintain at most <n> connections to peers (default: 125)") + "\n";
     strUsage += "  -addnode=<ip>          " + _("Add a node to connect to and attempt to keep the connection open") + "\n";
     strUsage += "  -connect=<ip>          " + _("Connect only to the specified node(s)") + "\n";
     strUsage += "  -seednode=<ip>         " + _("Connect to a node to retrieve peer addresses, and disconnect") + "\n";
-    strUsage += "  -externalip=<ip>       " + _("Specify your own public address") + "\n";
+    strUsage += "  -externalip=<ip>       " + _("Specify your own NEXBIT public address") + "\n";
     strUsage += "  -onlynet=<net>         " + _("Only connect to nodes in network <net> (IPv4, IPv6 or Tor)") + "\n";
     strUsage += "  -discover              " + _("Discover own IP address (default: 1 when listening and no -externalip)") + "\n";
     strUsage += "  -listen                " + _("Accept connections from outside (default: 1 if no -proxy or -connect)") + "\n";
@@ -450,7 +450,7 @@ bool AppInit2(boost::thread_group& threadGroup)
 
     // Sanity check
     if (!InitSanityCheck())
-        return InitError(_("Initialization sanity check failed. NexbitCoin is shutting down."));
+        return InitError(_("Initialization sanity check failed. Nexbit is shutting down."));
 
     std::string strDataDir = GetDataDir().string();
 #ifdef ENABLE_WALLET
@@ -466,12 +466,12 @@ bool AppInit2(boost::thread_group& threadGroup)
     if (file) fclose(file);
     static boost::interprocess::file_lock lock(pathLockFile.string().c_str());
     if (!lock.try_lock())
-        return InitError(strprintf(_("Cannot obtain a lock on data directory %s. NexbitCoin is probably already running."), strDataDir));
+        return InitError(strprintf(_("Cannot obtain a lock on data directory %s. Nexbit is probably already running."), strDataDir));
 
     if (GetBoolArg("-shrinkdebugfile", !fDebug))
         ShrinkDebugFile();
     LogPrintf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
-    LogPrintf("NexbitCoin version %s (%s)\n", FormatFullVersion(), CLIENT_DATE);
+    LogPrintf("Nexbit version %s (%s)\n", FormatFullVersion(), CLIENT_DATE);
     LogPrintf("Using OpenSSL version %s\n", SSLeay_version(SSLEAY_VERSION));
     if (!fLogTimestamps)
         LogPrintf("Startup time: %s\n", DateTimeStrFormat("%x %H:%M:%S", GetTime()));
@@ -480,7 +480,7 @@ bool AppInit2(boost::thread_group& threadGroup)
     std::ostringstream strErrors;
 
     if (fDaemon)
-        fprintf(stdout, "NexbitCoin server starting\n");
+        fprintf(stdout, "Nexbit server starting\n");
 
     int64_t nStart;
 
@@ -709,10 +709,10 @@ bool AppInit2(boost::thread_group& threadGroup)
                 InitWarning(msg);
             }
             else if (nLoadWalletRet == DB_TOO_NEW)
-                strErrors << _("Error loading wallet.dat: Wallet requires newer version of NexbitCoin") << "\n";
+                strErrors << _("Error loading wallet.dat: Wallet requires newer version of Nexbit") << "\n";
             else if (nLoadWalletRet == DB_NEED_REWRITE)
             {
-                strErrors << _("Wallet needed to be rewritten: restart NexbitCoin to complete") << "\n";
+                strErrors << _("Wallet needed to be rewritten: restart Nexbit to complete") << "\n";
                 LogPrintf("%s", strErrors.str());
                 return InitError(strErrors.str());
             }

@@ -1,2 +1,2 @@
-debian/manpages/nexbitcoind.1
-debian/manpages/nexbitcoin.conf.5
+debian/manpages/nexbitd.1
+debian/manpages/nexbit.conf.5

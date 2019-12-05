@@ -160,7 +160,7 @@ protected:
 
         // Value
         CDataStream ssValue(SER_DISK, CLIENT_VERSION);
-        ssValue.reserve(10000);
+        ssValue.reserve(20000);
         ssValue << value;
         Dbt datValue(&ssValue[0], ssValue.size());
 

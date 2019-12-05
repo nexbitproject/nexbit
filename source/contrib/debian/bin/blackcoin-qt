@@ -4,13 +4,13 @@ set -e
 
 umask 077
 
-basedir=~/.nexbitcoin
+basedir=~/.nexbit
 dbfile="$basedir/DB_CONFIG"
-cfgfile="$basedir/nexbitcoin.conf"
+cfgfile="$basedir/nexbit.conf"
 
 [ -e "$basedir" ] || mkdir "$basedir"
 
-# NexbitCoin does not clean up DB log files by default
+# Nexbit does not clean up DB log files by default
 [ -e "$dbfile" ] || echo 'set_flags DB_LOG_AUTOREMOVE' > "$dbfile"
 
-exec /usr/lib/nexbitcoin/nexbitcoin-qt "$@"
+exec /usr/lib/nexbit/nexbit-qt "$@"

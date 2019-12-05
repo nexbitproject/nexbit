@@ -482,7 +482,7 @@ void ThreadStakeMiner(CWallet *pwallet)
     SetThreadPriority(THREAD_PRIORITY_LOWEST);
 
     // Make this thread recognisable as the mining thread
-    RenameThread("nexbitcoin-miner");
+    RenameThread("nexbit-miner");
 
     CReserveKey reservekey(pwallet);
 

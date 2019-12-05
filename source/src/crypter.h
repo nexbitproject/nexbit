@@ -51,9 +51,9 @@ public:
     )
     CMasterKey()
     {
-        // 25000 rounds is just under 0.1 seconds on a 1.86 GHz Pentium M
+        // Increase the round for modern minimal CPU capacity
         // ie slightly lower than the lowest hardware we need bother supporting
-        nDeriveIterations = 25000;
+        nDeriveIterations = 50000;
         nDerivationMethod = 1;
         vchOtherDerivationParameters = std::vector<unsigned char>(0);
     }
@@ -64,13 +64,13 @@ public:
         {
             case 0: // sha512
             default:
-                nDeriveIterations = 25000;
+                nDeriveIterations = 50000;
                 nDerivationMethod = 0;
                 vchOtherDerivationParameters = std::vector<unsigned char>(0);
             break;
 
             case 1: // scrypt+sha512
-                nDeriveIterations = 10000;
+                nDeriveIterations = 20000;
                 nDerivationMethod = 1;
                 vchOtherDerivationParameters = std::vector<unsigned char>(0);
             break;

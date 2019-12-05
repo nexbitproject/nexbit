@@ -50,12 +50,12 @@ bool AppInit(int argc, char* argv[])
         if (mapArgs.count("-?") || mapArgs.count("--help"))
         {
             // First part of help message is specific to bitcoind / RPC client
-            std::string strUsage = _("NexbitCoin version") + " " + FormatFullVersion() + "\n\n" +
+            std::string strUsage = _("Nexbit version") + " " + FormatFullVersion() + "\n\n" +
                 _("Usage:") + "\n" +
-                  "  nexbitcoind [options]                     " + "\n" +
-                  "  nexbitcoind [options] <command> [params]  " + _("Send command to -server or nexbitcoind") + "\n" +
-                  "  nexbitcoind [options] help                " + _("List commands") + "\n" +
-                  "  nexbitcoind [options] help <command>      " + _("Get help for a command") + "\n";
+                  "  nexbitd [options]                     " + "\n" +
+                  "  nexbitd [options] <command> [params]  " + _("Send command to -server or nexbitd") + "\n" +
+                  "  nexbitd [options] help                " + _("List commands") + "\n" +
+                  "  nexbitd [options] help <command>      " + _("Get help for a command") + "\n";
 
             strUsage += "\n" + HelpMessage();
 
@@ -65,7 +65,7 @@ bool AppInit(int argc, char* argv[])
 
         // Command-line RPC
         for (int i = 1; i < argc; i++)
-            if (!IsSwitchChar(argv[i][0]) && !boost::algorithm::istarts_with(argv[i], "nexbitcoin:"))
+            if (!IsSwitchChar(argv[i][0]) && !boost::algorithm::istarts_with(argv[i], "nexbit:"))
                 fCommandLine = true;
 
         if (fCommandLine)

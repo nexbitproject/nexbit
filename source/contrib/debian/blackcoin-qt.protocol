@@ -1,6 +1,6 @@
 [Protocol]
-exec=nexbitcoin-qt '%u'
-protocol=nexbitcoin
+exec=nexbit-qt '%u'
+protocol=nexbit
 input=none
 output=none
 helper=true

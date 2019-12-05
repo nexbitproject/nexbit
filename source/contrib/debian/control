@@ -1,4 +1,4 @@
-Source: nexbitcoin
+Source: nexbit
 Section: utils
 Priority: optional
 Maintainer: Jonas Smedegaard <dr@jones.dk>
@@ -19,11 +19,11 @@ Build-Depends: debhelper,
  libqt4-dev,
  libqrencode-dev
 Standards-Version: 3.9.2
-Homepage: http://www.nexbitcoin.co/
-Vcs-Git: git://github.com/CoinBlack/nexbitcoin.git
-Vcs-Browser: http://github.com/CoinBlack/nexbitcoin
+Homepage: http://www.nexbit.co/
+Vcs-Git: git://github.com/CoinBlack/nexbit.git
+Vcs-Browser: http://github.com/CoinBlack/nexbit
 
-Package: nexbitcoind
+Package: nexbitd
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer network based digital currency - daemon
@@ -38,10 +38,10 @@ Description: peer-to-peer network based digital currency - daemon
  Full transaction history is stored locally at each client.  This
  requires 2+ GB of space, slowly growing.
  .
- This package provides nexbitcoind, a combined daemon and CLI tool to
+ This package provides nexbitd, a combined daemon and CLI tool to
  interact with the daemon.
 
-Package: nexbitcoin-qt
+Package: nexbit-qt
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer network based digital currency - Qt GUI
@@ -56,4 +56,4 @@ Description: peer-to-peer network based digital currency - Qt GUI
  Full transaction history is stored locally at each client.  This
  requires 2+ GB of space, slowly growing.
  .
- This package provides NexbitCoin-Qt, a GUI for NexbitCoin based on Qt.
+ This package provides Nexbit-Qt, a GUI for Nexbit based on Qt.

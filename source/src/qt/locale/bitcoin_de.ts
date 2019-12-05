@@ -3,19 +3,19 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About NexbitCoin</source>
-        <translation>Über NexbitCoin</translation>
+        <source>About Nexbit</source>
+        <translation>Über Nexbit</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;NexbitCoin&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;NexbitCoin&lt;/b&gt; Version</translation>
+        <source>&lt;b&gt;Nexbit&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;Nexbit&lt;/b&gt; Version</translation>
     </message>
     <message>
         <location line="+41"/>
         <source>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2012-2014 The NovaCoin developers
-Copyright © 2014 The NexbitCoin developers</source>
+Copyright © 2014 The Nexbit developers</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -63,8 +63,8 @@ Dieses Produkt enthält Software, die vom OpenSSL-Projekt zur Verwendung im Open
     </message>
     <message>
         <location line="-43"/>
-        <source>These are your NexbitCoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Das sind Ihre NexbitCoin Adressen um Zahlungen zu erhalten. Sie werden vielleicht verschiedene an jeden Sender vergeben, damit Sie im Auge behalten können wer Sie bezahlt.</translation>
+        <source>These are your Nexbit addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Das sind Ihre Nexbit Adressen um Zahlungen zu erhalten. Sie werden vielleicht verschiedene an jeden Sender vergeben, damit Sie im Auge behalten können wer Sie bezahlt.</translation>
     </message>
     <message>
         <location line="+53"/>
@@ -78,8 +78,8 @@ Dieses Produkt enthält Software, die vom OpenSSL-Projekt zur Verwendung im Open
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign a message to prove you own a NexbitCoin address</source>
-        <translation>Signieren Sie eine Nachricht um zu beweisen, dass Sie eine NexbitCoin Adresse besitzen</translation>
+        <source>Sign a message to prove you own a Nexbit address</source>
+        <translation>Signieren Sie eine Nachricht um zu beweisen, dass Sie eine Nexbit Adresse besitzen</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -93,8 +93,8 @@ Dieses Produkt enthält Software, die vom OpenSSL-Projekt zur Verwendung im Open
     </message>
     <message>
         <location line="-10"/>
-        <source>Verify a message to ensure it was signed with a specified NexbitCoin address</source>
-        <translation>Verifizieren Sie ob eine Nachricht einer bestimmten NexbitCoin Adresse signiert wurde</translation>
+        <source>Verify a message to ensure it was signed with a specified Nexbit address</source>
+        <translation>Verifizieren Sie ob eine Nachricht einer bestimmten Nexbit Adresse signiert wurde</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -261,8 +261,8 @@ Dieses Produkt enthält Software, die vom OpenSSL-Projekt zur Verwendung im Open
     </message>
     <message>
         <location line="+82"/>
-        <source>NexbitCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
-        <translation>NexbitCoin wird sich schließen um den Verschlüsselungsvorgang abzuschließen. Beachten Sie, dass die Verschlüsselung Ihrer Wallet keinen vollständigen Schutz vor Diebstahl Ihrer Coins duch auf Ihrem Computer installierte Malware gewährleistet</translation>
+        <source>Nexbit will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
+        <translation>Nexbit wird sich schließen um den Verschlüsselungsvorgang abzuschließen. Beachten Sie, dass die Verschlüsselung Ihrer Wallet keinen vollständigen Schutz vor Diebstahl Ihrer Coins duch auf Ihrem Computer installierte Malware gewährleistet</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -355,8 +355,8 @@ Dieses Produkt enthält Software, die vom OpenSSL-Projekt zur Verwendung im Open
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about NexbitCoin</source>
-        <translation>Informationen über NexbitCoin anzeigen</translation>
+        <source>Show information about Nexbit</source>
+        <translation>Informationen über Nexbit anzeigen</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -395,13 +395,13 @@ Dieses Produkt enthält Software, die vom OpenSSL-Projekt zur Verwendung im Open
     </message>
     <message>
         <location line="-55"/>
-        <source>Send coins to a NexbitCoin address</source>
-        <translation>Senden Sie Coins an eine NexbitCoin Adresse</translation>
+        <source>Send coins to a Nexbit address</source>
+        <translation>Senden Sie Coins an eine Nexbit Adresse</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>Modify configuration options for NexbitCoin</source>
-        <translation>Konfigurationsoptionen für NexbitCoin ändern</translation>
+        <source>Modify configuration options for Nexbit</source>
+        <translation>Konfigurationsoptionen für Nexbit ändern</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -441,8 +441,8 @@ Dieses Produkt enthält Software, die vom OpenSSL-Projekt zur Verwendung im Open
     <message>
         <location line="-214"/>
         <location line="+555"/>
-        <source>NexbitCoin</source>
-        <translation>NexbitCoin</translation>
+        <source>Nexbit</source>
+        <translation>Nexbit</translation>
     </message>
     <message>
         <location line="-555"/>
@@ -451,8 +451,8 @@ Dieses Produkt enthält Software, die vom OpenSSL-Projekt zur Verwendung im Open
     </message>
     <message>
         <location line="+193"/>
-        <source>&amp;About NexbitCoin</source>
-        <translation>&amp;Über NexbitCoin</translation>
+        <source>&amp;About Nexbit</source>
+        <translation>&amp;Über Nexbit</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -503,13 +503,13 @@ Dieses Produkt enthält Software, die vom OpenSSL-Projekt zur Verwendung im Open
     <message>
         <location line="+0"/>
         <location line="+58"/>
-        <source>NexbitCoin client</source>
-        <translation>NexbitCoin Anwendung</translation>
+        <source>Nexbit client</source>
+        <translation>Nexbit Anwendung</translation>
     </message>
     <message numerus="yes">
         <location line="+70"/>
-        <source>%n active connection(s) to NexbitCoin network</source>
-        <translation><numerusform>%n aktive Verbindung zum NexbitCoin Netzwerk</numerusform><numerusform>%n aktive Verbindungen zum NexbitCoin Netzwerk</numerusform></translation>
+        <source>%n active connection(s) to Nexbit network</source>
+        <translation><numerusform>%n aktive Verbindung zum Nexbit Netzwerk</numerusform><numerusform>%n aktive Verbindungen zum Nexbit Netzwerk</numerusform></translation>
     </message>
     <message>
         <location line="+488"/>
@@ -602,8 +602,8 @@ Adresse: %4</translation>
     <message>
         <location line="-15"/>
         <location line="+15"/>
-        <source>URI can not be parsed! This can be caused by an invalid NexbitCoin address or malformed URI parameters.</source>
-        <translation>Die URI kann nicht erkannt werden! Die Ursache hierfür kann eine ungültige NexbitCoin Adresse oder eine fehlerhafte Angabe der URI Parameter sein.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid Nexbit address or malformed URI parameters.</source>
+        <translation>Die URI kann nicht erkannt werden! Die Ursache hierfür kann eine ungültige Nexbit Adresse oder eine fehlerhafte Angabe der URI Parameter sein.</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -726,8 +726,8 @@ Adresse: %4</translation>
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+104"/>
-        <source>A fatal error occurred. NexbitCoin can no longer continue safely and will quit.</source>
-        <translation>Ein fataler Fehler ist aufgetreten. NexbitCoin kann nicht fortgesetzt werden und wird beendet.</translation>
+        <source>A fatal error occurred. Nexbit can no longer continue safely and will quit.</source>
+        <translation>Ein fataler Fehler ist aufgetreten. Nexbit kann nicht fortgesetzt werden und wird beendet.</translation>
     </message>
 </context>
 <context>
@@ -992,8 +992,8 @@ Adresse: %4</translation>
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid NexbitCoin address.</source>
-        <translation>Die eingegebene Adresse &quot;%1&quot; ist keine gültige NexbitCoin Adresse.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid Nexbit address.</source>
+        <translation>Die eingegebene Adresse &quot;%1&quot; ist keine gültige Nexbit Adresse.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1011,8 +1011,8 @@ Adresse: %4</translation>
     <message>
         <location filename="../guiutil.cpp" line="+426"/>
         <location line="+12"/>
-        <source>NexbitCoin-Qt</source>
-        <translation>NexbitCoin-Qt
+        <source>Nexbit-Qt</source>
+        <translation>Nexbit-Qt
 </translation>
     </message>
     <message>
@@ -1085,13 +1085,13 @@ Adresse: %4</translation>
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start NexbitCoin after logging in to the system.</source>
-        <translation>Automatisch NexbitCoin starten beim Einloggen in das System.</translation>
+        <source>Automatically start Nexbit after logging in to the system.</source>
+        <translation>Automatisch Nexbit starten beim Einloggen in das System.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start NexbitCoin on system login</source>
-        <translation>&amp;Starte NexbitCoin bei Systemstart</translation>
+        <source>&amp;Start Nexbit on system login</source>
+        <translation>&amp;Starte Nexbit bei Systemstart</translation>
     </message>
     <message>
         <location line="+21"/>
@@ -1100,8 +1100,8 @@ Adresse: %4</translation>
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the NexbitCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automatisch den NexbitCoin client port auf dem Router öffnen. Das funktioniert nur wenn der Router UPnP unterstützt und UPnP aktiviert ist.</translation>
+        <source>Automatically open the Nexbit client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Automatisch den Nexbit client port auf dem Router öffnen. Das funktioniert nur wenn der Router UPnP unterstützt und UPnP aktiviert ist.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1130,7 +1130,7 @@ Adresse: %4</translation>
     </message>
     <message>
         <location line="-57"/>
-        <source>Connect to the NexbitCoin network through a SOCKS5 proxy (e.g. when connecting through Tor).</source>
+        <source>Connect to the Nexbit network through a SOCKS5 proxy (e.g. when connecting through Tor).</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1175,7 +1175,7 @@ Adresse: %4</translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting NexbitCoin.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting Nexbit.</source>
         <translation>Die Sprache der GUI kann hier verändert werden. Die Einstellung wird nach einem Neustart übernommen.</translation>
     </message>
     <message>
@@ -1201,7 +1201,7 @@ Adresse: %4</translation>
     <message>
         <location line="+7"/>
         <source>Use black visual theme (requires restart)</source>
-        <translation>Verwende das schwarze NexbitCoin Wallet Design (Neustart erforderlich)</translation>
+        <translation>Verwende das schwarze Nexbit Wallet Design (Neustart erforderlich)</translation>
     </message>
     <message>
         <location line="+71"/>
@@ -1232,7 +1232,7 @@ Adresse: %4</translation>
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting NexbitCoin.</source>
+        <source>This setting will take effect after restarting Nexbit.</source>
         <translation>Diese Einstellung wird nach einem Neustart übernommen.</translation>
     </message>
     <message>
@@ -1251,8 +1251,8 @@ Adresse: %4</translation>
     <message>
         <location line="+46"/>
         <location line="+247"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the NexbitCoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Die angezeigte Information kann falsch sein. Die Brieftasche synchronisiert automatisch mit dem NexbitCoin Netzwerk nachdem eine Verbindung zustande gekommen ist, aber dieser Prozess ist nicht abgeschlossen.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Nexbit network after a connection is established, but this process has not completed yet.</source>
+        <translation>Die angezeigte Information kann falsch sein. Die Brieftasche synchronisiert automatisch mit dem Nexbit Netzwerk nachdem eine Verbindung zustande gekommen ist, aber dieser Prozess ist nicht abgeschlossen.</translation>
     </message>
     <message>
         <location line="-173"/>
@@ -1325,7 +1325,7 @@ Adresse: %4</translation>
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
-        <source>Cannot start nexbitcoin: click-to-pay handler</source>
+        <source>Cannot start nexbit: click-to-pay handler</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -1495,7 +1495,7 @@ Adresse: %4</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the NexbitCoin-Qt help message to get a list with possible NexbitCoin command-line options.</source>
+        <source>Show the Nexbit-Qt help message to get a list with possible Nexbit command-line options.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1515,13 +1515,13 @@ Adresse: %4</translation>
     </message>
     <message>
         <location line="-104"/>
-        <source>NexbitCoin - Debug window</source>
-        <translation>NexbitCoin - Debug Fenster</translation>
+        <source>Nexbit - Debug window</source>
+        <translation>Nexbit - Debug Fenster</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>NexbitCoin Core</source>
-        <translation>NexbitCoin Kern</translation>
+        <source>Nexbit Core</source>
+        <translation>Nexbit Kern</translation>
     </message>
     <message>
         <location line="+256"/>
@@ -1530,8 +1530,8 @@ Adresse: %4</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the NexbitCoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Offne die NexbitCoin Fehlerlogs aus dem Datenverzeichnis. Diese Funktion kann bei größeren Log-Files länger benötigen.</translation>
+        <source>Open the Nexbit debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Offne die Nexbit Fehlerlogs aus dem Datenverzeichnis. Diese Funktion kann bei größeren Log-Files länger benötigen.</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -1540,8 +1540,8 @@ Adresse: %4</translation>
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-28"/>
-        <source>Welcome to the NexbitCoin RPC console.</source>
-        <translation>Willkommen zur NexbitCoin RPC Anwendung.</translation>
+        <source>Welcome to the Nexbit RPC console.</source>
+        <translation>Willkommen zur Nexbit RPC Anwendung.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1712,7 +1712,7 @@ Adresse: %4</translation>
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="-171"/>
-        <source>Enter a NexbitCoin address (e.g. NcLtRAC6SdkZYmt54tXE8rpZbiHdGv2fnk)</source>
+        <source>Enter a Nexbit address (e.g. NcLtRAC6SdkZYmt54tXE8rpZbiHdGv2fnk)</source>
         <translation>Empfängeradresse (z.b. NcLtRAC6SdkZYmt54tXE8rpZbiHdGv2fnk)</translation>
     </message>
     <message>
@@ -1807,8 +1807,8 @@ Adresse: %4</translation>
     </message>
     <message>
         <location line="+241"/>
-        <source>WARNING: Invalid NexbitCoin address</source>
-        <translation>Warnung: Ungültige NexbitCoin Adresse</translation>
+        <source>WARNING: Invalid Nexbit address</source>
+        <translation>Warnung: Ungültige Nexbit Adresse</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -1881,7 +1881,7 @@ Adresse: %4</translation>
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a NexbitCoin address (e.g. NcLtRAC6SdkZYmt54tXE8rpZbiHdGv2fnk)</source>
+        <source>Enter a Nexbit address (e.g. NcLtRAC6SdkZYmt54tXE8rpZbiHdGv2fnk)</source>
         <translation>Empfängeradresse (z.b. NcLtRAC6SdkZYmt54tXE8rpZbiHdGv2fnk)</translation>
     </message>
 </context>
@@ -1942,8 +1942,8 @@ Adresse: %4</translation>
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this NexbitCoin address</source>
-        <translation>Signiere die Nachricht um zu beweisen das du Besitzer dieser NexbitCoin Adresse bist.</translation>
+        <source>Sign the message to prove you own this Nexbit address</source>
+        <translation>Signiere die Nachricht um zu beweisen das du Besitzer dieser Nexbit Adresse bist.</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -1974,7 +1974,7 @@ Adresse: %4</translation>
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified NexbitCoin address</source>
+        <source>Verify the message to ensure it was signed with the specified Nexbit address</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1985,7 +1985,7 @@ Adresse: %4</translation>
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a NexbitCoin address (e.g. NcLtRAC6SdkZYmt54tXE8rpZbiHdGv2fnk)</source>
+        <source>Enter a Nexbit address (e.g. NcLtRAC6SdkZYmt54tXE8rpZbiHdGv2fnk)</source>
         <translation>Empfängeradresse (z.b. NcLtRAC6SdkZYmt54tXE8rpZbiHdGv2fnk)</translation>
     </message>
     <message>
@@ -1995,8 +1995,8 @@ Adresse: %4</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter NexbitCoin signature</source>
-        <translation>NexbitCoin Signatur eingeben</translation>
+        <source>Enter Nexbit signature</source>
+        <translation>Nexbit Signatur eingeben</translation>
     </message>
     <message>
         <location line="+85"/>
@@ -2574,8 +2574,8 @@ Adresse: %4</translation>
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+8"/>
-        <source>NexbitCoin version</source>
-        <translation>NexbitCoin Version</translation>
+        <source>Nexbit version</source>
+        <translation>Nexbit Version</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2584,8 +2584,8 @@ Adresse: %4</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or nexbitcoind</source>
-        <translation>Kommando versenden an -server oder nexbitcoind </translation>
+        <source>Send command to -server or nexbitd</source>
+        <translation>Kommando versenden an -server oder nexbitd </translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2604,13 +2604,13 @@ Adresse: %4</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Specify configuration file (default: nexbitcoin.conf)</source>
-        <translation>Konfigurationsdatei angeben (Standard: nexbitcoin.conf)</translation>
+        <source>Specify configuration file (default: nexbit.conf)</source>
+        <translation>Konfigurationsdatei angeben (Standard: nexbit.conf)</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: nexbitcoind.pid)</source>
-        <translation>PID Datei angeben (Standard: nexbitcoin.pid)</translation>
+        <source>Specify pid file (default: nexbitd.pid)</source>
+        <translation>PID Datei angeben (Standard: nexbit.pid)</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2627,13 +2627,13 @@ Adresse: %4</translation>
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=nexbitcoinrpc
+rpcuser=nexbitrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;NexbitCoin Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;Nexbit Alert&quot; admin@foo.com
 </source>
         <translation type="unfinished"/>
     </message>
@@ -2734,8 +2734,8 @@ for example: alertnotify=echo %%s | mail -s &quot;NexbitCoin Alert&quot; admin@f
     </message>
     <message>
         <location line="+46"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong NexbitCoin will not work properly.</source>
-        <translation>Wanung : Bitte prüfen Sie ob Datum und Uhrzeit richtig eingestellt sind. Wenn das Datum falsch ist wird NexbitCoin nicht richtig funktionieren.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Nexbit will not work properly.</source>
+        <translation>Wanung : Bitte prüfen Sie ob Datum und Uhrzeit richtig eingestellt sind. Wenn das Datum falsch ist wird Nexbit nicht richtig funktionieren.</translation>
     </message>
     <message>
         <location line="-19"/>
@@ -3029,7 +3029,7 @@ for example: alertnotify=echo %%s | mail -s &quot;NexbitCoin Alert&quot; admin@f
     </message>
     <message>
         <location line="+8"/>
-        <source>Initialization sanity check failed. NexbitCoin is shutting down.</source>
+        <source>Initialization sanity check failed. Nexbit is shutting down.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3084,13 +3084,13 @@ for example: alertnotify=echo %%s | mail -s &quot;NexbitCoin Alert&quot; admin@f
     </message>
     <message>
         <location line="+4"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of NexbitCoin</source>
-        <translation>Fehler beim Laden wallet.dat. Brieftasche benötigt neuere Version der NexbitCoin Brieftasche.</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Nexbit</source>
+        <translation>Fehler beim Laden wallet.dat. Brieftasche benötigt neuere Version der Nexbit Brieftasche.</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Wallet needed to be rewritten: restart NexbitCoin to complete</source>
-        <translation>Brieftasche muss neu geschrieben werden. Starte die NexbitCoin Brieftasche neu zum komplettieren.</translation>
+        <source>Wallet needed to be rewritten: restart Nexbit to complete</source>
+        <translation>Brieftasche muss neu geschrieben werden. Starte die Nexbit Brieftasche neu zum komplettieren.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3149,7 +3149,7 @@ for example: alertnotify=echo %%s | mail -s &quot;NexbitCoin Alert&quot; admin@f
     </message>
     <message>
         <location line="+131"/>
-        <source>Unable to bind to %s on this computer. NexbitCoin is probably already running.</source>
+        <source>Unable to bind to %s on this computer. Nexbit is probably already running.</source>
         <translation>Fehler beim anbinden %s auf diesem Computer. BlaclCoin Client läuft wahrscheinlich bereits.</translation>
     </message>
     <message>
@@ -3179,7 +3179,7 @@ for example: alertnotify=echo %%s | mail -s &quot;NexbitCoin Alert&quot; admin@f
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. NexbitCoin is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s. Nexbit is probably already running.</source>
         <translation type="unfinished"/>
     </message>
     <message>

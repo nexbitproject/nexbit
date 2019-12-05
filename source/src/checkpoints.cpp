@@ -25,7 +25,19 @@ namespace Checkpoints
     //    timestamp before)
     // + Contains no strange transactions
     //
-    static MapCheckpoints mapCheckpoints;
+    static MapCheckpoints mapCheckpoints =
+        boost::assign::map_list_of
+        ( 181,   uint256("0x94aa15fe5d5de79e680c8dcbff28120ccd55e60e28b1b1165154cfbf2ce79510") ) // good block
+        ( 615,   uint256("0xaa3186d589523bd9d3b37ea8d064796169ced1984da8651734e6a3ddffaeaea8") ) // another good one
+        ( 1000,  uint256("0x5b768e210a9994d34ccf893a7978079c4310d57bf98819084e1f74439221c338") ) // last POW block
+        ( 1001, uint256("0x6c665c13d9f497d380dff020c7bc121b3d81191b479eeb76906be6b2cee93386") ) // 1st pos block
+        ( 1080, uint256("0x1254b150813e6796fc81c6ebe98879809420a38a034c5bb5ba4bc2912e6e46de") ) // nesplit
+        ( 1105, uint256("08e6a189f5e47564a690aad116f048194ecda24da50c6612025b4ae8685ff6468") ) // last good block
+    ;
+
+
+
+
 
     // TestNet has no checkpoints
     static MapCheckpoints mapCheckpointsTestnet;
@@ -62,7 +74,7 @@ namespace Checkpoints
         return NULL;
     }
 
-    // Automatically select a suitable sync-checkpoint 
+    // Automatically select a suitable sync-checkpoint
     const CBlockIndex* AutoSelectSyncCheckpoint()
     {
         const CBlockIndex *pindex = pindexBest;

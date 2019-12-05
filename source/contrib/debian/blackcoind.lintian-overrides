@@ -1,2 +1,2 @@
 # Linked code is Expat - only Debian packaging is GPL-2+
-nexbitcoind: possible-gpl-code-linked-with-openssl
+nexbitd: possible-gpl-code-linked-with-openssl
