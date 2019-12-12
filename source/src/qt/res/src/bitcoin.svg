@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="NPAY" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="1024px" height="1024px" viewBox="0 0 1024 1024" style="enable-background:new 0 0 1024 1024;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#F04F09;}
+	.st1{opacity:0.5;}
+	.st2{fill:#352A14;}
+	.st3{fill:none;stroke:#352A14;stroke-width:3;stroke-miterlimit:10;}
+	.st4{fill:#EDB45B;}
+	.st5{fill:none;stroke:url(#SVGID_1_);stroke-width:3;stroke-miterlimit:10;}
+</style>
+<circle id="BG" class="st0" cx="512" cy="512" r="512"/>
+<g id="N">
+	<g class="st1">
+		<polygon class="st2" points="765.7,495 765.7,534.5 864,534.5 864,597.5 765.7,597.5 765.7,789 598.4,789 380.2,419.5 380.2,789 
+			262.3,789 262.3,597.5 164,597.5 164,534.5 262.3,534.5 262.3,495 164,495 164,432 262.3,432 262.3,239 411.3,239 647.8,639.5 
+			647.8,239 765.7,239 765.7,432 864,432 864,495 		"/>
+		<polygon class="st3" points="765.7,495 765.7,534.5 864,534.5 864,597.5 765.7,597.5 765.7,789 598.4,789 380.2,419.5 380.2,789 
+			262.3,789 262.3,597.5 164,597.5 164,534.5 262.3,534.5 262.3,495 164,495 164,432 262.3,432 262.3,239 411.3,239 647.8,639.5 
+			647.8,239 765.7,239 765.7,432 864,432 864,495 		"/>
+	</g>
+	<g>
+		<polygon class="st4" points="763.7,493 763.7,532.5 862,532.5 862,595.5 763.7,595.5 763.7,787 596.4,787 378.2,417.5 378.2,787 
+			260.3,787 260.3,595.5 162,595.5 162,532.5 260.3,532.5 260.3,493 162,493 162,430 260.3,430 260.3,237 409.3,237 645.8,637.5 
+			645.8,237 763.7,237 763.7,430 862,430 862,493 		"/>
+		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="393.2733" y1="186.551" x2="630.2446" y2="837.6245">
+			<stop  offset="0" style="stop-color:#F6D86B"/>
+			<stop  offset="0.2" style="stop-color:#ECCE66;stop-opacity:0.8731"/>
+			<stop  offset="1" style="stop-color:#A58D41;stop-opacity:1.000000e-02"/>
+		</linearGradient>
+		<polygon class="st5" points="763.7,493 763.7,532.5 862,532.5 862,595.5 763.7,595.5 763.7,787 596.4,787 378.2,417.5 378.2,787 
+			260.3,787 260.3,595.5 162,595.5 162,532.5 260.3,532.5 260.3,493 162,493 162,430 260.3,430 260.3,237 409.3,237 645.8,637.5 
+			645.8,237 763.7,237 763.7,430 862,430 862,493 		"/>
+	</g>
+</g>
+</svg>
