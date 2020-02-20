@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Name=NEXBIT Core
+Comment=NEXBIT P2P Cryptocurrency
+Exec=nexbit-qt %u
+Terminal=false
+Type=Application
+Icon=nexbit128
+MimeType=x-scheme-handler/nexbit;
+Categories=Office;Finance;
+StartupWMClass=Nexbit-qt
+Name[en_US]=nexbit-qt.desktop

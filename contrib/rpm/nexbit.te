@@ -1,0 +1,81 @@
+policy_module(nexbit, 1.100.1)
+
+########################################
+#
+# Declarations
+#
+
+type nexbit_t;
+type nexbit_exec_t;
+init_daemon_domain(nexbit_t, nexbit_exec_t)
+
+permissive nexbit_t;
+
+type nexbit_initrc_exec_t;
+init_script_file(nexbit_initrc_exec_t)
+
+type nexbit_conf_t;
+files_type(nexbit_conf_t)
+
+type nexbit_var_lib_t;
+files_type(nexbit_var_lib_t)
+
+type nexbit_var_run_t;
+files_type(nexbit_var_run_t)
+
+type nexbit_port_t;
+corenet_port(nexbit_port_t)
+
+########################################
+#
+# nexbit local policy
+#
+allow nexbit_t self:process { fork };
+
+allow nexbit_t self:fifo_file rw_fifo_file_perms;
+allow nexbit_t self:unix_stream_socket create_stream_socket_perms;
+
+manage_dirs_pattern(nexbit_t, nexbit_conf_t, nexbit_conf_t)
+manage_files_pattern(nexbit_t, nexbit_conf_t, nexbit_conf_t)
+
+manage_dirs_pattern(nexbit_t, nexbit_var_lib_t, nexbit_var_lib_t)
+manage_files_pattern(nexbit_t, nexbit_var_lib_t, nexbit_var_lib_t)
+files_var_lib_filetrans(nexbit_t, nexbit_var_lib_t, { dir file })
+
+manage_dirs_pattern(nexbit_t, nexbit_var_run_t, nexbit_var_run_t)
+manage_files_pattern(nexbit_t, nexbit_var_run_t, nexbit_var_run_t)
+
+sysnet_dns_name_resolve(nexbit_t)
+corenet_all_recvfrom_unlabeled(nexbit_t)
+
+allow nexbit_t self:tcp_socket create_stream_socket_perms;
+corenet_tcp_sendrecv_generic_if(nexbit_t)
+corenet_tcp_sendrecv_generic_node(nexbit_t)
+corenet_tcp_sendrecv_all_ports(nexbit_t)
+corenet_tcp_bind_generic_node(nexbit_t)
+
+gen_require(`
+    type nexbit_port_t;
+')
+allow nexbit_t nexbit_port_t:tcp_socket name_bind;
+
+gen_require(`
+    type nexbit_port_t;
+')
+allow nexbit_t nexbit_port_t:tcp_socket name_connect;
+
+domain_use_interactive_fds(nexbit_t)
+
+files_read_etc_files(nexbit_t)
+
+miscfiles_read_localization(nexbit_t)
+
+sysnet_dns_name_resolve(nexbit_t)
+
+allow nexbit_t nexbit_exec_t:file execute_no_trans;
+allow nexbit_t self:process setsched;
+corecmd_exec_ls(nexbit_t)
+corenet_tcp_connect_http_port(nexbit_t)
+dev_read_urand(nexbit_t)
+fs_getattr_xattr_fs(nexbit_t)
+kernel_read_system_state(nexbit_t)

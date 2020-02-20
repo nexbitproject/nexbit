@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="26px" height="26px" viewBox="0 0 26 26" style="enable-background:new 0 0 26 26;" xml:space="preserve">
+<style type="text/css">
+	.st0{opacity:0.5;}
+	.st1{fill:#FFFFFF;}
+	.st2{fill:none;}
+</style>
+<g id="ic_receive_off" class="st0">
+	<g>
+		<g>
+			<path class="st1" d="M19.8,11.2L18,9.3c-0.3-0.3-0.7-0.3-0.9,0l-2.2,2.2V2.6c0-0.4-0.3-0.6-0.6-0.6h-2.6C11.3,2,11,2.3,11,2.6
+				v8.9L8.8,9.3c-0.3-0.3-0.7-0.3-0.9,0l-1.8,1.8c-0.3,0.3-0.3,0.7,0,0.9l6.4,6.4c0.3,0.3,0.7,0.3,0.9,0l6.4-6.4
+				C20.1,11.8,20.1,11.4,19.8,11.2z"/>
+		</g>
+	</g>
+	<g>
+		<g>
+			<path class="st1" d="M23.4,16.3h-2.6c-0.4,0-0.6,0.3-0.6,0.6v3.2H5.9v-3.2c0-0.4-0.3-0.6-0.6-0.6H2.6c-0.4,0-0.6,0.3-0.6,0.6v5.2
+				C2,23.1,2.9,24,3.9,24h18.1c1.1,0,1.9-0.9,1.9-1.9v-5.2C24,16.6,23.7,16.3,23.4,16.3z"/>
+		</g>
+	</g>
+	<path id="Rectangle" class="st2" d="M0,0h26v26H0V0z"/>
+</g>
+</svg>

@@ -1,0 +1,6 @@
+usr/local/bin/nexbit-qt usr/bin
+share/pixmaps/nexbit32.xpm usr/share/pixmaps
+share/pixmaps/nexbit16.xpm usr/share/pixmaps
+share/pixmaps/nexbit128.png usr/share/pixmaps
+debian/nexbit-qt.desktop usr/share/applications
+debian/nexbit-qt.protocol usr/share/kde4/services/

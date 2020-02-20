@@ -1,0 +1,825 @@
+# Copyright (c) 2013-2016 The Bitcoin Core developers
+# Distributed under the MIT software license, see the accompanying
+# file COPYING or http://www.opensource.org/licenses/mit-license.php.
+
+bin_PROGRAMS += qt/nexbit-qt
+EXTRA_LIBRARIES += qt/libbitcoinqt.a
+
+# nexbit qt core #
+include Makefile.qt_locale.include
+
+QT_FORMS_UI = \
+  qt/forms/addressbookpage.ui \
+  qt/forms/askpassphrasedialog.ui \
+  qt/forms/coincontroldialog.ui \
+  qt/forms/blockexplorer.ui \
+  qt/forms/editaddressdialog.ui \
+  qt/forms/governancepage.ui \
+  qt/forms/helpmessagedialog.ui \
+  qt/forms/intro.ui \
+  qt/forms/openuridialog.ui \
+  qt/forms/optionsdialog.ui \
+  qt/forms/rpcconsole.ui \
+  qt/nexbit/forms/loadingdialog.ui \
+  qt/forms/znexbitcontroldialog.ui \
+  qt/nexbit/forms/snackbar.ui \
+  qt/nexbit/forms/navmenuwidget.ui \
+  qt/nexbit/forms/lockunlock.ui \
+  qt/nexbit/forms/expandablebutton.ui \
+  qt/nexbit/forms/receivedialog.ui \
+  qt/nexbit/forms/walletpassworddialog.ui \
+  qt/nexbit/forms/topbar.ui \
+  qt/nexbit/forms/txrow.ui \
+  qt/nexbit/forms/dashboardwidget.ui \
+  qt/nexbit/forms/coincontrolnexwidget.ui \
+  qt/nexbit/forms/addresslabelrow.ui \
+  qt/nexbit/forms/contactdropdownrow.ui \
+  qt/nexbit/forms/mninfodialog.ui \
+  qt/nexbit/forms/optionbutton.ui \
+  qt/nexbit/forms/masternodewizarddialog.ui \
+  qt/nexbit/forms/mnrow.ui \
+  qt/nexbit/forms/masternodeswidget.ui \
+  qt/nexbit/forms/myaddressrow.ui \
+  qt/nexbit/forms/csrow.ui \
+  qt/nexbit/forms/sendchangeaddressdialog.ui \
+  qt/nexbit/forms/sendconfirmdialog.ui \
+  qt/nexbit/forms/sendcustomfeedialog.ui \
+  qt/nexbit/forms/sendchangeaddressdialog.ui \
+  qt/nexbit/forms/sendmultirow.ui \
+  qt/nexbit/forms/send.ui \
+  qt/nexbit/forms/addnewaddressdialog.ui \
+  qt/nexbit/forms/addnewcontactdialog.ui \
+  qt/nexbit/forms/requestdialog.ui \
+  qt/nexbit/forms/receivewidget.ui \
+  qt/nexbit/forms/tooltipmenu.ui \
+  qt/nexbit/forms/addresseswidget.ui \
+  qt/nexbit/forms/defaultdialog.ui \
+  qt/nexbit/forms/denomgenerationdialog.ui \
+  qt/nexbit/forms/privacywidget.ui \
+  qt/nexbit/forms/coldstakingwidget.ui \
+  qt/nexbit/settings/forms/settingsbackupwallet.ui \
+  qt/nexbit/settings/forms/settingsbittoolwidget.ui \
+  qt/nexbit/settings/forms/settingsconsolewidget.ui \
+  qt/nexbit/settings/forms/settingsdisplayoptionswidget.ui \
+  qt/nexbit/settings/forms/settingsfaqwidget.ui \
+  qt/nexbit/settings/forms/settingsinformationwidget.ui \
+  qt/nexbit/settings/forms/settingsmainoptionswidget.ui \
+  qt/nexbit/settings/forms/settingsmultisenddialog.ui \
+  qt/nexbit/settings/forms/settingsmultisendwidget.ui \
+  qt/nexbit/settings/forms/settingssignmessagewidgets.ui \
+  qt/nexbit/settings/forms/settingswalletoptionswidget.ui \
+  qt/nexbit/settings/forms/settingswalletrepairwidget.ui \
+  qt/nexbit/settings/forms/settingswidget.ui \
+  qt/nexbit/forms/welcomecontentwidget.ui \
+  qt/nexbit/forms/splash.ui
+
+QT_MOC_CPP = \
+  qt/moc_addressbookpage.cpp \
+  qt/moc_addresstablemodel.cpp \
+  qt/moc_askpassphrasedialog.cpp \
+  qt/moc_bantablemodel.cpp \
+  qt/moc_bitcoinaddressvalidator.cpp \
+  qt/moc_bitcoinamountfield.cpp \
+  qt/nexbit/moc_nexbitgui.cpp \
+  qt/moc_bitcoinunits.cpp \
+  qt/moc_blockexplorer.cpp \
+  qt/moc_clientmodel.cpp \
+  qt/moc_coincontroldialog.cpp \
+  qt/moc_coincontroltreewidget.cpp \
+  qt/moc_csvmodelwriter.cpp \
+  qt/moc_editaddressdialog.cpp \
+  qt/moc_governancepage.cpp \
+  qt/moc_guiutil.cpp \
+  qt/moc_intro.cpp \
+  qt/moc_macdockiconhandler.cpp \
+  qt/moc_macnotificationhandler.cpp \
+  qt/moc_notificator.cpp \
+  qt/moc_openuridialog.cpp \
+  qt/moc_optionsdialog.cpp \
+  qt/moc_optionsmodel.cpp \
+  qt/moc_peertablemodel.cpp \
+  qt/moc_paymentserver.cpp \
+  qt/moc_qvalidatedlineedit.cpp \
+  qt/moc_qvaluecombobox.cpp \
+  qt/moc_proposalframe.cpp \
+  qt/moc_recentrequeststablemodel.cpp \
+  qt/moc_rpcconsole.cpp \
+  qt/moc_splashscreen.cpp \
+  qt/moc_trafficgraphwidget.cpp \
+  qt/moc_transactiondesc.cpp \
+  qt/moc_transactionfilterproxy.cpp \
+  qt/moc_transactiontablemodel.cpp \
+  qt/moc_utilitydialog.cpp \
+  qt/moc_walletmodel.cpp \
+  qt/nexbit/moc_loadingdialog.cpp \
+  qt/moc_znexbitcontroldialog.cpp \
+  qt/nexbit/moc_pwidget.cpp \
+  qt/nexbit/moc_snackbar.cpp \
+  qt/nexbit/moc_navmenuwidget.cpp \
+  qt/nexbit/moc_lockunlock.cpp \
+  qt/nexbit/moc_expandablebutton.cpp \
+  qt/nexbit/moc_furabstractlistitemdelegate.cpp \
+  qt/nexbit/moc_receivedialog.cpp \
+  qt/nexbit/moc_walletpassworddialog.cpp \
+  qt/nexbit/moc_pfborderimage.cpp \
+  qt/nexbit/moc_topbar.cpp \
+  qt/nexbit/moc_txrow.cpp \
+  qt/nexbit/moc_dashboardwidget.cpp \
+  qt/nexbit/moc_coincontrolnexwidget.cpp \
+  qt/nexbit/moc_addresslabelrow.cpp \
+  qt/nexbit/moc_contactdropdownrow.cpp \
+  qt/nexbit/moc_mninfodialog.cpp \
+  qt/nexbit/moc_optionbutton.cpp \
+  qt/nexbit/moc_coldstakingmodel.cpp \
+  qt/nexbit/moc_mnmodel.cpp \
+  qt/nexbit/moc_masternodewizarddialog.cpp \
+  qt/nexbit/moc_mnrow.cpp \
+  qt/nexbit/moc_masternodeswidget.cpp \
+  qt/nexbit/moc_myaddressrow.cpp \
+  qt/nexbit/moc_csrow.cpp \
+  qt/nexbit/moc_contactsdropdown.cpp \
+  qt/nexbit/moc_sendchangeaddressdialog.cpp \
+  qt/nexbit/moc_sendconfirmdialog.cpp \
+  qt/nexbit/moc_sendcustomfeedialog.cpp \
+  qt/nexbit/moc_sendchangeaddressdialog.cpp \
+  qt/nexbit/moc_sendmultirow.cpp \
+  qt/nexbit/moc_send.cpp \
+  qt/nexbit/moc_addnewaddressdialog.cpp \
+  qt/nexbit/moc_addnewcontactdialog.cpp \
+  qt/nexbit/moc_requestdialog.cpp \
+  qt/nexbit/moc_receivewidget.cpp \
+  qt/nexbit/moc_tooltipmenu.cpp \
+  qt/nexbit/moc_addresseswidget.cpp \
+  qt/nexbit/moc_defaultdialog.cpp \
+  qt/nexbit/moc_denomgenerationdialog.cpp \
+  qt/nexbit/moc_privacywidget.cpp \
+  qt/nexbit/moc_coldstakingwidget.cpp \
+  qt/nexbit/settings/moc_settingsbackupwallet.cpp \
+  qt/nexbit/settings/moc_settingsbittoolwidget.cpp \
+  qt/nexbit/settings/moc_settingsconsolewidget.cpp \
+  qt/nexbit/settings/moc_settingsdisplayoptionswidget.cpp \
+  qt/nexbit/settings/moc_settingsfaqwidget.cpp \
+  qt/nexbit/settings/moc_settingsinformationwidget.cpp \
+  qt/nexbit/settings/moc_settingsmainoptionswidget.cpp \
+  qt/nexbit/settings/moc_settingsmultisenddialog.cpp \
+  qt/nexbit/settings/moc_settingsmultisendwidget.cpp \
+  qt/nexbit/settings/moc_settingssignmessagewidgets.cpp \
+  qt/nexbit/settings/moc_settingswalletoptionswidget.cpp \
+  qt/nexbit/settings/moc_settingswalletrepairwidget.cpp \
+  qt/nexbit/settings/moc_settingswidget.cpp \
+  qt/nexbit/moc_welcomecontentwidget.cpp \
+  qt/nexbit/moc_splash.cpp
+
+BITCOIN_MM = \
+  qt/macdockiconhandler.mm \
+  qt/macnotificationhandler.mm
+
+QT_MOC = \
+  qt/nexbit.moc \
+  qt/bitcoinamountfield.moc \
+  qt/intro.moc \
+  qt/rpcconsole.moc \
+  qt/nexbit/settings/moc_settingsconsolewidget.cpp
+
+QT_QRC_CPP = qt/qrc_nexbit.cpp
+QT_QRC = qt/nexbit.qrc
+QT_QRC_LOCALE_CPP = qt/qrc_nexbit_locale.cpp
+QT_QRC_LOCALE = qt/nexbit_locale.qrc
+
+PROTOBUF_CC = qt/paymentrequest.pb.cc
+PROTOBUF_H = qt/paymentrequest.pb.h
+PROTOBUF_PROTO = qt/paymentrequest.proto
+
+BITCOIN_QT_H = \
+  qt/addressbookpage.h \
+  qt/addresstablemodel.h \
+  qt/askpassphrasedialog.h \
+  qt/bantablemodel.h \
+  qt/bitcoinaddressvalidator.h \
+  qt/bitcoinamountfield.h \
+  qt/nexbit/nexbitgui.h \
+  qt/bitcoinunits.h \
+  qt/blockexplorer.h \
+  qt/clientmodel.h \
+  qt/coincontroldialog.h \
+  qt/coincontroltreewidget.h \
+  qt/csvmodelwriter.h \
+  qt/editaddressdialog.h \
+  qt/governancepage.h \
+  qt/guiconstants.h \
+  qt/guiutil.h \
+  qt/intro.h \
+  qt/macdockiconhandler.h \
+  qt/macnotificationhandler.h \
+  qt/networkstyle.h \
+  qt/notificator.h \
+  qt/openuridialog.h \
+  qt/optionsdialog.h \
+  qt/optionsmodel.h \
+  qt/paymentrequestplus.h \
+  qt/paymentserver.h \
+  qt/peertablemodel.h \
+  qt/platformstyle.h \
+  qt/proposalframe.h \
+  qt/qvalidatedlineedit.h \
+  qt/qvaluecombobox.h \
+  qt/recentrequeststablemodel.h \
+  qt/rpcconsole.h \
+  qt/splashscreen.h \
+  qt/trafficgraphwidget.h \
+  qt/transactiondesc.h \
+  qt/transactionfilterproxy.h \
+  qt/transactionrecord.h \
+  qt/transactiontablemodel.h \
+  qt/utilitydialog.h \
+  qt/walletmodel.h \
+  qt/walletmodeltransaction.h \
+  qt/nexbit/prunnable.h \
+  qt/nexbit/pfborderimage.h \
+  qt/nexbit/loadingdialog.h \
+  qt/winshutdownmonitor.h \
+  qt/znexbitcontroldialog.h \
+  qt/nexbit/pwidget.h \
+  qt/nexbit/guitransactionsutils.h \
+  qt/nexbit/snackbar.h \
+  qt/nexbit/navmenuwidget.h \
+  qt/nexbit/lockunlock.h \
+  qt/nexbit/receivedialog.h \
+  qt/nexbit/furlistrow.h \
+  qt/nexbit/furabstractlistitemdelegate.h \
+  qt/nexbit/txviewholder.h \
+  qt/nexbit/qtutils.h \
+  qt/nexbit/expandablebutton.h \
+  qt/nexbit/walletpassworddialog.h \
+  qt/nexbit/topbar.h \
+  qt/nexbit/txrow.h \
+  qt/nexbit/addressholder.h \
+  qt/nexbit/addressfilterproxymodel.h \
+  qt/nexbit/dashboardwidget.h \
+  qt/nexbit/coincontrolnexwidget.h \
+  qt/nexbit/addresslabelrow.h \
+  qt/nexbit/contactdropdownrow.h \
+  qt/nexbit/mninfodialog.h \
+  qt/nexbit/optionbutton.h \
+  qt/nexbit/coldstakingmodel.h \
+  qt/nexbit/mnmodel.h \
+  qt/nexbit/masternodewizarddialog.h \
+  qt/nexbit/mnrow.h \
+  qt/nexbit/masternodeswidget.h \
+  qt/nexbit/myaddressrow.h \
+  qt/nexbit/csrow.h \
+  qt/nexbit/contactsdropdown.h \
+  qt/nexbit/sendchangeaddressdialog.h \
+  qt/nexbit/sendconfirmdialog.h \
+  qt/nexbit/sendcustomfeedialog.h \
+  qt/nexbit/sendchangeaddressdialog.h \
+  qt/nexbit/sendmultirow.h \
+  qt/nexbit/send.h \
+  qt/nexbit/addnewaddressdialog.h \
+  qt/nexbit/addnewcontactdialog.h \
+  qt/nexbit/requestdialog.h \
+  qt/nexbit/receivewidget.h \
+  qt/nexbit/tooltipmenu.h \
+  qt/nexbit/addresseswidget.h \
+  qt/nexbit/defaultdialog.h \
+  qt/nexbit/denomgenerationdialog.h \
+  qt/nexbit/privacywidget.h \
+  qt/nexbit/coldstakingwidget.h \
+  qt/nexbit/settings/settingsbackupwallet.h \
+  qt/nexbit/settings/settingsbittoolwidget.h \
+  qt/nexbit/settings/settingsconsolewidget.h \
+  qt/nexbit/settings/settingsdisplayoptionswidget.h \
+  qt/nexbit/settings/settingsfaqwidget.h \
+  qt/nexbit/settings/settingsinformationwidget.h \
+  qt/nexbit/settings/settingsmainoptionswidget.h \
+  qt/nexbit/settings/settingsmultisenddialog.h \
+  qt/nexbit/settings/settingsmultisendwidget.h \
+  qt/nexbit/settings/settingssignmessagewidgets.h \
+  qt/nexbit/settings/settingswalletoptionswidget.h \
+  qt/nexbit/settings/settingswalletrepairwidget.h \
+  qt/nexbit/settings/settingswidget.h \
+  qt/nexbit/welcomecontentwidget.h \
+  qt/nexbit/splash.h
+
+RES_ICONS = \
+  qt/res/icons/add.png \
+  qt/res/icons/address-book.png \
+  qt/res/icons/bitcoin.ico \
+  qt/res/icons/bitcoin.png \
+  qt/res/icons/bitcoin_testnet.ico \
+  qt/res/icons/bitcoin_testnet.png \
+  qt/res/icons/bitcoin_regtest.png \
+  qt/res/icons/browse.png \
+  qt/res/icons/clock1.png \
+  qt/res/icons/clock2.png \
+  qt/res/icons/clock3.png \
+  qt/res/icons/clock4.png \
+  qt/res/icons/clock5.png \
+  qt/res/icons/configure.png \
+  qt/res/icons/connect0_16.png \
+  qt/res/icons/connect1_16.png \
+  qt/res/icons/connect2_16.png \
+  qt/res/icons/connect3_16.png \
+  qt/res/icons/connect4_16.png \
+  qt/res/icons/debugwindow.png \
+  qt/res/icons/edit.png \
+  qt/res/icons/editcopy.png \
+  qt/res/icons/editpaste.png \
+  qt/res/icons/explorer.png \
+  qt/res/icons/export.png \
+  qt/res/icons/eye.png \
+  qt/res/icons/eye_minus.png \
+  qt/res/icons/eye_plus.png \
+  qt/res/icons/filesave.png \
+  qt/res/icons/history.png \
+  qt/res/icons/key.png \
+  qt/res/icons/lock_closed.png \
+  qt/res/icons/lock_open.png \
+  qt/res/icons/masternodes.png \
+  qt/res/icons/onion.png \
+  qt/res/icons/overview.png \
+  qt/res/icons/qrcode.png \
+  qt/res/icons/quit.png \
+  qt/res/icons/receive.png \
+  qt/res/icons/receive_dark.png \
+  qt/res/icons/privacy.png \
+  qt/res/icons/remove.png \
+  qt/res/icons/send.png \
+  qt/res/icons/send_dark.png \
+  qt/res/icons/governance.png \
+  qt/res/icons/governance_dark.png \
+  qt/res/icons/staking_active.png \
+  qt/res/icons/staking_inactive.png \
+  qt/res/icons/synced.png \
+  qt/res/icons/trade.png \
+  qt/res/icons/transaction0.png \
+  qt/res/icons/transaction2.png \
+  qt/res/icons/transaction_conflicted.png \
+  qt/res/icons/tx_inout.png \
+  qt/res/icons/tx_input.png \
+  qt/res/icons/tx_output.png \
+  qt/res/icons/tx_mined.png \
+  qt/res/icons/ic-transaction-received.svg \
+  qt/res/icons/ic-transaction-mint.svg \
+  qt/res/icons/ic-transaction-sent.svg \
+  qt/res/icons/ic-transaction-staked.svg \
+  qt/res/icons/unit_nexbit.png \
+  qt/res/icons/unit_mnexbit.png \
+  qt/res/icons/unit_unexbit.png \
+  qt/res/icons/unit_tnexbit.png \
+  qt/res/icons/unit_tmnexbit.png \
+  qt/res/icons/unit_tunexbit.png \
+  qt/res/icons/yesvote.png \
+  qt/res/icons/novote.png \
+  qt/res/icons/abstainvote.png \
+  qt/nexbit/res/img/bg-dashboard-banner.png \
+  qt/nexbit/res/img/bg-multi-number-dark.svg \
+  qt/nexbit/res/img/ic-check-locked.svg \
+  qt/nexbit/res/img/ic-nav-address.svg \
+  qt/nexbit/res/img/ic-update.svg \
+  qt/nexbit/res/img/bg-multi-number.svg \
+  qt/nexbit/res/img/ic-check-mint-off.svg \
+  qt/nexbit/res/img/ic-nav-cold-staking.svg \
+  qt/nexbit/res/img/ic-nav-cold-staking-active.svg \
+  qt/nexbit/res/img/ic-nav-dashboard-active.svg \
+  qt/nexbit/res/img/ic-wallet-status-locked.svg \
+  qt/nexbit/res/img/bg-splash.svg \
+  qt/nexbit/res/img/bg-splash.png \
+  qt/nexbit/res/img/ic-check-mint.svg \
+  qt/nexbit/res/img/ic-nav-dashboard-hover.svg \
+  qt/nexbit/res/img/ic-wallet-status-staking.svg \
+  qt/nexbit/res/img/ic-check-peers-off.svg \
+  qt/nexbit/res/img/ic-nav-dashboard.svg \
+  qt/nexbit/res/img/ic-wallet-status-unlocked.svg \
+  qt/nexbit/res/img/ic-check-peers.svg \
+  qt/nexbit/res/img/ic-nav-master-active.svg \
+  qt/nexbit/res/img/ic-watch-password-white.svg \
+  qt/nexbit/res/img/bg-welcome-container.jpg \
+  qt/nexbit/res/img/bg-welcome-container.png \
+  qt/nexbit/res/img/bg-welcome-container.svg \
+  qt/nexbit/res/img/bg-welcome-container@2x.png \
+  qt/nexbit/res/img/bg-welcome-container@3x.png \
+  qt/nexbit/res/img/ic-check-staking-off.svg \
+  qt/nexbit/res/img/ic-nav-master-hover.svg \
+  qt/nexbit/res/img/ic-watch-password.svg \
+  qt/nexbit/res/img/bg-welcome.jpg \
+  qt/nexbit/res/img/bg-welcome.svg \
+  qt/nexbit/res/img/bg-welcome@2x.jpg \
+  qt/nexbit/res/img/bg-welcome@3x.jpg \
+  qt/nexbit/res/img/bg-welcome.png \
+  qt/nexbit/res/img/ic-check-staking.svg \
+  qt/nexbit/res/img/ic-nav-master.svg \
+  qt/nexbit/res/img/img-dashboard-banner.jpg \
+  qt/nexbit/res/img/btn-radio-active.svg \
+  qt/nexbit/res/img/ic-check-sync-off.svg \
+  qt/nexbit/res/img/ic-nav-privacy-active.svg \
+  qt/nexbit/res/img/img-empty-contacts.svg \
+  qt/nexbit/res/img/btn-radio-off.svg \
+  qt/nexbit/res/img/ic-check-sync.png \
+  qt/nexbit/res/img/ic-nav-privacy-hover.svg \
+  qt/nexbit/res/img/img-empty-dark-contacts.svg \
+  qt/nexbit/res/img/ic-contact-arrow-down.svg \
+  qt/nexbit/res/img/ic-contact-arrow-down-white.svg \
+  qt/nexbit/res/img/ic-check-sync.svg \
+  qt/nexbit/res/img/ic-check-faq.svg \
+  qt/nexbit/res/img/ic-nav-privacy.svg \
+  qt/nexbit/res/img/img-empty-dark-error.svg \
+  qt/nexbit/res/img/ic-add-label.svg \
+  qt/nexbit/res/img/ic-pending.svg \
+  qt/nexbit/res/img/ic-check-theme-dark.svg \
+  qt/nexbit/res/img/ic-nav-receive-active.svg \
+  qt/nexbit/res/img/img-empty-dark-masternode.svg \
+  qt/nexbit/res/img/ic-add-liliac.svg \
+  qt/nexbit/res/img/ic-check-theme-light.svg \
+  qt/nexbit/res/img/ic-nav-receive-hover.svg \
+  qt/nexbit/res/img/img-empty-dark-multisend.svg \
+  qt/nexbit/res/img/ic-add-purple.svg \
+  qt/nexbit/res/img/ic-check-white.svg \
+  qt/nexbit/res/img/ic-nav-receive.svg \
+  qt/nexbit/res/img/img-empty-dark-peers.svg \
+  qt/nexbit/res/img/ic-add.svg \
+  qt/nexbit/res/img/ic-check.svg \
+  qt/nexbit/res/img/ic-nav-send-active.svg \
+  qt/nexbit/res/img/img-empty-dark-staking-off.svg \
+  qt/nexbit/res/img/img-empty-dark-staking-on.svg \
+  qt/nexbit/res/img/ic-address-book-grey.svg \
+  qt/nexbit/res/img/ic-chevron-left.svg \
+  qt/nexbit/res/img/ic-nav-send-hover.svg \
+  qt/nexbit/res/img/img-empty-dark-transactions.svg \
+  qt/nexbit/res/img/ic-address-book-white.svg \
+  qt/nexbit/res/img/ic-chevron-right.svg \
+  qt/nexbit/res/img/ic-nav-send.svg \
+  qt/nexbit/res/img/img-empty-error.svg \
+  qt/nexbit/res/img/ic-address-book.svg \
+  qt/nexbit/res/img/ic-clear-liliac.svg \
+  qt/nexbit/res/img/ic-nav-settings-active.svg \
+  qt/nexbit/res/img/img-empty-masternode.svg \
+  qt/nexbit/res/img/ic-address-send-white.svg \
+  qt/nexbit/res/img/ic-clear-purple.svg \
+  qt/nexbit/res/img/ic-nav-settings-hover.svg \
+  qt/nexbit/res/img/img-empty-multisend.svg \
+  qt/nexbit/res/img/ic-address-send.svg \
+  qt/nexbit/res/img/ic-close-white.svg \
+  qt/nexbit/res/img/ic-nav-settings.svg \
+  qt/nexbit/res/img/img-empty-peers.svg \
+  qt/nexbit/res/img/img-empty-privacy.svg \
+  qt/nexbit/res/img/img-empty-privacy-dark.svg \
+  qt/nexbit/res/img/ic-arrow-drop-down-white.svg \
+  qt/nexbit/res/img/ic-close.svg \
+  qt/nexbit/res/img/ic-radio-liliac-on.svg \
+  qt/nexbit/res/img/img-empty-staking-off.svg \
+  qt/nexbit/res/img/ic-arrow-drop-down.svg \
+  qt/nexbit/res/img/ic-coin-nex.svg \
+  qt/nexbit/res/img/ic-receive-off.svg \
+  qt/nexbit/res/img/img-empty-staking-on.svg \
+  qt/nexbit/res/img/ic-arrow-drop-up-white.svg \
+  qt/nexbit/res/img/ic-coin-znexbit.png \
+  qt/nexbit/res/img/ic-receive-on.svg \
+  qt/nexbit/res/img/img-empty-transactions.svg \
+  qt/nexbit/res/img/ic-arrow-drop-up.svg \
+  qt/nexbit/res/img/ic-coin-znexbit.svg \
+  qt/nexbit/res/img/ic-received.svg \
+  qt/nexbit/res/img/img-logo-nexbit.png \
+  qt/nexbit/res/img/ic-arrow-drop-white-down.svg \
+  qt/nexbit/res/img/ic-combo-box.svg \
+  qt/nexbit/res/img/ic-send.svg \
+  qt/nexbit/res/img/img-logo-nexbit@2x.png \
+  qt/nexbit/res/img/ic-arrow-purple-down.svg \
+  qt/nexbit/res/img/ic-connect.svg \
+  qt/nexbit/res/img/ic-submenu-lock.svg \
+  qt/nexbit/res/img/img-logo-nexbit@3x.png \
+  qt/nexbit/res/img/img-logo-nexbit.svg \
+  qt/nexbit/res/img/ic-arrow-right-white.svg \
+  qt/nexbit/res/img/ic-arrow-left-white.svg \
+  qt/nexbit/res/img/ic-arrow-left.svg \
+  qt/nexbit/res/img/ic-copy-liliac.svg \
+  qt/nexbit/res/img/ic-submenu-staking.svg \
+  qt/nexbit/res/img/img-nav-logo-nexbit.png \
+  qt/nexbit/res/img/ic-arrow-right.svg \
+  qt/nexbit/res/img/ic-copy.svg \
+  qt/nexbit/res/img/ic-copy-big.svg \
+  qt/nexbit/res/img/ic-copy-big-white.svg \
+  qt/nexbit/res/img/ic-submenu-unlock.svg \
+  qt/nexbit/res/img/img-nav-logo.png \
+  qt/nexbit/res/img/ic-arrow-white-left.svg \
+  qt/nexbit/res/img/ic-exit.svg \
+  qt/nexbit/res/img/ic-switch-liliac-on.svg \
+  qt/nexbit/res/img/img-nav-logo.svg \
+  qt/nexbit/res/img/ic-arrow-white-right.svg \
+  qt/nexbit/res/img/ic-expand.svg \
+  qt/nexbit/res/img/ic-switch-off.svg \
+  qt/nexbit/res/img/img-qr-test-big.png \
+  qt/nexbit/res/img/ic-check-active.svg \
+  qt/nexbit/res/img/ic-folder.svg \
+  qt/nexbit/res/img/ic-switch-on.svg \
+  qt/nexbit/res/img/img-qr-test.png \
+  qt/nexbit/res/img/ic-check-box.svg \
+  qt/nexbit/res/img/ic-check-box-dark-active.svg \
+  qt/nexbit/res/img/ic-check-box-indeterminate.svg \
+  qt/nexbit/res/img/ic-check-box-liliac-indeterminate.svg \
+  qt/nexbit/res/img/ic-label-liliac.svg \
+  qt/nexbit/res/img/ic-transaction-warning.svg \
+  qt/nexbit/res/img/ic-transaction-mint.svg \
+  qt/nexbit/res/img/ic-transaction-mint-inactive.svg \
+  qt/nexbit/res/img/ic-check-cold-staking.svg \
+  qt/nexbit/res/img/ic-check-cold-staking-off.svg \
+  qt/nexbit/res/img/ic-check-cold-staking-enabled.svg \
+  qt/nexbit/res/img/dark/ic-transaction-cs-contract.svg \
+  qt/nexbit/res/img/dark/ic-transaction-cs-contract-inactive.svg \
+  qt/nexbit/res/img/img-qr.svg \
+  qt/nexbit/res/img/ic-check-connect-off.svg \
+  qt/nexbit/res/img/ic-label.svg \
+  qt/nexbit/res/img/ic-transaction-received.svg \
+  qt/nexbit/res/img/dark/ic-transaction-received.svg \
+  qt/nexbit/res/img/dark/ic-transaction-warning.svg \
+  qt/nexbit/res/img/dark/ic-transaction-mint.svg \
+  qt/nexbit/res/img/dark/ic-transaction-mint-inactive.svg \
+  qt/nexbit/res/img/ic-transaction-received-inactive.svg \
+  qt/nexbit/res/img/dark/ic-transaction-received-inactive.svg \
+  qt/nexbit/res/img/img-welcome-step1.png \
+  qt/nexbit/res/img/ic-check-connect.svg \
+  qt/nexbit/res/img/ic-menu-hover.svg \
+  qt/nexbit/res/img/ic-transaction-sent.svg \
+  qt/nexbit/res/img/ic-transaction-sent-inactive.svg \
+  qt/nexbit/res/img/dark/ic-transaction-sent.svg \
+  qt/nexbit/res/img/dark/ic-transaction-sent-inactive.svg \
+  qt/nexbit/res/img/img-welcome-step2.png \
+  qt/nexbit/res/img/ic-check-dark.svg \
+  qt/nexbit/res/img/ic-mint.svg \
+  qt/nexbit/res/img/ic-transaction-staked.svg \
+  qt/nexbit/res/img/ic-transaction-staked-inactive.svg \
+  qt/nexbit/res/img/dark/ic-transaction-staked.svg \
+  qt/nexbit/res/img/dark/ic-transaction-staked-inactive.svg \
+  qt/nexbit/res/img/img-welcome-step3.png \
+  qt/nexbit/res/img/ic-check-liliac-on.svg \
+  qt/nexbit/res/img/ic-nav-address-active.svg \
+  qt/nexbit/res/img/ic-unlock-staking.svg \
+  qt/nexbit/res/img/img-welcome-step4.png \
+  qt/nexbit/res/img/ic-check-locked-off.svg \
+  qt/nexbit/res/img/ic-nav-address-hover.svg \
+  qt/nexbit/res/img/ic-update-liliac.svg \
+  qt/nexbit/res/img/ic-arrow-drop-down-purple.svg \
+  qt/nexbit/res/img/ic-arrow-drop-up-purple.svg \
+  qt/nexbit/res/img/ic-check-liliac-indeterminate.svg \
+  qt/nexbit/res/img/ic-check-box-liliac-indeterminate.svg \
+  qt/nexbit/res/img/ic-transaction-stake-delegated.svg \
+  qt/nexbit/res/img/ic-transaction-stake-delegated-inactive.svg \
+  qt/nexbit/res/img/ic-transaction-stake-hot.svg \
+  qt/nexbit/res/img/ic-transaction-stake-hot-inactive.svg \
+  qt/nexbit/res/img/dark/ic-transaction-stake-hot.svg \
+  qt/nexbit/res/img/dark/ic-transaction-stake-hot-inactive.svg \
+  qt/nexbit/res/img/dark/ic-transaction-stake-delegated.svg \
+  qt/nexbit/res/img/dark/ic-transaction-stake-delegated-inactive.svg \
+  qt/nexbit/res/img/ic-transaction-cs-contract.svg \
+  qt/nexbit/res/img/ic-transaction-cs-contract-inactive.svg \
+  qt/nexbit/res/img/ic-check-box-indeterminate.svg \
+  qt/nexbit/res/img/ani-loading-dark.gif \
+  qt/nexbit/res/img/ani-loading.gif
+
+
+
+BITCOIN_QT_BASE_CPP = \
+  qt/bantablemodel.cpp \
+  qt/bitcoinaddressvalidator.cpp \
+  qt/bitcoinamountfield.cpp \
+  qt/nexbit/nexbitgui.cpp \
+  qt/bitcoinunits.cpp \
+  qt/blockexplorer.cpp \
+  qt/clientmodel.cpp \
+  qt/csvmodelwriter.cpp \
+  qt/guiutil.cpp \
+  qt/intro.cpp \
+  qt/networkstyle.cpp \
+  qt/notificator.cpp \
+  qt/optionsdialog.cpp \
+  qt/optionsmodel.cpp \
+  qt/peertablemodel.cpp \
+  qt/platformstyle.cpp \
+  qt/qvalidatedlineedit.cpp \
+  qt/qvaluecombobox.cpp \
+  qt/rpcconsole.cpp \
+  qt/splashscreen.cpp \
+  qt/trafficgraphwidget.cpp \
+  qt/utilitydialog.cpp
+
+BITCOIN_QT_WINDOWS_CPP = qt/winshutdownmonitor.cpp
+
+BITCOIN_QT_WALLET_CPP = \
+  qt/addressbookpage.cpp \
+  qt/addresstablemodel.cpp \
+  qt/askpassphrasedialog.cpp \
+  qt/blockexplorer.cpp \
+  qt/coincontroldialog.cpp \
+  qt/coincontroltreewidget.cpp \
+  qt/editaddressdialog.cpp \
+  qt/governancepage.cpp \
+  qt/openuridialog.cpp \
+  qt/paymentrequestplus.cpp \
+  qt/paymentserver.cpp \
+  qt/proposalframe.cpp \
+  qt/recentrequeststablemodel.cpp \
+  qt/transactiondesc.cpp \
+  qt/transactionfilterproxy.cpp \
+  qt/transactionrecord.cpp \
+  qt/transactiontablemodel.cpp \
+  qt/walletmodel.cpp \
+  qt/walletmodeltransaction.cpp \
+  qt/nexbit/loadingdialog.cpp \
+  qt/znexbitcontroldialog.cpp \
+  qt/nexbit/pwidget.cpp \
+  qt/nexbit/guitransactionsutils.cpp \
+  qt/nexbit/snackbar.cpp \
+  qt/nexbit/navmenuwidget.cpp \
+  qt/nexbit/lockunlock.cpp \
+  qt/nexbit/receivedialog.cpp \
+  qt/nexbit/furabstractlistitemdelegate.cpp \
+  qt/nexbit/txviewholder.cpp \
+  qt/nexbit/qtutils.cpp \
+  qt/nexbit/expandablebutton.cpp \
+  qt/nexbit/walletpassworddialog.cpp \
+  qt/nexbit/topbar.cpp \
+  qt/nexbit/txrow.cpp \
+  qt/nexbit/addressholder.cpp \
+  qt/nexbit/addressfilterproxymodel.cpp \
+  qt/nexbit/dashboardwidget.cpp \
+  qt/nexbit/coincontrolnexwidget.cpp \
+  qt/nexbit/addresslabelrow.cpp \
+  qt/nexbit/contactdropdownrow.cpp \
+  qt/nexbit/contactsdropdown.cpp \
+  qt/nexbit/optionbutton.cpp \
+  qt/nexbit/mninfodialog.cpp \
+  qt/nexbit/coldstakingmodel.cpp \
+  qt/nexbit/mnmodel.cpp \
+  qt/nexbit/masternodewizarddialog.cpp \
+  qt/nexbit/mnrow.cpp \
+  qt/nexbit/masternodeswidget.cpp \
+  qt/nexbit/myaddressrow.cpp \
+  qt/nexbit/csrow.cpp \
+  qt/nexbit/sendchangeaddressdialog.cpp \
+  qt/nexbit/sendconfirmdialog.cpp \
+  qt/nexbit/sendcustomfeedialog.cpp \
+  qt/nexbit/sendchangeaddressdialog.cpp \
+  qt/nexbit/sendmultirow.cpp \
+  qt/nexbit/send.cpp \
+  qt/nexbit/addnewaddressdialog.cpp \
+  qt/nexbit/addnewcontactdialog.cpp \
+  qt/nexbit/requestdialog.cpp \
+  qt/nexbit/receivewidget.cpp \
+  qt/nexbit/tooltipmenu.cpp \
+  qt/nexbit/addresseswidget.cpp \
+  qt/nexbit/defaultdialog.cpp \
+  qt/nexbit/denomgenerationdialog.cpp \
+  qt/nexbit/privacywidget.cpp \
+  qt/nexbit/coldstakingwidget.cpp \
+  qt/nexbit/settings/settingsbackupwallet.cpp \
+  qt/nexbit/settings/settingsbittoolwidget.cpp \
+  qt/nexbit/settings/settingsconsolewidget.cpp \
+  qt/nexbit/settings/settingsdisplayoptionswidget.cpp \
+  qt/nexbit/settings/settingsfaqwidget.cpp \
+  qt/nexbit/settings/settingsinformationwidget.cpp \
+  qt/nexbit/settings/settingsmainoptionswidget.cpp \
+  qt/nexbit/settings/settingsmultisenddialog.cpp \
+  qt/nexbit/settings/settingsmultisendwidget.cpp \
+  qt/nexbit/settings/settingssignmessagewidgets.cpp \
+  qt/nexbit/settings/settingswalletoptionswidget.cpp \
+  qt/nexbit/settings/settingswalletrepairwidget.cpp \
+  qt/nexbit/settings/settingswidget.cpp \
+  qt/nexbit/welcomecontentwidget.cpp \
+  qt/nexbit/splash.cpp
+
+
+BITCOIN_QT_CPP = $(BITCOIN_QT_BASE_CPP)
+if TARGET_WINDOWS
+BITCOIN_QT_CPP += $(BITCOIN_QT_WINDOWS_CPP)
+endif
+if ENABLE_WALLET
+BITCOIN_QT_CPP += $(BITCOIN_QT_WALLET_CPP)
+endif
+
+RES_IMAGES = \
+  qt/res/images/about.png \
+  qt/res/images/splash.png \
+  qt/res/images/splash_testnet.png \
+  qt/res/images/splash_regtest.png \
+  qt/res/images/nexbit_logo_horizontal.png \
+  qt/res/images/downArrow_dark.png \
+  qt/res/images/downArrow_small_dark.png \
+  qt/res/images/downArrow_small.png \
+  qt/res/images/upArrow_small_dark.png \
+  qt/res/images/upArrow_small.png \
+  qt/res/images/leftArrow_small_dark.png \
+  qt/res/images/rightArrow_small_dark.png \
+  qt/res/images/qtreeview_selected.png
+
+RES_CSS = \
+  qt/res/css/default.css \
+  qt/nexbit/res/css/style_dark.css \
+  qt/nexbit/res/css/style_light.css
+
+RES_MOVIES = $(wildcard $(srcdir)/qt/res/movies/spinner-*.png)
+
+BITCOIN_RC = qt/res/nexbit-qt-res.rc
+
+BITCOIN_QT_INCLUDES = -I$(builddir)/qt -I$(srcdir)/qt -I$(srcdir)/qt/forms \
+  -I$(builddir)/qt/forms -DQT_NO_KEYWORDS
+
+qt_libbitcoinqt_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
+  $(QT_INCLUDES) $(QT_DBUS_INCLUDES) $(PROTOBUF_CFLAGS) $(QR_CFLAGS) $(SVG_CFLAGS) $(CHARTS_CFLAGS)
+qt_libbitcoinqt_a_CXXFLAGS = $(AM_CXXFLAGS) $(QT_PIE_FLAGS)
+qt_libbitcoinqt_a_OBJCXXFLAGS = $(AM_OBJCXXFLAGS) $(QT_PIE_FLAGS)
+
+qt_libbitcoinqt_a_SOURCES = $(BITCOIN_QT_CPP) $(BITCOIN_QT_H) $(QT_FORMS_UI) \
+  $(QT_QRC) $(QT_QRC_LOCALE) $(QT_TS) $(PROTOBUF_PROTO) $(RES_ICONS) $(RES_IMAGES) $(RES_CSS) $(RES_MOVIES)
+
+nodist_qt_libbitcoinqt_a_SOURCES = $(QT_MOC_CPP) $(QT_MOC) $(PROTOBUF_CC) \
+  $(PROTOBUF_H) $(QT_QRC_CPP) $(QT_QRC_LOCALE_CPP)
+
+# forms/foo.h -> forms/ui_foo.h
+QT_FORMS_H=$(join $(dir $(QT_FORMS_UI)),$(addprefix ui_, $(notdir $(QT_FORMS_UI:.ui=.h))))
+
+# Most files will depend on the forms and moc files as includes. Generate them
+# before anything else.
+$(QT_MOC): $(QT_FORMS_H)
+$(qt_libbitcoinqt_a_OBJECTS) $(qt_nexbit_qt_OBJECTS) : | $(QT_MOC)
+
+#Generating these with a half-written protobuf header leads to wacky results.
+#This makes sure it's done.
+$(QT_MOC): $(PROTOBUF_H)
+$(QT_MOC_CPP): $(PROTOBUF_H)
+
+# nexbit-qt binary #
+qt_nexbit_qt_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
+  $(QT_INCLUDES) $(PROTOBUF_CFLAGS) $(QR_CFLAGS) $(SVG_CFLAGS) $(CHARTS_CFLAGS)
+qt_nexbit_qt_CXXFLAGS = $(AM_CXXFLAGS) $(QT_PIE_FLAGS)
+
+qt_nexbit_qt_SOURCES = qt/nexbit.cpp
+if TARGET_DARWIN
+  qt_nexbit_qt_SOURCES += $(BITCOIN_MM)
+endif
+if TARGET_WINDOWS
+  qt_nexbit_qt_SOURCES += $(BITCOIN_RC)
+endif
+qt_nexbit_qt_LDADD = qt/libbitcoinqt.a $(LIBBITCOIN_SERVER)
+if ENABLE_WALLET
+qt_nexbit_qt_LDADD += $(LIBBITCOIN_UTIL) $(LIBBITCOIN_WALLET)
+endif
+if ENABLE_ZMQ
+qt_nexbit_qt_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
+endif
+qt_nexbit_qt_LDADD += $(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) $(LIBBITCOIN_UTIL) $(LIBBITCOIN_CRYPTO) $(LIBUNIVALUE) $(LIBBITCOIN_ZEROCOIN) $(LIBLEVELDB) $(LIBLEVELDB_SSE42) $(LIBMEMENV) \
+  $(BOOST_LIBS) $(QT_LIBS) $(QT_DBUS_LIBS) $(QR_LIBS) $(PROTOBUF_LIBS) $(SVG_LIBS) $(CHARTS_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(LIBSECP256K1) \
+  $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS)
+qt_nexbit_qt_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(QT_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+qt_nexbit_qt_LIBTOOLFLAGS = $(AM_LIBTOOLFLAGS) --tag CXX
+
+#locale/foo.ts -> locale/foo.qm
+QT_QM=$(QT_TS:.ts=.qm)
+
+SECONDARY: $(QT_QM)
+
+$(srcdir)/qt/nexbitstrings.cpp: $(libbitcoin_server_a_SOURCES) $(libbitcoin_wallet_a_SOURCES) $(libbitcoin_common_a_SOURCES) $(libbitcoin_zmq_a_SOURCES) $(libbitcoin_util_a_SOURCES)
+	@test -n $(XGETTEXT) || echo "xgettext is required for updating translations"
+	$(AM_V_GEN) cd $(srcdir); XGETTEXT=$(XGETTEXT) PACKAGE_NAME="$(PACKAGE_NAME)" $(PYTHON) ../share/qt/extract_strings_qt.py $^
+
+translate: $(srcdir)/qt/nexbitstrings.cpp $(QT_FORMS_UI) $(QT_FORMS_UI) $(BITCOIN_QT_BASE_CPP) qt/nexbit.cpp $(BITCOIN_QT_WINDOWS_CPP) $(BITCOIN_QT_WALLET_CPP) $(BITCOIN_QT_H) $(BITCOIN_MM)
+	@test -n $(LUPDATE) || echo "lupdate is required for updating translations"
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(LUPDATE) $^ -locations relative -no-obsolete -ts $(srcdir)/qt/locale/nexbit_en.ts
+
+$(QT_QRC_LOCALE_CPP): $(QT_QRC_LOCALE) $(QT_QM)
+	@test -f $(RCC)
+	@cp -f $< $(@D)/temp_$(<F)
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name nexbit_locale $(@D)/temp_$(<F) | \
+	  $(SED) -e '/^\*\*.*Created:/d' -e '/^\*\*.*by:/d' > $@
+	@rm $(@D)/temp_$(<F)
+
+$(QT_QRC_CPP): $(QT_QRC) $(QT_FORMS_H) $(RES_ICONS) $(RES_IMAGES) $(RES_CSS) $(RES_MOVIES) $(PROTOBUF_H)
+	@test -f $(RCC)
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name nexbit $< | \
+	  $(SED) -e '/^\*\*.*Created:/d' -e '/^\*\*.*by:/d' > $@
+
+CLEAN_QT = $(nodist_qt_libbitcoinqt_a_SOURCES) $(QT_QM) $(QT_FORMS_H) qt/*.gcda qt/*.gcno qt/temp_nexbit_locale.qrc
+
+CLEANFILES += $(CLEAN_QT)
+
+nexbit_qt_clean: FORCE
+	rm -f $(CLEAN_QT) $(qt_libbitcoinqt_a_OBJECTS) $(qt_nexbit_qt_OBJECTS) qt/nexbit-qt$(EXEEXT) $(LIBBITCOINQT)
+
+nexbit_qt : qt/nexbit-qt$(EXEEXT)
+
+ui_%.h: %.ui
+	@test -f $(UIC)
+	@$(MKDIR_P) $(@D)
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(UIC) -o $@ $< || (echo "Error creating $@"; false)
+
+%.moc: %.cpp
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(MOC) $(DEFAULT_INCLUDES) $(QT_INCLUDES) $(MOC_DEFS) $< | \
+	  $(SED) -e '/^\*\*.*Created:/d' -e '/^\*\*.*by:/d' > $@
+
+moc_%.cpp: %.h
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(MOC) $(DEFAULT_INCLUDES) $(QT_INCLUDES) $(MOC_DEFS) $< | \
+	  $(SED) -e '/^\*\*.*Created:/d' -e '/^\*\*.*by:/d' > $@
+
+%.qm: %.ts
+	@test -f $(LRELEASE)
+	@$(MKDIR_P) $(@D)
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(LRELEASE) -silent $< -qm $@

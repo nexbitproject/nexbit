@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="Ebene_1"
+   x="0px"
+   y="0px"
+   viewBox="0 0 841.9 595.3"
+   enable-background="new 0 0 841.9 595.3"
+   xml:space="preserve"
+   sodipodi:docname="mine.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"><metadata
+   id="metadata5291"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+   id="defs5289" /><sodipodi:namedview
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1"
+   objecttolerance="10"
+   gridtolerance="10"
+   guidetolerance="10"
+   inkscape:pageopacity="0"
+   inkscape:pageshadow="2"
+   inkscape:window-width="1366"
+   inkscape:window-height="682"
+   id="namedview5287"
+   showgrid="false"
+   inkscape:zoom="0.84495214"
+   inkscape:cx="420.95001"
+   inkscape:cy="297.64999"
+   inkscape:window-x="0"
+   inkscape:window-y="28"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="Ebene_1" />
+<rect
+   x="464"
+   y="158.6"
+   transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 1027.5018 42.8013)"
+   stroke="#000000"
+   stroke-width="2"
+   stroke-linecap="round"
+   stroke-linejoin="round"
+   stroke-miterlimit="10"
+   width="81.9"
+   height="151.3"
+   id="rect5278"
+   style="fill:#6c5353" />
+<rect
+   x="190"
+   y="342.1"
+   transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 882.9977 387.9771)"
+   fill="none"
+   stroke="#000000"
+   stroke-width="30"
+   stroke-linecap="round"
+   stroke-linejoin="round"
+   stroke-miterlimit="10"
+   width="342.3"
+   height="69.4"
+   id="rect5280"
+   style="fill:#241c1c" />
+<path
+   stroke="#000000"
+   stroke-linecap="round"
+   stroke-linejoin="round"
+   stroke-miterlimit="10"
+   d="M445.7,186l32.2-32.2  c-44.6-37.2-124-74.4-218.3-64.5l-2.5,9.9C361.4,114.1,403.6,153.8,445.7,186z"
+   id="path5282"
+   style="fill:#6c5353" />
+<path
+   stroke="#000000"
+   stroke-linecap="round"
+   stroke-linejoin="round"
+   stroke-miterlimit="10"
+   d="M552.4,292.7l32.2-32.2  c37.2,44.6,74.4,124,64.5,218.3l-9.9,2.5C624.3,377,584.6,332.4,552.4,292.7z"
+   id="path5284"
+   style="fill:#6c5353" />
+</svg>
