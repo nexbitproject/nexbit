@@ -53,27 +53,27 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
- (0, uint256("0x00000fb2f2088f12e662772d6fe280f5b1c82df1735e6567741c895183e2322d"));
- 
-    
+ (0, uint256("0x01"));
+
+
 static const Checkpoints::CCheckpointData data = {
-          &mapCheckpoints,
-    1581199524, //Sat, 08 Feb 2020 22:05:24 +0000
+  /*        &mapCheckpoints,
+    1582310886, //Fri, 21 Feb 2020 22:05:24 +0000
     0,    // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
     200        // * estimated number of transactions per day after checkpoint
    };
-
+*/
 
 static Checkpoints::MapCheckpoints mapCheckpointsTestnet =
     boost::assign::map_list_of
     (0, uint256("0x001")); //!< First v7 block
 static const Checkpoints::CCheckpointData dataTestnet = {
-          &mapCheckpoints,
-    1581199524, // * UNIX timestamp of last checkpoint block
+/*          &mapCheckpoints,
+    1582310886, // * UNIX timestamp of last checkpoint block
     0,    // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
-    0   
+    0  */
 };
 
 static Checkpoints::MapCheckpoints mapCheckpointsRegtest =
@@ -173,21 +173,21 @@ public:
 
         /** Height or Time Based Activations **/
         nLastPOWBlock = 259200;
-        nNexbitBadBlockTime = 1471401614; // Skip nBit validation of Block 259201 per PR #915
-        nNexbitBadBlocknBits = 0x1c056dac; // Skip nBit validation of Block 259201 per PR #915
+        nNexbitBadBlockTime = 1471401614;
+        nNexbitBadBlocknBits = 0x1c056dac;
         nModifierUpdateBlock = 615800;
         nZerocoinStartHeight = 863787;
-        nZerocoinStartTime = 1508214600; // October 17, 2017 4:30:00 AM
+        nZerocoinStartTime = 1508214600;
         nBlockEnforceSerialRange = 895400; //Enforce serial range starting this block
         nBlockRecalculateAccumulators = 908000; //Trigger a recalculation of accumulators
         nBlockFirstFraudulent = 891737; //First block that bad serials emerged
         nBlockLastGoodCheckpoint = 891730; //Last valid accumulator checkpoint
         nBlockEnforceInvalidUTXO = 902850; //Start enforcing the invalid UTXO's
         nInvalidAmountFiltered = 268200*COIN; //Amount of invalid coins filtered through exchanges, that should be considered valid
-        nBlockZerocoinV2 = 1153160; //!> The block that zerocoin v2 becomes active - roughly Tuesday, May 8, 2018 4:00:00 AM GMT
+        nBlockZerocoinV2 = 1153160; //
         nBlockDoubleAccumulated = 1050010;
-        nEnforceNewSporkKey = 1566860400; //!> Sporks signed after Monday, August 26, 2019 11:00:00 PM GMT must use the new spork key
-        nRejectOldSporkKey = 1569538800; //!> Fully reject old spork key after Thursday, September 26, 2019 11:00:00 PM GMT
+        nEnforceNewSporkKey = 1585699200; //Wed, 01 Apr 2020 00:00:00 +0000
+        nRejectOldSporkKey = 1586995200; //Thu, 16 Apr 2020 00:00:00 +0000
         nBlockStakeModifierlV2 = 1967000;
         nBIP65ActivationHeight = 1808634;
         // Activation height for TimeProtocolV2, Blocks V7 and newMessageSignatures
@@ -217,7 +217,7 @@ public:
          *     CTxOut(nValue=50.00000000, scriptPubKey=0xA9037BAC7050C479B121CF)
          *   vMerkleTree: e0028e
          */
-        const char* pszTimestamp = "U.S. News & World Report Jan 28 2016 With His Absence, Trump Dominates Another Debate";
+        const char* pszTimestamp = "NEXBIT one step ahead to the world of financial freedom 22/02/2020";
         CMutableTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
@@ -228,14 +228,43 @@ public:
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = BlockMerkleRoot(genesis);
         genesis.nVersion = 1;
-        genesis.nTime = 1581199524; //Sat, 08 Feb 2020 22:05:24 +0000
+        genesis.nTime = 1582310886; //Fri, 21 Feb 2020 18:48:06 +0000
         genesis.nBits = 0x1e0ffff0;
-        genesis.nNonce = 2426739;
+      //  genesis.nNonce = 2426739;
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x00000fb2f2088f12e662772d6fe280f5b1c82df1735e6567741c895183e2322d"));
-        assert(genesis.hashMerkleRoot == uint256("0x52f560d9b6d1895a859d1ec52a9474307d123a6109c0c51a881ec08cca628ae4"));
+        if(genesis.GetHash() != uint256("0x"))
+        {
+           printf("MSearching for genesis block...\n");
+           uint256 hashTarget;
+           hashTarget.SetCompact(genesis.nBits);
+           while(uint256(genesis.GetHash()) > uint256(hashTarget))
+           {
+               ++genesis.nNonce;
+               if (genesis.nNonce == 0)
+               {
+                   printf("Mainnet NONCE WRAPPED, incrementing time");
+                   std::cout << std::string("Mainnet NONCE WRAPPED, incrementing time:\n");
+                   ++genesis.nTime;
+               }
+               if (genesis.nNonce % 10000 == 0)
+               {
+                   printf("Mainnet: nonce %08u: hash = %s \n", genesis.nNonce, genesis.GetHash().ToString().c_str());
+               }
+           }
+           printf("Mainnet block.nTime = %u \n", genesis.nTime);
+           printf("Mainnet block.nNonce = %u \n", genesis.nNonce);
+           printf("Mainnet block.hashMerkleRoot: %s\n", genesis.hashMerkleRoot.ToString().c_str());
+           printf("Mainnet block.GetHash = %s\n", genesis.GetHash().ToString().c_str());
+           vFixedSeeds.clear();
+           vSeeds.clear();
+}
 
-        
+
+
+        assert(hashGenesisBlock == uint256("0x01"));
+        assert(genesis.hashMerkleRoot == uint256("0x01"));
+
+
         vSeeds.push_back(CDNSSeedData("nexbit.io", "dns1.nexbit.io"));     // Primary DNS Seeder from NEXBIT
         vSeeds.push_back(CDNSSeedData("nexbit.io", "dns2.nexbit.io"));    // Secondary DNS Seeder from NEXBIT
         vSeeds.push_back(CDNSSeedData("nexbit.io", "dns3.nexbit.io"));    // Primery DNS Seeder from QuantaEx
@@ -253,7 +282,7 @@ public:
         base58Prefixes[EXT_COIN_TYPE] = boost::assign::list_of(0x80)(0x00)(0x00)(0x77).convert_to_container<std::vector<unsigned char> >();
 
         convertSeed6(vFixedSeeds, pnSeed6_main, ARRAYLEN(pnSeed6_main));
-        
+
     //    fRequireRPCPassword = false;        // default true
         fMiningRequiresPeers = false;       // default true
         fAllowMinDifficultyBlocks = false;
@@ -321,8 +350,8 @@ public:
         nToCheckBlockUpgradeMajority = 5760; // 4 days
         nMinerThreads = 0;
         nLastPOWBlock = 200;
-        nNexbitBadBlockTime = 1581199524; //Sat, 08 Feb 2020 22:05:24 +0000
-        nNexbitBadBlocknBits = 0x1e0a20bd; // Skip nBit validation of Block 201 per PR #915
+        nNexbitBadBlockTime = 1581199524;
+        nNexbitBadBlocknBits = 0x1e0a20bd;
         nMaturity = 15;
         nStakeMinDepth = 100;
         nMasternodeCountDrift = 4;
@@ -358,12 +387,12 @@ public:
         nSupplyBeforeFakeSerial = 0;
 
         //! Modify the testnet genesis block so the timestamp is valid for a later start.
-        genesis.nTime = 1581199524; //Sat, 08 Feb 2020 22:05:24 +0000
+        genesis.nTime = 1582310886; //Fri, 21 Feb 2020 18:48:06 +0000
         genesis.nBits = 0x1e0ffff0;
-        genesis.nNonce = 2426739;
+      //  genesis.nNonce = 2426739;
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x00000fb2f2088f12e662772d6fe280f5b1c82df1735e6567741c895183e2322d"));
-       
+        assert(hashGenesisBlock == uint256("0x01"));
+
 
         vFixedSeeds.clear();
         vSeeds.clear();
@@ -462,14 +491,14 @@ public:
         nFakeSerialBlockheightEnd = -1;
 
         //! Modify the regtest genesis block so the timestamp is valid for a later start.
-        genesis.nTime = 1581199524; //Sat, 08 Feb 2020 22:05:24 +0000;
+        genesis.nTime = 1582310886; //Fri, 21 Feb 2020 18:48:06 +0000
         genesis.nBits = 0x1e0ffff0;
-        genesis.nNonce = 2426739;
+      //  genesis.nNonce = 2426739;
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x00000fb2f2088f12e662772d6fe280f5b1c82df1735e6567741c895183e2322d"));
-     
-       
+        assert(hashGenesisBlock == uint256("0x01"));
+
+
 
         vFixedSeeds.clear(); //! Testnet mode doesn't have any fixed seeds.
         vSeeds.clear();      //! Testnet mode doesn't have any DNS seeds.
