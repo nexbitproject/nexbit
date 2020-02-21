@@ -53,20 +53,23 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    (0, uint256("0x00000fb2f2088f12e662772d6fe280f5b1c82df1735e6567741c895183e2322d"));
+ (300, uint256(b0a11d4eac919b2e7c69831d8f6c1482af4516938aaf1d1757accfb07bd569ed))
+ (800, uint256(d25f090b7105525c605719a845cea5d9be6d4875b0e2ff74a61fc2c7fd1886aa))
+ (1300, uint256(89f11dff36edf8aebb6ebad18469591b30e8749f9c8991789c31bdf043d5bb3f))
+ (2066, uint256(3ad64c593d930a8f7e7a5eae89251fc734c1ddb330034483efbf0da18dbc6a80));
     
 static const Checkpoints::CCheckpointData data = {
           &mapCheckpoints,
-    1581199524, // * UNIX timestamp of last checkpoint block
-    0,    // * total number of transactions between genesis and last checkpoint
+    1582216412, // * 02/20/2020 @ 4:33pm (UTC)
+    2067,    // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
-    0        // * estimated number of transactions per day after checkpoint
+    2000        // * estimated number of transactions per day after checkpoint
    };
 
 
 static Checkpoints::MapCheckpoints mapCheckpointsTestnet =
     boost::assign::map_list_of
-    (0, uint256("0x01")); //!< First v7 block
+    (0, uint256("0x001")); //!< First v7 block
 static const Checkpoints::CCheckpointData dataTestnet = {
           &mapCheckpoints,
     1581199524, // * UNIX timestamp of last checkpoint block
@@ -238,7 +241,7 @@ public:
         vSeeds.push_back(CDNSSeedData("nexbit.io", "seed.nexbit.io"));     // Primary DNS Seeder from NEXBIT
         vSeeds.push_back(CDNSSeedData("nexbit.io", "nbcseed.nexbit.io"));    // Secondary DNS Seeder from NEXBIT
         vSeeds.push_back(CDNSSeedData("quantaex.com", "nbcseed.quantaex.com"));    // Primery DNS Seeder from QuantaEx
-        vSeeds.push_back(CDNSSeedData("bitbd.com", "dnsseed.bitbd.com"));
+        vSeeds.push_back(CDNSSeedData("bitbd.com", "dnsseed.bitbd.co"));
 
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 54);

@@ -18,7 +18,7 @@ const std::string CLIENT_NAME("NEXBIT Core");
 /**
  * Client version number
  */
-#define CLIENT_VERSION_SUFFIX ""
+#define CLIENT_VERSION_SUFFIX "v"
 
 
 /**
@@ -45,8 +45,8 @@ const std::string CLIENT_NAME("NEXBIT Core");
 //! git will put "#define GIT_ARCHIVE 1" on the next line inside archives.
 #define GIT_ARCHIVE 1
 #ifdef GIT_ARCHIVE
-#define GIT_COMMIT_ID ""
-#define GIT_COMMIT_DATE "Fri, 7 Feb 2020 09:55:09 -0300"
+#define GIT_COMMIT_ID "6dd538672585be91140b675647a54e0e686aeca3"
+#define GIT_COMMIT_DATE "Fri, 21 Feb 2020 06:05:09 0600"
 #endif
 
 #define BUILD_DESC_WITH_SUFFIX(maj, min, rev, build, suffix) \
