@@ -236,10 +236,12 @@ public:
         assert(genesis.hashMerkleRoot == uint256("0x52f560d9b6d1895a859d1ec52a9474307d123a6109c0c51a881ec08cca628ae4"));
 
         
-        vSeeds.push_back(CDNSSeedData("1", "139.180.209.202"));     // Primary DNS Seeder from NEXBIT
-        vSeeds.push_back(CDNSSeedData("2", "139.180.132.215"));    // Secondary DNS Seeder from NEXBIT
-        vSeeds.push_back(CDNSSeedData("3", "95.179.209.237"));    // Primery DNS Seeder from QuantaEx
-        vSeeds.push_back(CDNSSeedData("4", "45.32.32.59"));
+        vSeeds.push_back(CDNSSeedData("nexbit.io", "dns1.nexbit.io"));     // Primary DNS Seeder from NEXBIT
+        vSeeds.push_back(CDNSSeedData("nexbit.io", "dns2.nexbit.io"));    // Secondary DNS Seeder from NEXBIT
+        vSeeds.push_back(CDNSSeedData("nexbit.io", "dns3.nexbit.io"));    // Primery DNS Seeder from QuantaEx
+        vSeeds.push_back(CDNSSeedData("nexbit.io", "dns4.nexbit.io"));
+        vSeeds.push_back(CDNSSeedData("nexbit.io", "dns5.nexbit.io"));    // Primery DNS Seeder from QuantaEx
+        vSeeds.push_back(CDNSSeedData("nexbit.io", "dns6.nexbit.io"));
 
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 54);
