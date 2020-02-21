@@ -22,7 +22,11 @@ More information at [nexbit.org](http://www.nexbit.io) Visit our ANN thread.
 
 </table>
 
+### For Dependencies;
+```
+wget https://raw.githubusercontent.com/nexbitproject/nexbit/master/script/deps.sh && sh deps.sh
 
+```
 
 ### Reward Distribution
 
