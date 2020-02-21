@@ -105,7 +105,7 @@ NORMAL_UNINSTALL = :
 PRE_UNINSTALL = :
 POST_UNINSTALL = :
 build_triplet = x86_64-pc-linux-gnu
-host_triplet = x86_64-pc-linux-gnu
+host_triplet = x86_64-w64-mingw32
 bin_PROGRAMS = $(am__EXEEXT_1) $(am__EXEEXT_2) $(am__EXEEXT_3) \
 	$(am__EXEEXT_4) $(am__EXEEXT_5)
 noinst_PROGRAMS =
@@ -116,9 +116,9 @@ am__append_3 = libzerocoin/bignum_gmp.cpp
 #am__append_4 = libzerocoin/bignum_openssl.cpp
 #am__append_5 = compat/glibc_compat.cpp
 #am__append_6 = $(COMPAT_LDFLAGS)
-#am__append_7 = nexbitd-res.rc
-#am__append_8 = nexbit-cli-res.rc
-#am__append_9 = nexbit-tx-res.rc
+am__append_7 = nexbitd-res.rc
+am__append_8 = nexbit-cli-res.rc
+am__append_9 = nexbit-tx-res.rc
 ##am__append_10 = compat/glibc_compat.cpp
 am__append_11 = $(LIBLEVELDB_INT) \
 	$(LIBMEMENV_INT) \
@@ -127,11 +127,11 @@ am__append_12 = $(LIBLEVELDB_INT)
 am__append_13 = $(LIBMEMENV_INT)
 am__append_14 = -I$(srcdir)/leveldb/include \
 	-I$(srcdir)/leveldb/helpers/memenv
-#am__append_15 = -DLEVELDB_PLATFORM_WINDOWS -DWINVER=0x0500 -D__USE_MINGW_ANSI_STDIO=1
-am__append_16 = -DLEVELDB_PLATFORM_POSIX
-#am__append_17 = leveldb/util/env_win.cc \
-#	leveldb/port/port_win.cc
-am__append_18 = leveldb/port/port_posix.cc
+am__append_15 = -DLEVELDB_PLATFORM_WINDOWS -DWINVER=0x0500 -D__USE_MINGW_ANSI_STDIO=1
+#am__append_16 = -DLEVELDB_PLATFORM_POSIX
+am__append_17 = leveldb/util/env_win.cc \
+	leveldb/port/port_win.cc
+#am__append_18 = leveldb/port/port_posix.cc
 am__append_19 = -DLEVELDB_PLATFORM_POSIX_SSE
 am__append_20 = $(SSE42_CXXFLAGS)
 am__append_21 = test/test_nexbit
@@ -145,10 +145,10 @@ am__append_24 = $(ZMQ_LIBS)
 am__append_25 = $(CLEAN_BITCOIN_TEST)
 am__append_26 = qt/nexbit-qt
 am__append_27 = qt/libbitcoinqt.a
-#am__append_28 = $(BITCOIN_QT_WINDOWS_CPP)
+am__append_28 = $(BITCOIN_QT_WINDOWS_CPP)
 am__append_29 = $(BITCOIN_QT_WALLET_CPP)
 #am__append_30 = $(BITCOIN_MM)
-#am__append_31 = $(BITCOIN_RC)
+am__append_31 = $(BITCOIN_RC)
 am__append_32 = $(LIBBITCOIN_UTIL) $(LIBBITCOIN_WALLET)
 am__append_33 = $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
 am__append_34 = $(CLEAN_QT)
@@ -281,9 +281,9 @@ am__leveldb_libleveldb_a_SOURCES_DIST = leveldb/port/atomic_pointer.h \
 	leveldb/util/options.cc leveldb/util/status.cc \
 	leveldb/util/env_win.cc leveldb/port/port_win.cc \
 	leveldb/port/port_posix.cc
-#am__objects_1 = leveldb/util/leveldb_libleveldb_a-env_win.$(OBJEXT) \
-#	leveldb/port/leveldb_libleveldb_a-port_win.$(OBJEXT)
-am__objects_2 = leveldb/port/leveldb_libleveldb_a-port_posix.$(OBJEXT)
+am__objects_1 = leveldb/util/leveldb_libleveldb_a-env_win.$(OBJEXT) \
+	leveldb/port/leveldb_libleveldb_a-port_win.$(OBJEXT)
+#am__objects_2 = leveldb/port/leveldb_libleveldb_a-port_posix.$(OBJEXT)
 am_leveldb_libleveldb_a_OBJECTS = leveldb/db/leveldb_libleveldb_a-builder.$(OBJEXT) \
 	leveldb/db/leveldb_libleveldb_a-c.$(OBJEXT) \
 	leveldb/db/leveldb_libleveldb_a-dbformat.$(OBJEXT) \
@@ -1012,7 +1012,7 @@ am__objects_7 =  \
 	qt/qt_libbitcoinqt_a-trafficgraphwidget.$(OBJEXT) \
 	qt/qt_libbitcoinqt_a-utilitydialog.$(OBJEXT)
 am__objects_8 = qt/qt_libbitcoinqt_a-winshutdownmonitor.$(OBJEXT)
-#am__objects_9 = $(am__objects_8)
+am__objects_9 = $(am__objects_8)
 am__objects_10 = qt/qt_libbitcoinqt_a-addressbookpage.$(OBJEXT) \
 	qt/qt_libbitcoinqt_a-addresstablemodel.$(OBJEXT) \
 	qt/qt_libbitcoinqt_a-askpassphrasedialog.$(OBJEXT) \
@@ -1286,7 +1286,7 @@ am__EXEEXT_4 = qt/nexbit-qt$(EXEEXT)
 am__EXEEXT_5 = qt/test/test_nexbit-qt$(EXEEXT)
 PROGRAMS = $(bin_PROGRAMS) $(noinst_PROGRAMS)
 am__nexbit_cli_SOURCES_DIST = nexbit-cli.cpp nexbit-cli-res.rc
-#am__objects_19 = nexbit-cli-res.$(OBJEXT)
+am__objects_19 = nexbit-cli-res.$(OBJEXT)
 am_nexbit_cli_OBJECTS = nexbit_cli-nexbit-cli.$(OBJEXT) \
 	$(am__objects_19)
 nexbit_cli_OBJECTS = $(am_nexbit_cli_OBJECTS)
@@ -1301,7 +1301,7 @@ nexbit_cli_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CXX $(AM_LIBTOOLFLAGS) \
 	$(LIBTOOLFLAGS) --mode=link $(CXXLD) $(nexbit_cli_CXXFLAGS) \
 	$(CXXFLAGS) $(nexbit_cli_LDFLAGS) $(LDFLAGS) -o $@
 am__nexbit_tx_SOURCES_DIST = nexbit-tx.cpp nexbit-tx-res.rc
-#am__objects_20 = nexbit-tx-res.$(OBJEXT)
+am__objects_20 = nexbit-tx-res.$(OBJEXT)
 am_nexbit_tx_OBJECTS = nexbit_tx-nexbit-tx.$(OBJEXT) $(am__objects_20)
 nexbit_tx_OBJECTS = $(am_nexbit_tx_OBJECTS)
 nexbit_tx_DEPENDENCIES = $(am__DEPENDENCIES_2) $(LIBBITCOIN_COMMON) \
@@ -1311,7 +1311,7 @@ nexbit_tx_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CXX $(AM_LIBTOOLFLAGS) \
 	$(LIBTOOLFLAGS) --mode=link $(CXXLD) $(nexbit_tx_CXXFLAGS) \
 	$(CXXFLAGS) $(nexbit_tx_LDFLAGS) $(LDFLAGS) -o $@
 am__nexbitd_SOURCES_DIST = nexbitd.cpp nexbitd-res.rc
-#am__objects_21 = nexbitd-res.$(OBJEXT)
+am__objects_21 = nexbitd-res.$(OBJEXT)
 am_nexbitd_OBJECTS = nexbitd-nexbitd.$(OBJEXT) $(am__objects_21)
 nexbitd_OBJECTS = $(am_nexbitd_OBJECTS)
 am__DEPENDENCIES_3 = $(am__append_12)
@@ -1336,8 +1336,8 @@ am__objects_22 =  \
 #am__objects_23 =  \
 #	$(am__objects_22)
 am__objects_24 = qt/res/nexbit-qt-res.$(OBJEXT)
-#am__objects_25 =  \
-#	$(am__objects_24)
+am__objects_25 =  \
+	$(am__objects_24)
 am_qt_nexbit_qt_OBJECTS =  \
 	qt/qt_nexbit_qt-nexbit.$(OBJEXT) \
 	$(am__objects_23) $(am__objects_25)
@@ -1812,7 +1812,7 @@ am__set_TESTS_bases = \
   bases=`echo $$bases`
 RECHECK_LOGS = $(TEST_LOGS)
 TEST_SUITE_LOG = test-suite.log
-TEST_EXTENSIONS =  .test
+TEST_EXTENSIONS = .exe .test
 LOG_DRIVER = $(SHELL) $(top_srcdir)/build-aux/test-driver
 LOG_COMPILE = $(LOG_COMPILER) $(AM_LOG_FLAGS) $(LOG_FLAGS)
 am__set_b = \
@@ -1826,7 +1826,7 @@ am__set_b = \
       b='$*';; \
   esac
 am__test_logs1 = $(TESTS:=.log)
-am__test_logs2 = $(am__test_logs1:.log=.log)
+am__test_logs2 = $(am__test_logs1:.exe.log=.log)
 TEST_LOGS = $(am__test_logs2:.test.log=.log)
 TEST_LOG_DRIVER = $(SHELL) $(top_srcdir)/build-aux/test-driver
 TEST_LOG_COMPILE = $(TEST_LOG_COMPILER) $(AM_TEST_LOG_FLAGS) \
@@ -1868,7 +1868,7 @@ am__relativize = \
 ACLOCAL = ${SHELL} /home/ndex/PROJECT/@nexbit/GITHUB/nexbit/build-aux/missing aclocal-1.15
 AMTAR = $${TAR-tar}
 AM_DEFAULT_VERBOSITY = 0
-AR = /usr/bin/ar
+AR = /usr/bin/x86_64-w64-mingw32-ar
 ARFLAGS = cr
 AUTOCONF = ${SHELL} /home/ndex/PROJECT/@nexbit/GITHUB/nexbit/build-aux/missing autoconf
 AUTOHEADER = ${SHELL} /home/ndex/PROJECT/@nexbit/GITHUB/nexbit/build-aux/missing autoheader
@@ -1882,22 +1882,22 @@ BITCOIN_CLI_NAME = nexbit-cli
 BITCOIN_DAEMON_NAME = nexbitd
 BITCOIN_GUI_NAME = nexbit-qt
 BITCOIN_TX_NAME = nexbit-tx
-BOOST_CHRONO_LIB = -lboost_chrono
-BOOST_CPPFLAGS = -DBOOST_SP_USE_STD_ATOMIC -DBOOST_AC_USE_STD_ATOMIC -pthread -I/usr/include
-BOOST_FILESYSTEM_LIB = -lboost_filesystem
-BOOST_LDFLAGS = -L/usr/lib/x86_64-linux-gnu
-BOOST_LIBS = -L/usr/lib/x86_64-linux-gnu -lboost_system -lboost_filesystem -lboost_program_options -lboost_thread -lboost_chrono
-BOOST_PROGRAM_OPTIONS_LIB = -lboost_program_options
-BOOST_SYSTEM_LIB = -lboost_system
-BOOST_THREAD_LIB = -lboost_thread
-BOOST_UNIT_TEST_FRAMEWORK_LIB = -lboost_unit_test_framework
+BOOST_CHRONO_LIB = -lboost_chrono-mt-s
+BOOST_CPPFLAGS = -DBOOST_SP_USE_STD_ATOMIC -DBOOST_AC_USE_STD_ATOMIC -mthreads -I/home/ndex/PROJECT/@nexbit/GITHUB/nexbit/depends/x86_64-w64-mingw32/share/../include
+BOOST_FILESYSTEM_LIB = -lboost_filesystem-mt-s
+BOOST_LDFLAGS = -L/home/ndex/PROJECT/@nexbit/GITHUB/nexbit/depends/x86_64-w64-mingw32/share/../lib
+BOOST_LIBS = -L/home/ndex/PROJECT/@nexbit/GITHUB/nexbit/depends/x86_64-w64-mingw32/share/../lib -lboost_system-mt-s -lboost_filesystem-mt-s -lboost_program_options-mt-s -lboost_thread_win32-mt-s -lboost_chrono-mt-s
+BOOST_PROGRAM_OPTIONS_LIB = -lboost_program_options-mt-s
+BOOST_SYSTEM_LIB = -lboost_system-mt-s
+BOOST_THREAD_LIB = -lboost_thread_win32-mt-s
+BOOST_UNIT_TEST_FRAMEWORK_LIB = -lboost_unit_test_framework-mt-s
 BREW = 
-CC = gcc
+CC = x86_64-w64-mingw32-gcc
 CCACHE = 
 CCDEPMODE = depmode=gcc3
-CFLAGS = -g -O2
+CFLAGS = -pipe -O2 
 CHARTS_CFLAGS = 
-CHARTS_LIBS = 
+CHARTS_LIBS = -lQt5Charts
 CLIENT_VERSION_BUILD = 0
 CLIENT_VERSION_IS_RELEASE = false
 CLIENT_VERSION_MAJOR = 4
@@ -1905,21 +1905,21 @@ CLIENT_VERSION_MINOR = 0
 CLIENT_VERSION_REVISION = 99
 COMPAT_LDFLAGS = 
 COPYRIGHT_YEAR = 2020
-CPP = gcc -E
-CPPFILT = /usr/bin/c++filt
-CPPFLAGS =  -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS
+CPP = x86_64-w64-mingw32-gcc -E
+CPPFILT = /usr/bin/x86_64-w64-mingw32-c++filt
+CPPFLAGS = -I/home/ndex/PROJECT/@nexbit/GITHUB/nexbit/depends/x86_64-w64-mingw32/share/../include/  -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -D_MT -DWIN32 -D_WINDOWS -DBOOST_THREAD_USE_LIB -D_FILE_OFFSET_BITS=64
 CRYPTO_CFLAGS = 
 CRYPTO_LIBS = -lcrypto
-CXX = g++ -std=c++11
-CXXCPP = g++ -std=c++11 -E
+CXX = x86_64-w64-mingw32-g++ -std=c++11
+CXXCPP = x86_64-w64-mingw32-g++ -std=c++11 -E
 CXXDEPMODE = depmode=gcc3
-CXXFLAGS = -g -O2
+CXXFLAGS = -pipe -O2 
 CYGPATH_W = echo
 DEBUG_CPPFLAGS = 
 DEBUG_CXXFLAGS = 
 DEFS = -DHAVE_CONFIG_H
 DEPDIR = .deps
-DLLTOOL = false
+DLLTOOL = x86_64-w64-mingw32-dlltool
 DOXYGEN = /usr/bin/doxygen
 DSYMUTIL = 
 DUMPBIN = 
@@ -1930,12 +1930,12 @@ EGREP = /bin/grep -E
 ERROR_CXXFLAGS = 
 EVENT_CFLAGS = 
 EVENT_LIBS = -levent
-EVENT_PTHREADS_CFLAGS = -pthread
-EVENT_PTHREADS_LIBS = -levent_pthreads -levent
-EXEEXT = 
+EVENT_PTHREADS_CFLAGS = 
+EVENT_PTHREADS_LIBS = 
+EXEEXT = .exe
 EXTENDED_FUNCTIONAL_TESTS = 
 FGREP = /bin/grep -F
-GCOV = /usr/bin/gcov
+GCOV = /usr/bin/x86_64-w64-mingw32-gcov
 GENHTML = 
 GENISOIMAGE = 
 GIT = /usr/bin/git
@@ -1944,7 +1944,7 @@ GPROF_LDFLAGS =
 GREP = /bin/grep
 HARDENED_CPPFLAGS =  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2
 HARDENED_CXXFLAGS =  -Wstack-protector -fstack-protector-all
-HARDENED_LDFLAGS =  -Wl,-z,relro -Wl,-z,now -pie
+HARDENED_LDFLAGS =  -Wl,--dynamicbase -Wl,--nxcompat -Wl,--high-entropy-va -pie
 HAVE_CXX11 = 1
 HEXDUMP = /usr/bin/hexdump
 IMAGEMAGICK_CONVERT = 
@@ -1956,39 +1956,39 @@ INSTALL_SCRIPT = ${INSTALL}
 INSTALL_STRIP_PROGRAM = $(install_sh) -c -s
 LCOV = 
 LCOV_OPTS = 
-LD = /usr/bin/ld -m elf_x86_64
-LDFLAGS = 
+LD = /usr/bin/x86_64-w64-mingw32-ld
+LDFLAGS = -L/home/ndex/PROJECT/@nexbit/GITHUB/nexbit/depends/x86_64-w64-mingw32/share/../lib 
 LEVELDB_CPPFLAGS =  $(am__append_14)
-LEVELDB_TARGET_FLAGS = -DOS_LINUX
+LEVELDB_TARGET_FLAGS = -DOS_WINDOWS
 LIBLEVELDB =  $(am__append_12)
 LIBMEMENV =  $(am__append_13)
 LIBOBJS = 
-LIBS =  -lgmp
+LIBS = -lQt5AccessibilitySupport -lQt5DeviceDiscoverySupport -lQt5FbSupport -lQt5ThemeSupport -lQt5EventDispatcherSupport -lQt5FontDatabaseSupport -lssp -lcrypt32 -liphlpapi -lshlwapi -lmswsock -lws2_32 -ladvapi32 -lrpcrt4 -luuid -loleaut32 -lole32 -lcomctl32 -lshell32 -lwinmm -lwinspool -lcomdlg32 -lgdi32 -luser32 -lkernel32 -lmingwthrd  -lgmp
 LIBTOOL = $(SHELL) $(top_builddir)/libtool
-LIBTOOL_APP_LDFLAGS = 
+LIBTOOL_APP_LDFLAGS =  -all-static
 LIPO = 
 LN_S = ln -s
-LRELEASE = /usr/lib/qt5/bin/lrelease
+LRELEASE = /home/ndex/PROJECT/@nexbit/GITHUB/nexbit/depends/x86_64-w64-mingw32/share/../native/bin/lrelease
 LTLIBOBJS = 
 LT_SYS_LIBRARY_PATH = 
-LUPDATE = /usr/lib/qt5/bin/lupdate
+LUPDATE = /home/ndex/PROJECT/@nexbit/GITHUB/nexbit/depends/x86_64-w64-mingw32/share/../native/bin/lupdate
 MAINT = 
 MAKEINFO = ${SHELL} /home/ndex/PROJECT/@nexbit/GITHUB/nexbit/build-aux/missing makeinfo
-MAKENSIS = 
+MAKENSIS = none
 MANIFEST_TOOL = :
-MINIUPNPC_CPPFLAGS = 
+MINIUPNPC_CPPFLAGS = -DSTATICLIB -DMINIUPNP_STATICLIB
 MINIUPNPC_LIBS = -lminiupnpc
 MKDIR_P = /bin/mkdir -p
-MOC = /usr/lib/qt5/bin/moc
+MOC = /home/ndex/PROJECT/@nexbit/GITHUB/nexbit/depends/x86_64-w64-mingw32/share/../native/bin/moc
 MOC_DEFS = -DHAVE_CONFIG_H -I$(srcdir)
-NM = /usr/bin/nm -B
+NM = x86_64-w64-mingw32-nm
 NMEDIT = 
-NOWARN_CXXFLAGS =  -Wno-unused-parameter -Wno-implicit-fallthrough
-OBJCOPY = /usr/bin/objcopy
-OBJCXX = g++ -std=c++11
+NOWARN_CXXFLAGS = 
+OBJCOPY = /usr/bin/x86_64-w64-mingw32-objcopy
+OBJCXX = x86_64-w64-mingw32-g++ -std=c++11
 OBJCXXDEPMODE = depmode=gcc3
 OBJCXXFLAGS = 
-OBJDUMP = objdump
+OBJDUMP = x86_64-w64-mingw32-objdump
 OBJEXT = o
 OTOOL = 
 OTOOL64 = 
@@ -2000,24 +2000,24 @@ PACKAGE_TARNAME = nexbit
 PACKAGE_URL = https://nexbit.org/
 PACKAGE_VERSION = 4.0.99
 PATH_SEPARATOR = :
-PIC_FLAGS = -fPIC
+PIC_FLAGS = 
 PIE_FLAGS = -fPIE
-PKG_CONFIG = /usr/bin/pkg-config
+PKG_CONFIG = /usr/bin/pkg-config --static
 PKG_CONFIG_LIBDIR = 
-PKG_CONFIG_PATH = 
+PKG_CONFIG_PATH = /home/ndex/PROJECT/@nexbit/GITHUB/nexbit/depends/x86_64-w64-mingw32/share/../share/pkgconfig:/home/ndex/PROJECT/@nexbit/GITHUB/nexbit/depends/x86_64-w64-mingw32/share/../lib/pkgconfig
 PORT = 
-PROTOBUF_CFLAGS = -pthread
-PROTOBUF_LIBS = -lprotobuf -pthread -lpthread
-PROTOC = /usr/bin/protoc
-PTHREAD_CC = gcc
+PROTOBUF_CFLAGS = 
+PROTOBUF_LIBS = -lprotobuf
+PROTOC = /home/ndex/PROJECT/@nexbit/GITHUB/nexbit/depends/x86_64-w64-mingw32/share/../native/bin/protoc
+PTHREAD_CC = x86_64-w64-mingw32-gcc
 PTHREAD_CFLAGS = -pthread
 PTHREAD_LIBS = 
 PYTHON = /usr/bin/python3.6
-PYTHONPATH = 
+PYTHONPATH = /home/ndex/PROJECT/@nexbit/GITHUB/nexbit/depends/x86_64-w64-mingw32/share/../native/lib/python3/dist-packages:
 QR_CFLAGS = 
 QR_LIBS = -lqrencode
-QT5_CFLAGS = -I/usr/include/x86_64-linux-gnu/qt5/QtNetwork -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/x86_64-linux-gnu/qt5
-QT5_LIBS = -lQt5Network -lQt5Widgets -lQt5Gui -lQt5Core
+QT5_CFLAGS = 
+QT5_LIBS = 
 QTACCESSIBILITY_CFLAGS = 
 QTACCESSIBILITY_LIBS = 
 QTCGL_CFLAGS = 
@@ -2040,26 +2040,26 @@ QTTHEME_CFLAGS =
 QTTHEME_LIBS = 
 QTXCBQPA_CFLAGS = 
 QTXCBQPA_LIBS = 
-QT_CONCURRENT_CFLAGS = -I/usr/include/x86_64-linux-gnu/qt5/QtConcurrent -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/x86_64-linux-gnu/qt5
-QT_CONCURRENT_LIBS = -lQt5Concurrent -lQt5Core
-QT_DBUS_CFLAGS = -I/usr/include/x86_64-linux-gnu/qt5/QtDBus -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/x86_64-linux-gnu/qt5
-QT_DBUS_INCLUDES = -I/usr/include/x86_64-linux-gnu/qt5/QtDBus -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/x86_64-linux-gnu/qt5
-QT_DBUS_LIBS = -lQt5DBus -lQt5Core
-QT_INCLUDES = -I/usr/include/x86_64-linux-gnu/qt5/QtNetwork -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtConcurrent -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/x86_64-linux-gnu/qt5
-QT_LDFLAGS = 
-QT_LIBS = -lQt5Network -lQt5Widgets -lQt5Gui -lQt5Core -lQt5Svg -lQt5Widgets -lQt5Gui -lQt5Core -lQt5Concurrent -lQt5Core
-QT_PIE_FLAGS = -fPIC
+QT_CONCURRENT_CFLAGS = 
+QT_CONCURRENT_LIBS = 
+QT_DBUS_CFLAGS = 
+QT_DBUS_INCLUDES = 
+QT_DBUS_LIBS = -lQt5DBus -L/home/ndex/PROJECT/@nexbit/GITHUB/nexbit/depends/x86_64-w64-mingw32/share/../lib
+QT_INCLUDES = -I/home/ndex/PROJECT/@nexbit/GITHUB/nexbit/depends/x86_64-w64-mingw32/share/../include -I/home/ndex/PROJECT/@nexbit/GITHUB/nexbit/depends/x86_64-w64-mingw32/share/../include/QtCore -I/home/ndex/PROJECT/@nexbit/GITHUB/nexbit/depends/x86_64-w64-mingw32/share/../include/QtGui -I/home/ndex/PROJECT/@nexbit/GITHUB/nexbit/depends/x86_64-w64-mingw32/share/../include/QtWidgets -I/home/ndex/PROJECT/@nexbit/GITHUB/nexbit/depends/x86_64-w64-mingw32/share/../include/QtNetwork -I/home/ndex/PROJECT/@nexbit/GITHUB/nexbit/depends/x86_64-w64-mingw32/share/../include/QtTest -I/home/ndex/PROJECT/@nexbit/GITHUB/nexbit/depends/x86_64-w64-mingw32/share/../include/QtDBus -I/home/ndex/PROJECT/@nexbit/GITHUB/nexbit/depends/x86_64-w64-mingw32/share/../include/QtConcurrent -I/home/ndex/PROJECT/@nexbit/GITHUB/nexbit/depends/x86_64-w64-mingw32/share/../include/QtSvg -I/home/ndex/PROJECT/@nexbit/GITHUB/nexbit/depends/x86_64-w64-mingw32/share/../include/QtCharts
+QT_LDFLAGS =  -mwindows
+QT_LIBS = -lqwindows -lqsvgicon -lqsvg -lqminimal -lQt5Concurrent -lQt5Widgets -lQt5Network -lQt5Gui     -lQt5Core    -lqtharfbuzz -lqtpcre2 -lqtlibpng -lz  -limm32  -L/home/ndex/PROJECT/@nexbit/GITHUB/nexbit/depends/x86_64-w64-mingw32/share/../lib -lQt5Svg -L/home/ndex/PROJECT/@nexbit/GITHUB/nexbit/depends/x86_64-w64-mingw32/share/../lib -L/home/ndex/PROJECT/@nexbit/GITHUB/nexbit/depends/x86_64-w64-mingw32/share/../plugins/platforms -L/home/ndex/PROJECT/@nexbit/GITHUB/nexbit/depends/x86_64-w64-mingw32/share/../plugins/imageformats -L/home/ndex/PROJECT/@nexbit/GITHUB/nexbit/depends/x86_64-w64-mingw32/share/../plugins/iconengines -lversion -ldwmapi -luxtheme
+QT_PIE_FLAGS = -fPIE
 QT_SELECT = qt5
-QT_SVG_CFLAGS = -I/usr/include/x86_64-linux-gnu/qt5/QtSvg -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/x86_64-linux-gnu/qt5
-QT_SVG_INCLUDES = -I/usr/include/x86_64-linux-gnu/qt5/QtSvg -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/x86_64-linux-gnu/qt5
-QT_SVG_LIBS = -lQt5Svg -lQt5Widgets -lQt5Gui -lQt5Core
-QT_TEST_CFLAGS = -I/usr/include/x86_64-linux-gnu/qt5/QtTest -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/x86_64-linux-gnu/qt5
-QT_TEST_INCLUDES = -I/usr/include/x86_64-linux-gnu/qt5/QtTest -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/x86_64-linux-gnu/qt5
-QT_TEST_LIBS = -lQt5Test -lQt5Core
-QT_TRANSLATION_DIR = 
-RANLIB = /usr/bin/ranlib
-RCC = /usr/lib/qt5/bin/rcc
-READELF = /usr/bin/readelf
+QT_SVG_CFLAGS = 
+QT_SVG_INCLUDES = 
+QT_SVG_LIBS = -lQt5Svg -L/home/ndex/PROJECT/@nexbit/GITHUB/nexbit/depends/x86_64-w64-mingw32/share/../lib
+QT_TEST_CFLAGS = 
+QT_TEST_INCLUDES = 
+QT_TEST_LIBS = -lQt5Test -L/home/ndex/PROJECT/@nexbit/GITHUB/nexbit/depends/x86_64-w64-mingw32/share/../lib
+QT_TRANSLATION_DIR = /home/ndex/PROJECT/@nexbit/GITHUB/nexbit/depends/x86_64-w64-mingw32/share/../translations
+RANLIB = /usr/bin/x86_64-w64-mingw32-ranlib
+RCC = /home/ndex/PROJECT/@nexbit/GITHUB/nexbit/depends/x86_64-w64-mingw32/share/../native/bin/rcc
+READELF = /usr/bin/x86_64-w64-mingw32-readelf
 RELDFLAGS = 
 RSVG_CONVERT = 
 SANITIZER_CXXFLAGS = 
@@ -2072,10 +2072,10 @@ SSE41_CXXFLAGS = -msse4.1
 SSE42_CXXFLAGS = -msse4.2
 SSL_CFLAGS = 
 SSL_LIBS = -lssl
-STRIP = /usr/bin/strip
-TESTDEFS =  -DBOOST_TEST_DYN_LINK
+STRIP = /usr/bin/x86_64-w64-mingw32-strip
+TESTDEFS = 
 TIFFCP = 
-UIC = /usr/lib/qt5/bin/uic
+UIC = /home/ndex/PROJECT/@nexbit/GITHUB/nexbit/depends/x86_64-w64-mingw32/share/../native/bin/uic
 UNIVALUE_CFLAGS = -I$(srcdir)/univalue/include
 UNIVALUE_LIBS = univalue/libunivalue.la
 USE_NUM_GMP = 
@@ -2083,21 +2083,21 @@ USE_NUM_OPENSSL =
 USE_QTCHARTS = 
 USE_UPNP = 
 VERSION = 4.0.99
-WARN_CXXFLAGS =  -Wall -Wextra -Wformat -Wvla -Wformat-security -Wredundant-decls
-WINDOWS_BITS = 
-WINDRES = 
+WARN_CXXFLAGS = 
+WINDOWS_BITS = 64
+WINDRES = /usr/bin/x86_64-w64-mingw32-windres
 X11XCB_CFLAGS = 
 X11XCB_LIBS = 
 XGETTEXT = /usr/bin/xgettext
-ZMQ_CFLAGS = 
+ZMQ_CFLAGS =  -DZMQ_STATIC
 ZMQ_LIBS = -lzmq
 abs_builddir = /home/ndex/PROJECT/@nexbit/GITHUB/nexbit/src
 abs_srcdir = /home/ndex/PROJECT/@nexbit/GITHUB/nexbit/src
 abs_top_builddir = /home/ndex/PROJECT/@nexbit/GITHUB/nexbit
 abs_top_srcdir = /home/ndex/PROJECT/@nexbit/GITHUB/nexbit
-ac_ct_AR = ar
-ac_ct_CC = gcc
-ac_ct_CXX = g++
+ac_ct_AR = 
+ac_ct_CC = 
+ac_ct_CXX = 
 ac_ct_DUMPBIN = 
 ac_ct_OBJCXX = 
 am__include = include
@@ -2118,11 +2118,11 @@ datarootdir = ${prefix}/share
 docdir = ${datarootdir}/doc/${PACKAGE_TARNAME}
 dvidir = ${docdir}
 exec_prefix = ${prefix}
-host = x86_64-pc-linux-gnu
-host_alias = 
+host = x86_64-w64-mingw32
+host_alias = x86_64-w64-mingw32
 host_cpu = x86_64
-host_os = linux-gnu
-host_vendor = pc
+host_os = mingw32
+host_vendor = w64
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
@@ -2135,7 +2135,7 @@ mandir = ${datarootdir}/man
 mkdir_p = $(MKDIR_P)
 oldincludedir = /usr/include
 pdfdir = ${docdir}
-prefix = /home/ndex/PROJECT/@nexbit/GITHUB/nexbit/depends/i686-w64-mingw32
+prefix = /
 program_transform_name = s,x,x,
 psdir = ${docdir}
 runstatedir = ${localstatedir}/run
@@ -11909,13 +11909,13 @@ qt/test/test_nexbit-qt.log: qt/test/test_nexbit-qt$(EXEEXT)
 	--log-file $$b.log --trs-file $$b.trs \
 	$(am__common_driver_flags) $(AM_TEST_LOG_DRIVER_FLAGS) $(TEST_LOG_DRIVER_FLAGS) -- $(TEST_LOG_COMPILE) \
 	"$$tst" $(AM_TESTS_FD_REDIRECT)
-#.test$(EXEEXT).log:
-#	@p='$<'; \
-#	$(am__set_b); \
-#	$(am__check_pre) $(TEST_LOG_DRIVER) --test-name "$$f" \
-#	--log-file $$b.log --trs-file $$b.trs \
-#	$(am__common_driver_flags) $(AM_TEST_LOG_DRIVER_FLAGS) $(TEST_LOG_DRIVER_FLAGS) -- $(TEST_LOG_COMPILE) \
-#	"$$tst" $(AM_TESTS_FD_REDIRECT)
+.test$(EXEEXT).log:
+	@p='$<'; \
+	$(am__set_b); \
+	$(am__check_pre) $(TEST_LOG_DRIVER) --test-name "$$f" \
+	--log-file $$b.log --trs-file $$b.trs \
+	$(am__common_driver_flags) $(AM_TEST_LOG_DRIVER_FLAGS) $(TEST_LOG_DRIVER_FLAGS) -- $(TEST_LOG_COMPILE) \
+	"$$tst" $(AM_TESTS_FD_REDIRECT)
 
 distdir: $(DISTFILES)
 	@srcdirstrip=`echo "$(srcdir)" | sed 's/[].[^$$\\*]/\\\\&/g'`; \
