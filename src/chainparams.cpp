@@ -53,17 +53,15 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
- (300, uint256("b0a11d4eac919b2e7c69831d8f6c1482af4516938aaf1d1757accfb07bd569ed"))
- (800, uint256("d25f090b7105525c605719a845cea5d9be6d4875b0e2ff74a61fc2c7fd1886aa"))
- (1300, uint256("89f11dff36edf8aebb6ebad18469591b30e8749f9c8991789c31bdf043d5bb3f"))
- (2066, uint256("3ad64c593d930a8f7e7a5eae89251fc734c1ddb330034483efbf0da18dbc6a80"));
+ (0, uint256("0x00000fb2f2088f12e662772d6fe280f5b1c82df1735e6567741c895183e2322d"));
+ 
     
 static const Checkpoints::CCheckpointData data = {
           &mapCheckpoints,
-    1582216412, // * 02/20/2020 @ 4:33pm (UTC)
-    2067,    // * total number of transactions between genesis and last checkpoint
+    1581199524, //Sat, 08 Feb 2020 22:05:24 +0000
+    0,    // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
-    2000        // * estimated number of transactions per day after checkpoint
+    200        // * estimated number of transactions per day after checkpoint
    };
 
 
@@ -238,10 +236,10 @@ public:
         assert(genesis.hashMerkleRoot == uint256("0x52f560d9b6d1895a859d1ec52a9474307d123a6109c0c51a881ec08cca628ae4"));
 
         
-        vSeeds.push_back(CDNSSeedData("nexbit.io", "seed.nexbit.io"));     // Primary DNS Seeder from NEXBIT
-        vSeeds.push_back(CDNSSeedData("nexbit.io", "nbcseed.nexbit.io"));    // Secondary DNS Seeder from NEXBIT
-        vSeeds.push_back(CDNSSeedData("quantaex.com", "nbcseed.quantaex.com"));    // Primery DNS Seeder from QuantaEx
-        vSeeds.push_back(CDNSSeedData("bitbd.com", "dnsseed.bitbd.co"));
+        vSeeds.push_back(CDNSSeedData("1", "139.180.209.202"));     // Primary DNS Seeder from NEXBIT
+        vSeeds.push_back(CDNSSeedData("2", "139.180.132.215"));    // Secondary DNS Seeder from NEXBIT
+        vSeeds.push_back(CDNSSeedData("3", "95.179.209.237"));    // Primery DNS Seeder from QuantaEx
+        vSeeds.push_back(CDNSSeedData("4", "45.32.32.59"));
 
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 54);
