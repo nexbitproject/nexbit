@@ -53,13 +53,14 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
- (0, uint256("0x0000048173674e236f3483a27358d1f1d081d8a826aea149dd1e2fe7cdada42b"));
+ (100, uint256("0d91e50f36794bdbd5099c0cdb7432dada425b84ef41ab0771761934f2b4553e"))
+ (400, uint256("7e3c21e5f9b7b116774f7eeb1db075bd6aaa74e72f3ec33c15df4631e30728a6"));
 
 
 static const Checkpoints::CCheckpointData data = {
          &mapCheckpoints,
     1582310886, //Fri, 21 Feb 2020 22:05:24 +0000
-    0,    // * total number of transactions between genesis and last checkpoint
+    401,    // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
     200        // * estimated number of transactions per day after checkpoint
    };
@@ -172,7 +173,7 @@ public:
         nMinColdStakingAmount = 1 * COIN;
 
         /** Height or Time Based Activations **/
-        nLastPOWBlock = 400;
+        nLastPOWBlock = 210000;
         nNexbitBadBlockTime = 1471401614;
         nNexbitBadBlocknBits = 0x1c056dac;
         nModifierUpdateBlock = 615800;
@@ -254,11 +255,11 @@ public:
         convertSeed6(vFixedSeeds, pnSeed6_main, ARRAYLEN(pnSeed6_main));
 
     //    fRequireRPCPassword = false;        // default true
-        fMiningRequiresPeers = false;       // default true
+        fMiningRequiresPeers = true;       // default true
         fAllowMinDifficultyBlocks = false;
         fDefaultConsistencyChecks = false;
         fRequireStandard = true;
-        fMineBlocksOnDemand = true;     // default false
+        fMineBlocksOnDemand = false;     // default false
         fSkipProofOfWorkCheck = true;      // default false
         fTestnetToBeDeprecatedFieldRPC = false;
         fHeadersFirstSyncingActive = false;
