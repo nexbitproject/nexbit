@@ -172,7 +172,7 @@ public:
         nMinColdStakingAmount = 1 * COIN;
 
         /** Height or Time Based Activations **/
-        nLastPOWBlock = 259200;
+        nLastPOWBlock = 300;
         nNexbitBadBlockTime = 1471401614;
         nNexbitBadBlocknBits = 0x1c056dac;
         nModifierUpdateBlock = 615800;
