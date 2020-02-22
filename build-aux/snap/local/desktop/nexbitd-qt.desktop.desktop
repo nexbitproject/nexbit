@@ -1,0 +1,16 @@
+# http://standards.freedesktop.org/desktop-entry-spec/desktop-entry-spec-1.0.html
+
+[Desktop Entry]
+Encoding=UTF-8
+Name=NEXBIT Core
+Comment=NEXBIT Core QT main network
+GenericName=NEXBIT Digital Currency QT client main network
+Exec=nexbit-core.qt %u
+Terminal=false
+Type=Application
+Icon=${SNAP}/share/pixmaps/nexbit.png
+MimeType=x-scheme-handler/nexbit;
+Categories=X-Office;X-Finance;
+Keywords=internet;nexbit;znexbit;nex;core;wallet;qt;main;snap;launchpad;crypto;digital;currency;coin;token;zerocoin;
+Version=1.0
+Name[en_US]=nexbitd-qt.desktop

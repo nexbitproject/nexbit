@@ -172,12 +172,11 @@ public:
         nMinColdStakingAmount = 1 * COIN;
 
         /** Height or Time Based Activations **/
-        nLastPOWBlock = 300;
+        nLastPOWBlock = 400;
         nNexbitBadBlockTime = 1471401614;
         nNexbitBadBlocknBits = 0x1c056dac;
         nModifierUpdateBlock = 615800;
-        nZerocoinStartHeight = 863787;
-        nZerocoinStartTime = 1586995200;
+        nZerocoinStartTime = 1508214600;
         nBlockEnforceSerialRange = 895400; //Enforce serial range starting this block
         nBlockRecalculateAccumulators = 908000; //Trigger a recalculation of accumulators
         nBlockFirstFraudulent = 891737; //First block that bad serials emerged
