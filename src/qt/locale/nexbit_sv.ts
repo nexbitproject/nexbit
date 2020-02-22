@@ -1380,8 +1380,8 @@ Den startar automatiskt så snart plånboken har tillräckligt många bekräftel
         <translation>användare_masternode</translation>
     </message>
     <message>
-        <source>Address: 88.26.164.88:51474</source>
-        <translation>Address: 88.26.164.88:51474</translation>
+        <source>Address: 88.26.164.88:13775</source>
+        <translation>Address: 88.26.164.88:13775</translation>
     </message>
     <message>
         <source>Jan. 19, 2019</source>
@@ -4512,8 +4512,8 @@ Var vänlig kontrollera adressen och försök igen.</translation>
         <translation>Du måste specifiera en masternodeprivkey i konfigurationen. Var vänlig se dokumentationen för hjälp.</translation>
     </message>
     <message>
-        <source>(51472 could be used only on mainnet)</source>
-        <translation>(51472 kunde endast användas på mainnet)</translation>
+        <source>(13775 could be used only on mainnet)</source>
+        <translation>(13775 kunde endast användas på mainnet)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -4524,8 +4524,8 @@ Var vänlig kontrollera adressen och försök igen.</translation>
         <translation>(standard: 1)</translation>
     </message>
     <message>
-        <source>(must be 51472 for mainnet)</source>
-        <translation>(måste vara 51472 för mainnet)</translation>
+        <source>(must be 13775 for mainnet)</source>
+        <translation>(måste vara 13775 för mainnet)</translation>
     </message>
     <message>
         <source>Accept command line and JSON-RPC commands</source>

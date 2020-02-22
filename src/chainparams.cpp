@@ -149,7 +149,7 @@ public:
         pchMessageStart[2] = 0x40;
         pchMessageStart[3] = 0x0b;
         vAlertPubKey = ParseHex("040a7bdf5ee26fb26009f21da0e9cefdbcf92fdcaa6bd437822609dbc54485850a1eb1535ad34314b565cf3819bd57876000a7e9340bbeac65ef4a2391c228f8d6");
-        nDefaultPort = 13520;
+        nDefaultPort = 13775;
         bnProofOfWorkLimit = ~uint256(0) >> 20; // nexbit starting difficulty is 1 / 2^12
         bnProofOfStakeLimit = ~uint256(0) >> 24;
         bnProofOfStakeLimit_V2 = ~uint256(0) >> 20; // 60/4 = 15 ==> use 2**4 higher limit
@@ -177,7 +177,7 @@ public:
         nNexbitBadBlocknBits = 0x1c056dac;
         nModifierUpdateBlock = 615800;
         nZerocoinStartHeight = 863787;
-        nZerocoinStartTime = 1508214600;
+        nZerocoinStartTime = 1586995200;
         nBlockEnforceSerialRange = 895400; //Enforce serial range starting this block
         nBlockRecalculateAccumulators = 908000; //Trigger a recalculation of accumulators
         nBlockFirstFraudulent = 891737; //First block that bad serials emerged
@@ -236,12 +236,12 @@ public:
         assert(genesis.hashMerkleRoot == uint256("0x9ef55146bd732bdcef4e20089e0d4655671d201e0e73687323e8123b47078b96"));
 
 
-        vSeeds.push_back(CDNSSeedData("nexbit.io", "dns1.nexbit.io"));     // Primary DNS Seeder from NEXBIT
-        vSeeds.push_back(CDNSSeedData("nexbit.io", "dns2.nexbit.io"));    // Secondary DNS Seeder from NEXBIT
-        vSeeds.push_back(CDNSSeedData("nexbit.io", "dns3.nexbit.io"));    // Primery DNS Seeder from QuantaEx
-        vSeeds.push_back(CDNSSeedData("nexbit.io", "dns4.nexbit.io"));
-        vSeeds.push_back(CDNSSeedData("nexbit.io", "dns5.nexbit.io"));    // Primery DNS Seeder from QuantaEx
-        vSeeds.push_back(CDNSSeedData("nexbit.io", "dns6.nexbit.io"));
+        vSeeds.push_back(CDNSSeedData("nexbit.app", "seed1.nexbit.app"));     // Primary DNS Seeder from NEXBIT
+        vSeeds.push_back(CDNSSeedData("nexbit.app", "seed2.nexbit.app"));    // Secondary DNS Seeder from NEXBIT
+        vSeeds.push_back(CDNSSeedData("nexbit.app", "seed3.nexbit.app"));    // Primery DNS Seeder from QuantaEx
+        vSeeds.push_back(CDNSSeedData("nexbit.app", "seed4.nexbit.app"));
+        vSeeds.push_back(CDNSSeedData("nexbit.app", "seed5.nexbit.app"));    // Primery DNS Seeder from QuantaEx
+        vSeeds.push_back(CDNSSeedData("nexbit.app", "seed6.nexbit.app"));
 
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 54);
@@ -315,7 +315,7 @@ public:
         pchMessageStart[2] = 0xad;
         pchMessageStart[3] = 0x31;
         vAlertPubKey = ParseHex("0497e21613c39c9260dccb6a1468b53f59f8f63513cef2e4a8dc2f2696aa357423134c7c9d89921cbf4ff2f553796a9444a2510f8eede2e992878b9e8522d58dea");
-        nDefaultPort = 23520;
+        nDefaultPort = 23775;
         nEnforceBlockUpgradeMajority = 4320; // 75%
         nRejectBlockOutdatedMajority = 5472; // 95%
         nToCheckBlockUpgradeMajority = 5760; // 4 days
