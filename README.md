@@ -17,8 +17,8 @@ More information at [nexbit.org](http://www.nexbit.io) Visit our ANN thread.
 <tr><td>Algo</td><td>Quark</td></tr>
 <tr><td>Block Time</td><td>60 Seconds</td></tr>
 <tr><td>Difficulty Retargeting</td><td>Every Block</td></tr>
-<tr><td>Max Coin Supply (PoW Phase)</td><td>49,199,5000 NBC</td></tr>
-<tr><td>Max Coin Supply (PoS Phase)</td><td>Infinite</td></tr>
+<tr><td>Max Coin Supply (PoW Phase)</td><td>371,995,000 NBC</td></tr>
+
 
 </table>
 
@@ -27,29 +27,28 @@ More information at [nexbit.org](http://www.nexbit.io) Visit our ANN thread.
 wget https://raw.githubusercontent.com/nexbitproject/nexbit/master/script/deps.sh && sh deps.sh
 
 ```
+### Ports
 
-### Reward Distribution
+RPC: 13774
+P2P: 13775
 
-<table>
-<th colspan=4>Genesis Block</th>
-<tr><th>Block Height</th><th>Reward Amount</th><th>Notes</th></tr>
+### Ports [Testnet]
 
-</table>
+RPC: 23774
+P2P: 23775
 
-### PoW Rewards Breakdown
+### Ports [RegTest]
 
-<table>
-<th>Block Height</th><th>Masternodes</th><th>Miner</th><th>Budget</th>
-<tr><td>201-86600</td><td>20% (50 NBC)</td><td>80% (200 NBC)</td><td>N/A</td></tr>
-<tr><td>86600-151200</td><td>20% (50 NBC)</td><td>70% (200 NBC)</td><td>10% (25 NBC)</td></tr>
-<tr><td>151201-259200</td><td>45% (22.5 NBC)</td><td>45% (22.5 NBC)</td><td>10% (5 NBC)</td></tr>
-</table>
+18444
 
-### PoS Rewards Breakdown
+
+
+
+### PoS Reward Distribution
 
 <table>
 <th>Phase</th><th>Block Height</th><th>Reward</th><th>Masternodes & Stakers</th><th>Budget</th>
-<tr><td>Phase 0</td><td>259201-302399</td><td>50 NBC</td><td>90% (45 NBC)</td><td>10% (5 NBC)</td></tr>
+<tr><td>Phase 0</td><td>301-302399</td><td>50 NBC</td><td>90% (45 NBC)</td><td>10% (5 NBC)</td></tr>
 <tr><td>Phase 1</td><td>302400-345599</td><td>45 NBC</td><td>90% (40.5 NBC)</td><td>10% (4.5 NBC)</td></tr>
 <tr><td>Phase 2</td><td>345600-388799</td><td>40 NBC</td><td>90% (36 NBC)</td><td>10% (4 NBC)</td></tr>
 <tr><td>Phase 3</td><td>388800-431999</td><td>35 NBC</td><td>90% (31.5 NBC)</td><td>10% (3.5 NBC)</td></tr>
@@ -61,3 +60,7 @@ wget https://raw.githubusercontent.com/nexbitproject/nexbit/master/script/deps.s
 <tr><td>Phase 9</td><td>648000-1154203</td><td>5 NBC</td><td>90% (4.5 NBC)</td><td>10% (0.5 NBC)</td></tr>
 <tr><td>Phase X</td><td>1154203-∞</td><td>6 NBC</td><td>84% (5 NBC/zNBC)</td><td>16% (1 NBC)</td></tr>
 </table>
+
+```
+NEXBIT.IO
+```
