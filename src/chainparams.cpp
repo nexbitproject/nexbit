@@ -53,27 +53,27 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
- (0, uint256("0x01"));
+ (0, uint256("0x0000048173674e236f3483a27358d1f1d081d8a826aea149dd1e2fe7cdada42b"));
 
 
 static const Checkpoints::CCheckpointData data = {
-  /*        &mapCheckpoints,
+         &mapCheckpoints,
     1582310886, //Fri, 21 Feb 2020 22:05:24 +0000
     0,    // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
     200        // * estimated number of transactions per day after checkpoint
    };
-*/
+
 
 static Checkpoints::MapCheckpoints mapCheckpointsTestnet =
     boost::assign::map_list_of
     (0, uint256("0x001")); //!< First v7 block
 static const Checkpoints::CCheckpointData dataTestnet = {
-/*          &mapCheckpoints,
+          &mapCheckpoints,
     1582310886, // * UNIX timestamp of last checkpoint block
     0,    // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
-    0  */
+    0
 };
 
 static Checkpoints::MapCheckpoints mapCheckpointsRegtest =
@@ -230,39 +230,10 @@ public:
         genesis.nVersion = 1;
         genesis.nTime = 1582310886; //Fri, 21 Feb 2020 18:48:06 +0000
         genesis.nBits = 0x1e0ffff0;
-      //  genesis.nNonce = 2426739;
+        genesis.nNonce = 2440854;
         hashGenesisBlock = genesis.GetHash();
-        if(genesis.GetHash() != uint256("0x"))
-        {
-           printf("MSearching for genesis block...\n");
-           uint256 hashTarget;
-           hashTarget.SetCompact(genesis.nBits);
-           while(uint256(genesis.GetHash()) > uint256(hashTarget))
-           {
-               ++genesis.nNonce;
-               if (genesis.nNonce == 0)
-               {
-                   printf("Mainnet NONCE WRAPPED, incrementing time");
-                   std::cout << std::string("Mainnet NONCE WRAPPED, incrementing time:\n");
-                   ++genesis.nTime;
-               }
-               if (genesis.nNonce % 10000 == 0)
-               {
-                   printf("Mainnet: nonce %08u: hash = %s \n", genesis.nNonce, genesis.GetHash().ToString().c_str());
-               }
-           }
-           printf("Mainnet block.nTime = %u \n", genesis.nTime);
-           printf("Mainnet block.nNonce = %u \n", genesis.nNonce);
-           printf("Mainnet block.hashMerkleRoot: %s\n", genesis.hashMerkleRoot.ToString().c_str());
-           printf("Mainnet block.GetHash = %s\n", genesis.GetHash().ToString().c_str());
-           vFixedSeeds.clear();
-           vSeeds.clear();
-}
-
-
-
-        assert(hashGenesisBlock == uint256("0x01"));
-        assert(genesis.hashMerkleRoot == uint256("0x01"));
+        assert(hashGenesisBlock == uint256("0x0000048173674e236f3483a27358d1f1d081d8a826aea149dd1e2fe7cdada42b"));
+        assert(genesis.hashMerkleRoot == uint256("0x9ef55146bd732bdcef4e20089e0d4655671d201e0e73687323e8123b47078b96"));
 
 
         vSeeds.push_back(CDNSSeedData("nexbit.io", "dns1.nexbit.io"));     // Primary DNS Seeder from NEXBIT
@@ -299,7 +270,7 @@ public:
         strSporkPubKey = "0419d389514939f57d4819639b0496347516dad5855f641030a6579af67b1b84cc294df615414235cc6d7d0860c399df311e849091d5cd2de2c26c446e72417844";
         strSporkPubKeyOld = "045ba0ffab23f507cf5ad6cba785723298fb673a2bb1366ca6fff5141e5f70c515d65bd33a67d67da4b1d0236e0ee8a4833f93807f81a22503c58d8ef8022a7d97";
         strObfuscationPoolDummyAddress = "NcLtRAC6SdkZYmt54tXE8rpZbiHdGv2fnk";
-        nEnforceNewSporkKey = 1582329600; //!> Sporks signed after Saturday, 22-Feb-20 00:00:00 UTC
+        nStartMasternodePayments = 1582310886; //Fri, 21 Feb 2020 18:48:06 +0000
 
         /** Zerocoin */
         zerocoinModulus = "25195908475657893494027183240048398571429282126204032027777137836043662020707595556264018525880784"
@@ -365,7 +336,7 @@ public:
         nBlockEnforceInvalidUTXO = 9902850; //Start enforcing the invalid UTXO's
         nInvalidAmountFiltered = 0; //Amount of invalid coins filtered through exchanges, that should be considered valid
         nBlockZerocoinV2 = 444020; //!> The block that zerocoin v2 becomes active
-        nEnforceNewSporkKey = 1582329600; //!> Sporks signed after Saturday, 22-Feb-20 00:00:00 UTC
+        nEnforceNewSporkKey = 1585699200; //Wed, 01 Apr 2020 00:00:00 +0000
         nRejectOldSporkKey = 1583020800; //!> Fully reject old spork key after Sunday, 01-Mar-20 00:00:00 UTC
         nBlockStakeModifierlV2 = 1214000;
         nBIP65ActivationHeight = 851019;
@@ -389,9 +360,9 @@ public:
         //! Modify the testnet genesis block so the timestamp is valid for a later start.
         genesis.nTime = 1582310886; //Fri, 21 Feb 2020 18:48:06 +0000
         genesis.nBits = 0x1e0ffff0;
-      //  genesis.nNonce = 2426739;
+        genesis.nNonce = 2440854;
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x01"));
+        assert(hashGenesisBlock == uint256("0x0000048173674e236f3483a27358d1f1d081d8a826aea149dd1e2fe7cdada42b"));
 
 
         vFixedSeeds.clear();
@@ -424,7 +395,7 @@ public:
         strSporkPubKey = "042571307bde5c9dc51bc8a6fb4ba2ecb86d5eadbc6abbcdb209de854f6f62de0b351cb10415ff67b3d2d4b8b3ec9a1c7f48ff16e1cf3f78a78270ee8c1e475aa6";
         strSporkPubKeyOld = "042571307bde5c9dc51bc8a6fb4ba2ecb86d5eadbc6abbcdb209de854f6f62de0b351cb10415ff67b3d2d4b8b3ec9a1c7f48ff16e1cf3f78a78270ee8c1e475aa6";
         strObfuscationPoolDummyAddress = "y57cqfGRkekRyDRNeJiLtYVEbvhXrNbmox";
-        nStartMasternodePayments = 1582329600; //!> Sporks signed after Saturday, 22-Feb-20 00:00:00 UTC
+        nStartMasternodePayments = 1582310886; //Fri, 21 Feb 2020 18:48:06 +0000
         nBudget_Fee_Confirmations = 3; // Number of confirmations for the finalization fee. We have to make this very short
                                        // here because we only have a 8 block finalization window on testnet
 
@@ -493,10 +464,10 @@ public:
         //! Modify the regtest genesis block so the timestamp is valid for a later start.
         genesis.nTime = 1582310886; //Fri, 21 Feb 2020 18:48:06 +0000
         genesis.nBits = 0x1e0ffff0;
-      //  genesis.nNonce = 2426739;
+        genesis.nNonce = 2440854;
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x01"));
+        assert(hashGenesisBlock == uint256("0x0000048173674e236f3483a27358d1f1d081d8a826aea149dd1e2fe7cdada42b"));
 
 
 
