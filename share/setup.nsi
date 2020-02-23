@@ -1,4 +1,4 @@
-Name "NEXBIT Core (64-bit)"
+Name "NEXBIT Core (-bit)"
 
 RequestExecutionLevel highest
 SetCompressor /SOLID lzma
@@ -19,7 +19,7 @@ SetCompressor /SOLID lzma
 !define MUI_STARTMENUPAGE_REGISTRY_KEY ${REGKEY}
 !define MUI_STARTMENUPAGE_REGISTRY_VALUENAME StartMenuGroup
 !define MUI_STARTMENUPAGE_DEFAULTFOLDER "NEXBIT Core"
-!define MUI_FINISHPAGE_RUN $INSTDIR\nexbit-qt.exe
+!define MUI_FINISHPAGE_RUN $INSTDIR\nexbit-qt
 !define MUI_UNICON "${NSISDIR}\Contrib\Graphics\Icons\modern-uninstall.ico"
 !define MUI_UNWELCOMEFINISHPAGE_BITMAP "/home/ndex/PROJECT/@nexbit/GITHUB/nexbit/share/pixmaps/nsis-wizard.bmp"
 !define MUI_UNFINISHPAGE_NOAUTOCLOSE
@@ -27,7 +27,7 @@ SetCompressor /SOLID lzma
 # Included files
 !include Sections.nsh
 !include MUI2.nsh
-!if "64" == "64"
+!if "" == "64"
 !include x64.nsh
 !endif
 
@@ -47,8 +47,8 @@ Var StartMenuGroup
 !insertmacro MUI_LANGUAGE English
 
 # Installer attributes
-OutFile /home/ndex/PROJECT/@nexbit/GITHUB/nexbit/nexbit-4.0.99-win64-setup.exe
-!if "64" == "64"
+OutFile /home/ndex/PROJECT/@nexbit/GITHUB/nexbit/nexbit-4.0.99-win-setup.exe
+!if "" == "64"
 InstallDir $PROGRAMFILES64\Nexbit
 !else
 InstallDir $PROGRAMFILES\Nexbit
@@ -72,12 +72,12 @@ ShowUninstDetails show
 Section -Main SEC0000
     SetOutPath $INSTDIR
     SetOverwrite on
-    File /home/ndex/PROJECT/@nexbit/GITHUB/nexbit/release/nexbit-qt.exe
+    File /home/ndex/PROJECT/@nexbit/GITHUB/nexbit/release/nexbit-qt
     File /oname=COPYING.txt /home/ndex/PROJECT/@nexbit/GITHUB/nexbit/COPYING
     File /oname=readme.txt /home/ndex/PROJECT/@nexbit/GITHUB/nexbit/doc/README_windows.txt
     SetOutPath $INSTDIR\daemon
-    File /home/ndex/PROJECT/@nexbit/GITHUB/nexbit/release/nexbitd.exe
-    File /home/ndex/PROJECT/@nexbit/GITHUB/nexbit/release/nexbit-cli.exe
+    File /home/ndex/PROJECT/@nexbit/GITHUB/nexbit/release/nexbitd
+    File /home/ndex/PROJECT/@nexbit/GITHUB/nexbit/release/nexbit-cli
     SetOutPath $INSTDIR\doc
     File /r /home/ndex/PROJECT/@nexbit/GITHUB/nexbit/doc\*.*
     SetOutPath $INSTDIR
@@ -90,8 +90,8 @@ Section -post SEC0001
     WriteUninstaller $INSTDIR\uninstall.exe
     !insertmacro MUI_STARTMENU_WRITE_BEGIN Application
     CreateDirectory $SMPROGRAMS\$StartMenuGroup
-    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\$(^Name).lnk" $INSTDIR\nexbit-qt.exe
-    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\NEXBIT Core (testnet, 64-bit).lnk" "$INSTDIR\nexbit-qt.exe" "-testnet" "$INSTDIR\nexbit-qt.exe" 1
+    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\$(^Name).lnk" $INSTDIR\nexbit-qt
+    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\NEXBIT Core (testnet, -bit).lnk" "$INSTDIR\nexbit-qt" "-testnet" "$INSTDIR\nexbit-qt" 1
     CreateShortcut "$SMPROGRAMS\$StartMenuGroup\Uninstall $(^Name).lnk" $INSTDIR\uninstall.exe
     !insertmacro MUI_STARTMENU_WRITE_END
     WriteRegStr HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" DisplayName "$(^Name)"
@@ -104,8 +104,8 @@ Section -post SEC0001
     WriteRegDWORD HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" NoRepair 1
     WriteRegStr HKCR "nexbit" "URL Protocol" ""
     WriteRegStr HKCR "nexbit" "" "URL:Nexbit"
-    WriteRegStr HKCR "nexbit\DefaultIcon" "" $INSTDIR\nexbit-qt.exe
-    WriteRegStr HKCR "nexbit\shell\open\command" "" '"$INSTDIR\nexbit-qt.exe" "%1"'
+    WriteRegStr HKCR "nexbit\DefaultIcon" "" $INSTDIR\nexbit-qt
+    WriteRegStr HKCR "nexbit\shell\open\command" "" '"$INSTDIR\nexbit-qt" "%1"'
 SectionEnd
 
 # Macro for selecting uninstaller sections
@@ -123,7 +123,7 @@ done${UNSECTION_ID}:
 
 # Uninstaller sections
 Section /o -un.Main UNSEC0000
-    Delete /REBOOTOK $INSTDIR\nexbit-qt.exe
+    Delete /REBOOTOK $INSTDIR\nexbit-qt
     Delete /REBOOTOK $INSTDIR\COPYING.txt
     Delete /REBOOTOK $INSTDIR\readme.txt
     RMDir /r /REBOOTOK $INSTDIR\daemon
@@ -135,7 +135,7 @@ Section -un.post UNSEC0001
     DeleteRegKey HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)"
     Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\Uninstall $(^Name).lnk"
     Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\$(^Name).lnk"
-    Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\NEXBIT Core (testnet, 64-bit).lnk"
+    Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\NEXBIT Core (testnet, -bit).lnk"
     Delete /REBOOTOK "$SMSTARTUP\Nexbit.lnk"
     Delete /REBOOTOK $INSTDIR\uninstall.exe
     Delete /REBOOTOK $INSTDIR\debug.log
@@ -157,7 +157,7 @@ SectionEnd
 # Installer functions
 Function .onInit
     InitPluginsDir
-!if "64" == "64"
+!if "" == "64"
     ${If} ${RunningX64}
       ; disable registry redirection (enable access to 64-bit portion of registry)
       SetRegView 64

@@ -107,3 +107,7 @@ moc_*
 nexbitd-new-gui.*
 
 release/conf/sporks/
+
+contrib/devtools/
+
+config.status

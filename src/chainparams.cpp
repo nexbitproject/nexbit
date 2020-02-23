@@ -173,7 +173,7 @@ public:
         nMinColdStakingAmount = 1 * COIN;
 
         /** Height or Time Based Activations **/
-        nLastPOWBlock = 210000;
+        nLastPOWBlock = 240000;
         nNexbitBadBlockTime = 1471401614;
         nNexbitBadBlocknBits = 0x1c056dac;
         nModifierUpdateBlock = 615800;
@@ -259,7 +259,7 @@ public:
         fAllowMinDifficultyBlocks = false;
         fDefaultConsistencyChecks = false;
         fRequireStandard = true;
-        fMineBlocksOnDemand = false;     // default false
+        fMineBlocksOnDemand = true;     // default false
         fSkipProofOfWorkCheck = true;      // default false
         fTestnetToBeDeprecatedFieldRPC = false;
         fHeadersFirstSyncingActive = false;
