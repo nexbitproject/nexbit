@@ -53,14 +53,15 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
- (0, uint256("0x0000048173674e236f3483a27358d1f1d081d8a826aea149dd1e2fe7cdada42b"));
+ (210, uint256("0000000ebe6a564cbf361345485dab9a7bc1ca6d4dc37f685c7fc4405ed5564f"));
+ 
 
 
 
 static const Checkpoints::CCheckpointData data = {
          &mapCheckpoints,
-    1582310886, //Fri, 21 Feb 2020 22:05:24 +0000
-    0,    // * total number of transactions between genesis and last checkpoint
+    1582761561, //Thu, 2020-02-26 23:59:21
+    211,    // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
     300        // * estimated number of transactions per day after checkpoint
    };
@@ -173,9 +174,9 @@ public:
         nMinColdStakingAmount = 1 * COIN;
 
         /** Height or Time Based Activations **/
-        nLastPOWBlock = 210; //define last pow
-        nNexbitBadBlockTime = 1471401614;
-        nNexbitBadBlocknBits = 0x1c056dac;
+        nLastPOWBlock = 21000; //define last pow
+       // nNexbitBadBlockTime = 1471401614;
+        //nNexbitBadBlocknBits = 0x1c056dac;
         nModifierUpdateBlock = 615800;
         nZerocoinStartTime = 1508214600;
         nBlockEnforceSerialRange = 895400; //Enforce serial range starting this block
@@ -236,10 +237,10 @@ public:
         assert(genesis.hashMerkleRoot == uint256("0x9ef55146bd732bdcef4e20089e0d4655671d201e0e73687323e8123b47078b96"));
 
 
-        vSeeds.push_back(CDNSSeedData("bitbd.co", "seed.bitbd.co"));     // Primary DNS Seeder from NEXBIT
-        vSeeds.push_back(CDNSSeedData("bitbd.co", "seeda.bitbd.co"));    // Secondary DNS Seeder from NEXBIT
-        vSeeds.push_back(CDNSSeedData("bitbd.co", "seedb.bitbd.co"));    // Primery DNS Seeder from QuantaEx
-        vSeeds.push_back(CDNSSeedData("bitbd.co", "seedc.bitbd.co"));
+        vSeeds.push_back(CDNSSeedData("1", "95.179.130.184"));     // Primary DNS Seeder from NEXBIT
+        vSeeds.push_back(CDNSSeedData("2", "45.77.170.148"));    // Secondary DNS Seeder from NEXBIT
+        vSeeds.push_back(CDNSSeedData("3", "199.247.4.6"));    // Primery DNS Seeder from QuantaEx
+        vSeeds.push_back(CDNSSeedData("4", "45.77.109.8"));
         
 
 

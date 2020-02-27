@@ -15,13 +15,13 @@
 #define CLIENT_VERSION_IS_RELEASE false
 
 /* Major version */
-#define CLIENT_VERSION_MAJOR 1
+#define CLIENT_VERSION_MAJOR 0
 
 /* Minor version */
-#define CLIENT_VERSION_MINOR 0
+#define CLIENT_VERSION_MINOR 3
 
 /* Build revision */
-#define CLIENT_VERSION_REVISION 3
+#define CLIENT_VERSION_REVISION 1
 
 /* Version is release */
 #define COPYRIGHT_YEAR 2020
@@ -346,13 +346,13 @@
 #define LT_OBJDIR ".libs/"
 
 /* Define to the address where bug reports for this package should be sent. */
-#define PACKAGE_BUGREPORT "https://github.com/nexbitproject/nexbit/issues"
+#define PACKAGE_BUGREPORT "https://github.com/nexbit-project/nexbit/issues"
 
 /* Define to the full name of this package. */
 #define PACKAGE_NAME "NEXBIT Core"
 
 /* Define to the full name and version of this package. */
-#define PACKAGE_STRING "NEXBIT Core 1.1.0.3"
+#define PACKAGE_STRING "NEXBIT Core 1.0.3.1"
 
 /* Define to the one symbol short name of this package. */
 #define PACKAGE_TARNAME "nexbit"
@@ -361,7 +361,7 @@
 #define PACKAGE_URL "https://nexbit.io/"
 
 /* Define to the version of this package. */
-#define PACKAGE_VERSION "1.1.0.3"
+#define PACKAGE_VERSION "1.0.3.1"
 
 /* Define to necessary symbol if this constant uses a non-standard name on
    your system. */
