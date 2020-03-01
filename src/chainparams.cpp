@@ -53,15 +53,12 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
- (210, uint256("0000000ebe6a564cbf361345485dab9a7bc1ca6d4dc37f685c7fc4405ed5564f"));
+ (0, uint256("0x0000048173674e236f3483a27358d1f1d081d8a826aea149dd1e2fe7cdada42b"));
  
-
-
-
 static const Checkpoints::CCheckpointData data = {
          &mapCheckpoints,
-    1582761561, //Thu, 2020-02-26 23:59:21
-    211,    // * total number of transactions between genesis and last checkpoint
+    1582310886, //Thu, 2020-02-26 23:59:21
+    0,    // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
     300        // * estimated number of transactions per day after checkpoint
    };
@@ -174,34 +171,34 @@ public:
         nMinColdStakingAmount = 1 * COIN;
 
         /** Height or Time Based Activations **/
-        nLastPOWBlock = 21000; //define last pow
-       // nNexbitBadBlockTime = 1471401614;
-        //nNexbitBadBlocknBits = 0x1c056dac;
-        nModifierUpdateBlock = 615800;
+        nLastPOWBlock = 2100; //define last pow
+        nNexbitBadBlockTime = 1471401614;
+      //  nNexbitBadBlocknBits = 0x1c056dac;
+        nModifierUpdateBlock = 6158;
         nZerocoinStartTime = 1508214600;
-        nBlockEnforceSerialRange = 895400; //Enforce serial range starting this block
-        nBlockRecalculateAccumulators = 908000; //Trigger a recalculation of accumulators
-        nBlockFirstFraudulent = 891737; //First block that bad serials emerged
-        nBlockLastGoodCheckpoint = 891730; //Last valid accumulator checkpoint
-        nBlockEnforceInvalidUTXO = 902850; //Start enforcing the invalid UTXO's
+        nBlockEnforceSerialRange = 8954; //Enforce serial range starting this block
+        nBlockRecalculateAccumulators = 9080; //Trigger a recalculation of accumulators
+        nBlockFirstFraudulent = 891; //First block that bad serials emerged
+     //   nBlockLastGoodCheckpoint = 891730; //Last valid accumulator checkpoint
+        nBlockEnforceInvalidUTXO = 9028; //Start enforcing the invalid UTXO's
         nInvalidAmountFiltered = 268200*COIN; //Amount of invalid coins filtered through exchanges, that should be considered valid
-        nBlockZerocoinV2 = 1153160; //
-        nBlockDoubleAccumulated = 1050010;
+        nBlockZerocoinV2 = 11530; //
+        nBlockDoubleAccumulated = 10500;
         nEnforceNewSporkKey = 1585699200; //Wed, 01 Apr 2020 00:00:00 +0000
         nRejectOldSporkKey = 1586995200; //Thu, 16 Apr 2020 00:00:00 +0000
-        nBlockStakeModifierlV2 = 1967000;
-        nBIP65ActivationHeight = 1808634;
+        nBlockStakeModifierlV2 = 1967;
+        nBIP65ActivationHeight = 1808;
         // Activation height for TimeProtocolV2, Blocks V7 and newMessageSignatures
-        nBlockTimeProtocolV2 = 2153200;
+        nBlockTimeProtocolV2 = 21530;
 
         // Public coin spend enforcement
-        nPublicZCSpends = 1880000;
+        nPublicZCSpends = 18800;
 
         // New P2P messages signatures
         nBlockEnforceNewMessageSignatures = nBlockTimeProtocolV2;
 
         // Blocks v7
-        nBlockLastAccumulatorCheckpoint = 1686240;
+    //    nBlockLastAccumulatorCheckpoint = 1686240;
         nBlockV7StartHeight = nBlockTimeProtocolV2;
 
         // Fake Serial Attack
@@ -218,7 +215,7 @@ public:
          *     CTxOut(nValue=50.00000000, scriptPubKey=0xA9037BAC7050C479B121CF)
          *   vMerkleTree: e0028e
          */
-        const char* pszTimestamp = "NEXBIT one step ahead to the world of financial freedom 22/02/2020";
+      const char* pszTimestamp = "NEXBIT one step ahead to the world of financial freedom 22/02/2020";
         CMutableTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
@@ -237,10 +234,10 @@ public:
         assert(genesis.hashMerkleRoot == uint256("0x9ef55146bd732bdcef4e20089e0d4655671d201e0e73687323e8123b47078b96"));
 
 
-        vSeeds.push_back(CDNSSeedData("1", "95.179.130.184"));     // Primary DNS Seeder from NEXBIT
-        vSeeds.push_back(CDNSSeedData("2", "45.77.170.148"));    // Secondary DNS Seeder from NEXBIT
-        vSeeds.push_back(CDNSSeedData("3", "199.247.4.6"));    // Primery DNS Seeder from QuantaEx
-        vSeeds.push_back(CDNSSeedData("4", "45.77.109.8"));
+        vSeeds.push_back(CDNSSeedData("nexbit.io", "nodea.nexbit.io"));     // Primary DNS Seeder from NEXBIT
+        vSeeds.push_back(CDNSSeedData("nexbit.io", "nodeb.nexbit.io"));    // Secondary DNS Seeder from NEXBIT
+        vSeeds.push_back(CDNSSeedData("nexbit.io", "nodec.nexbit.io"));    // Primery DNS Seeder from QuantaEx
+        vSeeds.push_back(CDNSSeedData("nexbit.io", "noded.nexbit.io"));
         
 
 
@@ -256,21 +253,21 @@ public:
 
     //    fRequireRPCPassword = false;        // default true
         fMiningRequiresPeers = true;       // default true
-        fAllowMinDifficultyBlocks = true;
-        fDefaultConsistencyChecks = false;
+        fAllowMinDifficultyBlocks = false;
+        fDefaultConsistencyChecks = true;
         fRequireStandard = true;
         fMineBlocksOnDemand = false;     // default false
         fSkipProofOfWorkCheck = true;      // default false
         fTestnetToBeDeprecatedFieldRPC = false;
-        fHeadersFirstSyncingActive = false;
+        fHeadersFirstSyncingActive = true;
 
 
         nPoolMaxTransactions = 3;
-        nBudgetCycleBlocks = 43200; //!< Amount of blocks in a months period of time (using 1 minutes per) = (60*24*30)
+        nBudgetCycleBlocks = 1200; //!< Amount of blocks in a months period of time (using 1 minutes per) = (60*24*30)
         strSporkPubKey = "0419d389514939f57d4819639b0496347516dad5855f641030a6579af67b1b84cc294df615414235cc6d7d0860c399df311e849091d5cd2de2c26c446e72417844";
         strSporkPubKeyOld = "045ba0ffab23f507cf5ad6cba785723298fb673a2bb1366ca6fff5141e5f70c515d65bd33a67d67da4b1d0236e0ee8a4833f93807f81a22503c58d8ef8022a7d97";
         strObfuscationPoolDummyAddress = "NcLtRAC6SdkZYmt54tXE8rpZbiHdGv2fnk";
-        nStartMasternodePayments = 1582310886; //Fri, 21 Feb 2020 18:48:06 +0000
+        nStartMasternodePayments = 1562310886; //Fri, 21 Feb 2020 18:48:06 +0000
 
         /** Zerocoin */
         zerocoinModulus = "25195908475657893494027183240048398571429282126204032027777137836043662020707595556264018525880784"
@@ -336,8 +333,8 @@ public:
         nBlockEnforceInvalidUTXO = 9902850; //Start enforcing the invalid UTXO's
         nInvalidAmountFiltered = 0; //Amount of invalid coins filtered through exchanges, that should be considered valid
         nBlockZerocoinV2 = 444020; //!> The block that zerocoin v2 becomes active
-        nEnforceNewSporkKey = 1585699200; //Wed, 01 Apr 2020 00:00:00 +0000
-        nRejectOldSporkKey = 1583020800; //!> Fully reject old spork key after Sunday, 01-Mar-20 00:00:00 UTC
+        nEnforceNewSporkKey = 1583020800; //Wed, 01 Apr 2020 00:00:00 +0000
+        nRejectOldSporkKey = 1585699200; //!> Fully reject old spork key after Sunday, 01-Mar-20 00:00:00 UTC
         nBlockStakeModifierlV2 = 1214000;
         nBIP65ActivationHeight = 851019;
         // Activation height for TimeProtocolV2, Blocks V7 and newMessageSignatures
@@ -407,7 +404,6 @@ public:
     }
 };
 static CTestNetParams testNetParams;
-
 /**
  * Regression test
  */
@@ -463,6 +459,7 @@ public:
 
         //! Modify the regtest genesis block so the timestamp is valid for a later start.
         genesis.nTime = 1582310886; //Fri, 21 Feb 2020 18:48:06 +0000
+      //  genesis.nBits = bnProofOfWorkLimit.GetCompact();
         genesis.nBits = 0x1e0ffff0;
         genesis.nNonce = 2440854;
 
@@ -477,12 +474,12 @@ public:
      //   fRequireRPCPassword = false;        // default true
         fMiningRequiresPeers = false;       // default true
         fAllowMinDifficultyBlocks = false;
-        fDefaultConsistencyChecks = false;
+        fDefaultConsistencyChecks = true;
         fRequireStandard = true;
-        fMineBlocksOnDemand = true;     // default false
-        fSkipProofOfWorkCheck = false;      // default false
+        fMineBlocksOnDemand = false;     // default false
+        fSkipProofOfWorkCheck = true;      // default false
         fTestnetToBeDeprecatedFieldRPC = false;
-        fHeadersFirstSyncingActive = false;
+        fHeadersFirstSyncingActive = true;
 
         /* Spork Key for RegTest:
         WIF private key: 932HEevBSujW2ud7RfB1YF91AFygbBRQj3de3LyaCRqNzKKgWXi
