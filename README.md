@@ -3,14 +3,15 @@ NEXBIT Core integration/staging repository
 
 [![Build Status](https://travis-ci.org/nexbitproject/NEXBIT.svg?branch=master)](https://travis-ci.org/nexbitroject/nexbit) [![GitHub version](https://badge.fury.io/gh/nexbitroject%2Fnexbit.svg)](https://badge.fury.io/gh/nexbitproject%2Fnexbit)
 
-Nexbit Chain | An Optimistic Blockchain Project
+[Nexbit | An Optimistic Blockchain Project](https://nexbit.io)
 
-"3th May 2018 SpaceX launches Bangladeshi satellite Falcon 9 mission"
+
 
 NEXBIT.IO | QPay Global | nDEX Network | Nexbit Project
-NEXBIT Coin (NBC)
+NEXBIT (NBC)
+### BLOCK EXPLORER : http://45.76.159.88:3001/
 
-Nexbit Chain Details
+Nexbit specs
 
 Algorithm: Scrypt
 
@@ -49,10 +50,6 @@ Projects (Details will publish)
 
     https://nexbit.club
 
-    https://nexbit.exchange
-
-    https://nexbit.exchange
-
     https://nPay.life
 
 Coin Distributions
@@ -68,18 +65,18 @@ Project Marketing: 5%
 Project Team: 15%
 Social & Infos
 
-white_check_mark Technical: https://medium.com/@nDEXNetwork/pos-and-utxos-model-of-nexbit-coin-nbc-ndt-coin-9d3441261d49
+ Technical: https://medium.com/@nDEXNetwork/pos-and-utxos-model-of-nexbit-coin-nbc-ndt-coin-9d3441261d49
 
-white_check_mark Reddit: https://www.reddit.com/user/NEXBITPRO/
+ Reddit: https://www.reddit.com/user/NEXBITPRO/
 
-white_check_mark Email: info@nexbit.io
+ Email: info@nexbit.io
 
-white_check_mark Telegram: t.me/nexbitofficial
+ Telegram: t.me/nexbitofficial
 
-white_check_mark Twitter: https://twitter.com/nexbitchain
+ Twitter: https://twitter.com/nexbitchain
 
 white_check_mark Github: https://github.com/nexbitproject
-Download wallet from here: https://github.com/nexbitproject/wallet
+Download wallet from here: https://github.com/nexbitproject/nexbit/releases
 Dependencies for Linux users
 
 sudo apt-get -qq update
@@ -137,10 +134,6 @@ Github: https://github.com/nexbitproject
 
     https://nexbit.club
 
-    https://nexbit.exchange
-
-    https://nexbit.exchange
-
     https://nPay.life
 
 Распределение монет
@@ -169,7 +162,7 @@ white_check_mark Twitter: https://twitter.com/nexbitchain
 white_check_mark Github: https://github.com/nexbitproject
 firefireКак синхронизировать: https://t.me/nexbitofficial/3039
 
-
+### BLOCK EXPLORER : http://45.76.159.88:3001/
 
 ### For Dependencies;
 ```
