@@ -11,6 +11,7 @@ NEXBIT.IO | QPay Global | nDEX Network | Nexbit Project
 NEXBIT (NBC)
 ### BLOCK EXPLORER : http://45.76.159.88:3001/
 
+### CPU SCRYPT Miner for windows : https://github.com/pooler/cpuminer/releases/download/v2.5.0/pooler-cpuminer-2.5.0-win64.zip
 Nexbit specs
 
 Algorithm: Scrypt
@@ -31,7 +32,7 @@ P2P Port: 13520
 
 Block Reward: 500 coins
 
-Block Reward: (PoS)  50 coins
+Block Reward: (PoS)  250 coins
 
 Coin Supply: 365500000 coins
 
