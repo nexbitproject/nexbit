@@ -9,7 +9,7 @@ NEXBIT Core integration/staging repository
 
 NEXBIT.IO | QPay Global | nDEX Network | Nexbit Project
 NEXBIT (NBC)
-### BLOCK EXPLORER : http://45.76.159.88:3001/
+### BLOCK EXPLORER : https://explorer.nexbit.io   or  https://nbcportal.pro
 
 ### CPU SCRYPT Miner for windows : https://github.com/pooler/cpuminer/releases/download/v2.5.0/pooler-cpuminer-2.5.0-win64.zip
 Nexbit specs
