@@ -12,7 +12,7 @@
 #include "uint256.h"
 
 
-static const int nCheckpointSpan = 500;
+static const int nCheckpointSpan = 300;
 
 namespace Checkpoints
 {
@@ -25,7 +25,11 @@ namespace Checkpoints
     //    timestamp before)
     // + Contains no strange transactions
     //
-    static MapCheckpoints mapCheckpoints;
+   static MapCheckpoints mapCheckpoints =
+        boost::assign::map_list_of
+        ( 477, uint256("0x219b16baa7527bd4bfdf0b458da314b605efcf320b10984802b22fd7397f355b") ) // softfork
+        
+    ;
 
     // TestNet has no checkpoints
     static MapCheckpoints mapCheckpointsTestnet;
