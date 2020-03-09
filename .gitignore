@@ -24,5 +24,5 @@ qrc_*.cpp
 build
 
 !src/leveldb/Makefile
-
+*.P
 *.conf

@@ -1,0 +1,2 @@
+#define BUILD_SUFFIX e1e16d0-dirty
+#define BUILD_DATE "2020-03-09 17:20:50 +0600"
