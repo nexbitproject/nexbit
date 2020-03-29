@@ -17,7 +17,6 @@
 
 echo sleep 3
 
- #add-apt-repository ppa:bitcoin/bitcoin
- #apt-get update
- #apt-get install libdb4.8-dev libdb4.8++-dev  -y
- #apt-get update 
+add-apt-repository -y ppa:bitcoin/bitcoin
+apt-get update
+apt-get install -y libdb4.8-dev libdb4.8++-dev
