@@ -79,11 +79,41 @@ public:
         genesis.nVersion = 1;
         genesis.nTime    = 1583191262; //Monday, 02-Mar-20 23:21:02 UTC
         genesis.nBits    = bnProofOfWorkLimit.GetCompact();
-        genesis.nNonce   = 1229629;
+      //  genesis.nNonce   = 1229629;
 
        hashGenesisBlock = genesis.GetHash();
-       assert(hashGenesisBlock == uint256("0x000001a301f8cbe7e8a36b2e93b6224626afc263a293712a1281112cc34ec6c5"));
-       assert(genesis.hashMerkleRoot == uint256("0xcec4db775a590bd5988b10aa552962b944d320e82335e4c57358a6bf2b9b8ac4"));
+
+ if(genesis.GetHash() != uint256("0x"))
+        {
+            printf("Searching for genesis block...\n");
+            uint256 hashTarget = CBigNum().SetCompact(genesis.nBits).getuint256();
+            while(uint256(genesis.GetHash()) > hashTarget)
+            {
+                ++genesis.nNonce;
+                if (genesis.nNonce == 0)
+                {
+                    printf("NONCE WRAPPED, incrementing time");
+                    std::cout << std::string("NONCE WRAPPED, incrementing time:\n");
+                    ++genesis.nTime;
+                }
+                if (genesis.nNonce % 10000 == 0)
+                {
+                    printf("Mainnet: nonce %08u: hash = %s \n", genesis.nNonce, genesis.GetHash().ToString().c_str());
+                }
+            }
+            printf("Mainnet block.hashMerkleRoot: %s\n", genesis.hashMerkleRoot.ToString().c_str());
+            printf("block.nTime = %u \n", genesis.nTime);
+            printf("block.nNonce = %u \n", genesis.nNonce);
+            printf("block.GetHash = %s\n", genesis.GetHash().ToString().c_str());
+        }
+
+
+
+
+
+
+      // assert(hashGenesisBlock == uint256("0x000001a301f8cbe7e8a36b2e93b6224626afc263a293712a1281112cc34ec6c5"));
+      // assert(genesis.hashMerkleRoot == uint256("0xcec4db775a590bd5988b10aa552962b944d320e82335e4c57358a6bf2b9b8ac4"));
 
         vSeeds.push_back(CDNSSeedData("nexbit.io", "nodea.nexbit.io"));
         vSeeds.push_back(CDNSSeedData("nexbit.io", "nodeb.nexbit.io"));
@@ -92,7 +122,7 @@ public:
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 54);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 53);
-        base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1, 181);
+        base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 181);
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x04)(0x88)(0xB2)(0x1E).convert_to_container<std::vector<unsigned char> >();
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x04)(0x88)(0xAD)(0xE4).convert_to_container<std::vector<unsigned char> >();
 
@@ -136,10 +166,10 @@ public:
 
         // Modify the testnet genesis block so the timestamp is valid for a later start.
         genesis.nBits  = bnProofOfWorkLimit.GetCompact();
-        genesis.nNonce = 1229629;
+ //       genesis.nNonce = 1229629;
         hashGenesisBlock = genesis.GetHash();
         //assert(hashGenesisBlock == uint256("0x000001a301f8cbe7e8a36b2e93b6224626afc263a293712a1281112cc34ec6c5"));
-        assert(genesis.hashMerkleRoot == uint256("0xcec4db775a590bd5988b10aa552962b944d320e82335e4c57358a6bf2b9b8ac4"));
+ //       assert(genesis.hashMerkleRoot == uint256("0xcec4db775a590bd5988b10aa552962b944d320e82335e4c57358a6bf2b9b8ac4"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
@@ -174,11 +204,11 @@ public:
         bnProofOfWorkLimit = CBigNum(~uint256(0) >> 1);
         genesis.nTime = 1583191262;
         genesis.nBits  = bnProofOfWorkLimit.GetCompact();
-        genesis.nNonce = 1229629;
+ //       genesis.nNonce = 1229629;
         hashGenesisBlock = genesis.GetHash();
 
         //assert(hashGenesisBlock == uint256("0x000001a301f8cbe7e8a36b2e93b6224626afc263a293712a1281112cc34ec6c5"));
-        assert(genesis.hashMerkleRoot == uint256("0xcec4db775a590bd5988b10aa552962b944d320e82335e4c57358a6bf2b9b8ac4"));
+    //    assert(genesis.hashMerkleRoot == uint256("0xcec4db775a590bd5988b10aa552962b944d320e82335e4c57358a6bf2b9b8ac4"));
         vSeeds.clear();  // Regtest mode doesn't have any DNS seeds.
     }
 

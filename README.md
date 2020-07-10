@@ -178,7 +178,7 @@ P2P: 13520
 
 ### Ports [Testnet]
 
-RPC: 233519
+RPC: 23519
 
 P2P: 23520
 
