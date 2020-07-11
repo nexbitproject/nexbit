@@ -63,7 +63,7 @@ Object CallRPC(const string& strMethod, const Array& params)
     mapRequestHeaders["Authorization"] = string("Basic ") + strUserPass64;
 
     // Send request
-    string strRequest = JSONRPCRequest(strMethod, params, 1);
+    string strRequest = JSONRPCRequest(strMethod, params, 1); //int 
     string strPost = HTTPPost(strRequest, mapRequestHeaders);
     stream << strPost << std::flush;
 

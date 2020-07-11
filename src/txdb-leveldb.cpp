@@ -414,7 +414,7 @@ bool CTxDB::LoadBlockIndex()
     nBestInvalidTrust = bnBestInvalidTrust.getuint256();
 
     // Verify blocks in the best chain
-    int nCheckLevel = GetArg("-checklevel", 1);
+    int nCheckLevel = GetArg("-checklevel", 3);  //change verification level
     int nCheckDepth = GetArg( "-checkblocks", 500);
     if (nCheckDepth == 0)
         nCheckDepth = 1000000000; // suffices until the year 19000

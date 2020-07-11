@@ -102,7 +102,7 @@ def copydata(settings, blkindex, blkset):
 	blkCount = 0
 
 	lastDate = datetime.datetime(2000, 1, 1)
-	highTS = 1408893517 - 315360000
+	highTS = 1583191262 - 315360000
 	timestampSplit = False
 	fileOutput = True
 	setFileTime = False
@@ -131,10 +131,10 @@ def copydata(settings, blkindex, blkset):
 			inFn = inFn + 1
 			continue
 
-		inMagic = inhdr[:4]
-		if (inMagic != settings['netmagic']):
-			print("Invalid magic:" + inMagic)
-			return
+	#	inMagic = inhdr[:4]
+	#	if (inMagic != settings['netmagic']):
+	#		print("Invalid magic:" + inMagic)
+	#		return
 		inLenLE = inhdr[4:]
 		su = struct.unpack("<I", inLenLE)
 		inLen = su[0]
@@ -142,7 +142,7 @@ def copydata(settings, blkindex, blkset):
 		blk_hdr = rawblock[:80]
 
 		hash_str = 0
-		if blkCount > 319000:
+		if blkCount > 37800:
 			hash_str = calc_hash_str(blk_hdr)
 		else:
 			hash_str = calc_scrypt_hash_str(blk_hdr)
@@ -217,8 +217,8 @@ if __name__ == '__main__':
 		settings[m.group(1)] = m.group(2)
 	f.close()
 
-	if 'netmagic' not in settings:
-		settings['netmagic'] = '70352205'
+	#if 'netmagic' not in settings:
+	#	settings['netmagic'] = 'netmagic'
 	if 'input' not in settings:
 		settings['input'] = 'input'
 	if 'hashlist' not in settings:
@@ -233,7 +233,7 @@ if __name__ == '__main__':
 	settings['max_out_sz'] = long(settings['max_out_sz'])
 	settings['split_timestamp'] = int(settings['split_timestamp'])
 	settings['file_timestamp'] = int(settings['file_timestamp'])
-	settings['netmagic'] = settings['netmagic'].decode('hex')
+	#settings['netmagic'] = settings['netmagic'].decode('hex')
 
 	if 'output_file' not in settings and 'output' not in settings:
 		print("Missing output file / directory")
@@ -242,7 +242,7 @@ if __name__ == '__main__':
 	blkindex = get_block_hashes(settings)
 	blkset = mkblockset(blkindex)
 
-	if not "000001a646536a6b12bfef96a2087132a3eabefad3c82c3dc397fce7dd41b754" in blkset:
+	if not "8a28dae9ab1e296d120c38893bdbfdf2cbd6e891b9409411a23cd3bb5fc5ad0d" in blkset:  #Genesis block
 		print("not found")
 	else:
 		copydata(settings, blkindex, blkset)
