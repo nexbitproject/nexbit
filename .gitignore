@@ -1,6 +1,4 @@
 src/*.exe
-src/nexbit
-src/nexbitd
 src/test_nexbit
 src/build.h
 .*.swp
@@ -10,11 +8,9 @@ src/build.h
 *.orig
 *.o
 *.patch
-.nexbit
 #compilation and Qt preprocessor part
 *.qm
 Makefile
-nexbit-qt
 #resources cpp
 qrc_*.cpp
 #qt creator
