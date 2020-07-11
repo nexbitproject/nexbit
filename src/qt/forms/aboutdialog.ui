@@ -18,11 +18,15 @@
   <property name="windowTitle">
    <string>About Nexbit</string>
   </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../../../../../@media/favicon.ico</normaloff>../../../../../@media/favicon.ico</iconset>
+  </property>
   <property name="autoFillBackground">
    <bool>false</bool>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-image: url(:/bg/res/icons/bg-welcome.png);</string>
+   <string notr="true"/>
   </property>
   <layout class="QHBoxLayout" name="horizontalLayout_2">
    <item>

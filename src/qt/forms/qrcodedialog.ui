@@ -10,11 +10,24 @@
     <height>562</height>
    </rect>
   </property>
+  <property name="palette">
+   <palette>
+    <active/>
+    <inactive/>
+    <disabled/>
+   </palette>
+  </property>
   <property name="windowTitle">
    <string>QR Code Dialog</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(1, 0, 37);</string>
+   <string notr="true"/>
+  </property>
+  <property name="sizeGripEnabled">
+   <bool>true</bool>
+  </property>
+  <property name="modal">
+   <bool>true</bool>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout_3">
    <item>
@@ -191,11 +204,10 @@
    <class>BitcoinAmountField</class>
    <extends>QSpinBox</extends>
    <header>bitcoinamountfield.h</header>
+   <container>1</container>
   </customwidget>
  </customwidgets>
- <resources>
-  <include location="../bitcoin.qrc"/>
- </resources>
+ <resources/>
  <connections>
   <connection>
    <sender>chkReqPayment</sender>

@@ -21,11 +21,7 @@ struct SeedSpec6 {
 
 #include "chainparamsseeds.h"
 
-//
-// Main network
-//
 
-// Convert the pnSeeds6 array into usable address objects.
 static void convertSeed6(std::vector<CAddress> &vSeedsOut, const SeedSpec6 *data, unsigned int count)
 {
     // It'll only connect to one or two seed nodes because once it connects,
@@ -65,6 +61,7 @@ public:
         vout.resize(1);
         vout[0].SetEmpty();
         CTransaction txNew(1, 1583191262, vin, vout, 0);
+        genesis.vtx.push_back(txNew);
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
