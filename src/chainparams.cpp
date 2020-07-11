@@ -122,12 +122,10 @@ public:
         nDefaultPort = 23520;
         nRPCPort = 23519;
         strDataDir = "testnet";
-
-        // Modify the testnet genesis block so the timestamp is valid for a later start.
         genesis.nBits  = bnProofOfWorkLimit.GetCompact();
         genesis.nNonce = 1229629;
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x7d8aa4dcee9706d3d5a8efe53368f72fd48769b2257354c49107ccc0207c9987"));
+      //assert(hashGenesisBlock == uint256("0x7d8aa4dcee9706d3d5a8efe53368f72fd48769b2257354c49107ccc0207c9987"));
       //assert(genesis.hashMerkleRoot == uint256("0xcec4db775a590bd5988b10aa552962b944d320e82335e4c57358a6bf2b9b8ac4"));
 
         vSeeds.push_back(CDNSSeedData("nexbit.io", "test.nexbit.io")); //add fixed testnet node
