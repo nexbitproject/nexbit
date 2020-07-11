@@ -12,12 +12,14 @@ sudo apt-get install libminiupnpc-dev libzmq3-dev  -y
 sudo apt-get install curl zlib1g-dev build-essential libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev  -y
 sudo apt-get install libxslt1-dev libcurl4-openssl-dev software-properties-common  -y
 sudo apt-get install libffi-dev gnupg2 libevent-pthreads-2.1-6 libzmq3-dev  -y
+sudo add-apt-repository ppa:bitcoin/bitcoin 
+sudo apt-get update -y
+sudo apt-get install libdb4.8-dev libdb4.8++-dev -y
 
 sudo apt-get update
 
 echo sleep 3
 
-sudo add-apt-repository ppa:bitcoin/bitcoin
+sudo add-apt-repository -y ppa:bitcoin/bitcoin
 sudo apt-get update
-sudo apt-get install libdb4.8-dev libdb4.8++-dev  -y
-sudo apt-get update 
+sudo apt-get install -y libdb4.8-dev libdb4.8++-dev

@@ -1,4 +1,4 @@
-Contributing to NEXBIT Core
+[ Contributing to NEXBIT Core ]
 ============================
 
 The NEXBIT Core project operates an open contributor model where anyone is
