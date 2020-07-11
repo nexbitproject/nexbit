@@ -12,7 +12,7 @@
 #include "uint256.h"
 
 
-static const int nCheckpointSpan = 300;
+static const int nCheckpointSpan = 500;
 
 namespace Checkpoints
 {
