@@ -144,7 +144,7 @@ BitcoinGUI::BitcoinGUI(QWidget *parent):
     QWidget *frameBlocks = new QWidget();
     frameBlocks->setContentsMargins(0,0,0,0);
     frameBlocks->setSizePolicy(QSizePolicy::Preferred, QSizePolicy::Preferred);
-    frameBlocks->setStyleSheet("QWidget { background: none; margin-bottom: 5px; }");
+    frameBlocks->setStyleSheet("QWidget { background: rgb(53, 219, 107); margin-bottom: 5px; }");
     QHBoxLayout *frameBlocksLayout = new QHBoxLayout(frameBlocks);
     frameBlocksLayout->setContentsMargins(3,0,3,0);
     frameBlocksLayout->setSpacing(3);
@@ -352,7 +352,7 @@ static QWidget* makeToolBarSpacer()
 {
     QWidget* spacer = new QWidget();
     spacer->setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Expanding);
-    spacer->setStyleSheet(fUseBlackTheme ? "QWidget { background: rgb(12, 26, 42); }" : "QWidget { background: rgb(12, 26, 42); color: rgb(255, 255, 255); }");
+    spacer->setStyleSheet(fUseBlackTheme ? "QWidget { background: rgb(53, 219, 107); }" : "QWidget { background: rgb(53, 219, 107); color: rgb(249, 250, 251); }");
     return spacer;
 }
 
@@ -365,9 +365,9 @@ void BitcoinGUI::createToolBars()
     if (fUseBlackTheme)
     {
         QWidget* header = new QWidget();
-        header->setMinimumSize(160, 116);
+        header->setMinimumSize(140, 116);
         header->setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
-        header->setStyleSheet("QWidget { background-color: rgb(12, 26, 42); background-repeat: no-repeat; background-image: url(:/images/header); background-position: top center; color: rgb(255, 255, 255); }");
+        header->setStyleSheet("QWidget { background-color: rgb(53, 219, 107); background-repeat: no-repeat; background-image: url(:/images/header); background-position: top center; color: rgb(249, 250, 251); }");
         toolbar->addWidget(header);
         toolbar->addWidget(makeToolBarSpacer());
     }
@@ -381,7 +381,7 @@ void BitcoinGUI::createToolBars()
     toolbar->addWidget(makeToolBarSpacer());
 
     toolbar->setOrientation(Qt::Vertical);
-    toolbar->setMovable(false);
+    toolbar->setMovable(true);
 
     addToolBar(Qt::LeftToolBarArea, toolbar);
 
