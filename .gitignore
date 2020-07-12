@@ -9,8 +9,8 @@ src/build.h
 *.o
 *.patch
 #compilation and Qt preprocessor part
-*.qm
-Makefile
+
+
 #resources cpp
 qrc_*.cpp
 #qt creator
