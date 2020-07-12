@@ -1,6 +1,6 @@
 TEMPLATE = app
 TARGET = nexbit-qt
-VERSION = 1.2.5.2
+VERSION = v5.1.3
 INCLUDEPATH += src src/json src/qt
 QT += network
 DEFINES += ENABLE_WALLET
