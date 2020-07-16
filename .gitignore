@@ -18,7 +18,8 @@ qrc_*.cpp
 #mac specific
 .DS_Store
 build
-
+*.qm
+/release
 !src/leveldb/Makefile
 *.P
 *.conf
