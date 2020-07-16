@@ -462,17 +462,17 @@ void HelpMessageBox::showOrPrint()
 
 void SetBlackThemeQSS(QApplication& app)
 {
-    app.setStyleSheet("QWidget        { background: rgb(215, 215, 215); }"
+    app.setStyleSheet("QWidget        { background: rgb(17, 26, 35); }"
                       "QFrame         { border: 2px; }"
                       "QComboBox      { color: rgb(33, 39, 48); }"
-                      "QComboBox QAbstractItemView::item { color: rgb(255,255,255); }"
+                      "QComboBox QAbstractItemView::item { color: rgb(22, 177, 87); }"
                       "QPushButton    { background: rgb(33, 39, 48); color: rgb(249, 250, 251); }"
                       "QDoubleSpinBox { background: rgb(215, 215, 215); color: rgb(33, 39, 48); border-color: rgb(215, 215, 215); }"
                       "QLineEdit      { background: rgb(215, 215, 215); color: rgb(33, 39, 48); border-color: rgb(215, 215, 215); }"
                       "QTextEdit      { background: rgb(215, 215, 215); color: rgb(33, 39, 48); }"
                       "QPlainTextEdit { background: rgb(215, 215, 215); color: rgb(33, 39, 48); }"
-                      "QMenuBar       { background: rgb(28, 222, 109); color: rgb(33, 39, 48); }"
-                      "QMenu          { background: rgb(95, 235, 153); color: rgb(255,255,255); }"
+                      "QMenuBar       { background: rgb(95, 235, 153); color: rgb(33, 39, 48); }"
+                      "QMenu          { background: rgb(95, 235, 153); color: rgb(33, 39, 48); }"
                       "QMenu::item:selected { background-color: rgb(28, 222, 109); }"
                       "QLabel         { background: rgb(215, 215, 215); color: rgb(33, 39, 48); }"
                       "QScrollBar     { color: rgb(204, 204, 204); }"
