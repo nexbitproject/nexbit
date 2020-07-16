@@ -36,7 +36,7 @@ const std::string CLIENT_NAME("Nexbit");
 // git will put "#define GIT_ARCHIVE 1" on the next line inside archives. 
 #define GIT_ARCHIVE 1
 #ifdef GIT_ARCHIVE
-#    define GIT_COMMIT_ID "7c6dfd7"
+#    define GIT_COMMIT_ID "78a427"
 #    define GIT_COMMIT_DATE "Fri, 17 July 2020 05:29:03 +0600"
 #endif
 
