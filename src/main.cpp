@@ -42,11 +42,11 @@ set<pair<COutPoint, unsigned int> > setStakeSeen;
 CBigNum bnProofOfStakeLimit(~uint256(0) >> 20);
 CBigNum bnProofOfStakeLimitV2(~uint256(0) >> 48);
 
-int nStakeMinConfirmations = 30; //define maturity at 300 confs
+int nStakeMinConfirmations = 300; //define maturity at 300 confs
 unsigned int nStakeMinAge = 6 * 60 * 60; // 6 hours
-unsigned int nModifierInterval = 10 * 60; // time to elapse before new modifier is computed
+unsigned int nModifierInterval = 16 * 60; // time to elapse before new modifier is computed
 
-int nCoinbaseMaturity = 50;
+int nCoinbaseMaturity = 500;
 CBlockIndex* pindexGenesisBlock = NULL;
 int nBestHeight = -1;
 
@@ -988,7 +988,11 @@ int64_t GetProofOfStakeReward(const CBlockIndex* pindexPrev, int64_t nCoinAge, i
     int64_t nSubsidy;
     if (IsProtocolV3(pindexPrev->nTime))
         nSubsidy = COIN * 250;
-    else
+    else if (nBestHeight > 45000)
+         nSubsidy = COIN * 3 / 2;
+        else if (IsProtocolV3(pindexPrev->nTime))
+            nSubsidy = COIN * 3 / 2;
+          else
         nSubsidy = nCoinAge * COIN_YEAR_REWARD * 33 / (365 * 33 + 8);
 
     LogPrint("creation", "GetProofOfStakeReward(): create=%s nCoinAge=%d\n", FormatMoney(nSubsidy), nCoinAge);

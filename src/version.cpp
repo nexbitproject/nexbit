@@ -37,7 +37,7 @@ const std::string CLIENT_NAME("Nexbit");
 #define GIT_ARCHIVE 1
 #ifdef GIT_ARCHIVE
 #    define GIT_COMMIT_ID "7c6dfd7"
-#    define GIT_COMMIT_DATE "Sat, 11 July 2020 10:49:03 +0600"
+#    define GIT_COMMIT_DATE "Fri, 17 July 2020 05:29:03 +0600"
 #endif
 
 #define BUILD_DESC_FROM_COMMIT(maj,min,rev,build,commit) \
