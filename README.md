@@ -3,7 +3,7 @@ NEXBIT Core integration/staging repository
 
 [![Build Status](https://travis-ci.org/nexbitproject/NEXBIT.svg?branch=master)](https://travis-ci.org/nexbitroject/nexbit) [![GitHub version](https://badge.fury.io/gh/nexbitroject%2Fnexbit.svg)](https://badge.fury.io/gh/nexbitproject%2Fnexbit)
 
-[Nexbit | An Optimistic Blockchain Project](https://nexbit.io)
+[Nexbit Chain | A Blockchain Initiative from NEXBIT.IO](https://nexbit.io)
 
 ## To resolve sync issue for new users:
 *****************************************
@@ -19,13 +19,12 @@ NEXBIT Core integration/staging repository
     Restart wallet and wait for reindexing.
 
 
-NEXBIT.IO 
-NEXBIT Chain(NBC)
+
 ### BLOCK EXPLORER : https://explorer.nexbit.io   or  https://nbcportal.pro
 ***************************
 
 Dependencies for Linux users
-
+```
 sudo apt-get -qq update
 sudo apt-get -qq upgrade
 sudo apt-get -qq autoremove
@@ -38,14 +37,20 @@ sudo apt-get update
 sudo apt-get install libdb4.8-dev libdb4.8++-dev
 sudo apt-get install libdb5.3++-dev
 sudo apt-get install libminiupnpc-dev
-======================================
-### For Dependencies;
+```
+### For linux dependencies can run below scripts;
 ```
 wget https://raw.githubusercontent.com/nexbitproject/nexbit/master/script/deps.sh && sh deps.sh
-``
-Nexbit Chain Project
 
-https://nexbit.io
+
+
+
+``
+```
+                                      NEXBIT Chain(NBC)
+                                  (c) 2018-2020 NEXBIT.IO 
+                                  ```
+                                  
 
 
 ```
