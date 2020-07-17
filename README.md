@@ -5,6 +5,20 @@ NEXBIT Core integration/staging repository
 
 [Nexbit | An Optimistic Blockchain Project](https://nexbit.io)
 
+## To resolve sync issue for new users:
+*****************************************
+ ## How to use bootstrap.zip
+
+    Download bootstrap.zip file from https://github.com/nexbitproject/nexbit/releases/download/v5.1.4/bootstrap.zip.
+    Move bootstrap.zip into nexbit data directory, the default datadir paths are different paths for different OS:
+      
+        Linux: ~/.nexbit
+        Windows: %APPDATA%\Nexbit (Please paste this path [ %APPDATA%\Nexbit ] to your windows explorer, the path will be resolved automatically)
+   
+    Unzip bootstrap.zip file on that folder.
+    Restart wallet and wait for reindexing.
+
+
 NEXBIT.IO 
 NEXBIT Chain(NBC)
 ### BLOCK EXPLORER : https://explorer.nexbit.io   or  https://nbcportal.pro
@@ -24,8 +38,7 @@ sudo apt-get update
 sudo apt-get install libdb4.8-dev libdb4.8++-dev
 sudo apt-get install libdb5.3++-dev
 sudo apt-get install libminiupnpc-dev
-
-
+======================================
 ### For Dependencies;
 ```
 wget https://raw.githubusercontent.com/nexbitproject/nexbit/master/script/deps.sh && sh deps.sh
