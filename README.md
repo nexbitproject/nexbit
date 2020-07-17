@@ -8,7 +8,7 @@ NEXBIT Core integration/staging repository
 ## To resolve sync issue for new users:
 *****************************************
 ## How to use bootstrap.zip
-
+```
     Download bootstrap.zip file from https://github.com/nexbitproject/nexbit/releases/download/v5.1.4/bootstrap.zip.
     Move bootstrap.zip into nexbit data directory, the default datadir paths are different paths for different OS:
       
@@ -18,12 +18,14 @@ NEXBIT Core integration/staging repository
     Unzip bootstrap.zip file on that folder.
     Restart wallet and wait for reindexing.
 
-
+```
 
 ### BLOCK EXPLORER : https://explorer.nexbit.io   or  https://nbcportal.pro
 ***************************
 
 ### Dependencies for Linux users
+
+
 ```
 sudo apt-get -qq update
 sudo apt-get -qq upgrade
@@ -37,12 +39,18 @@ sudo apt-get update
 sudo apt-get install libdb4.8-dev libdb4.8++-dev
 sudo apt-get install libdb5.3++-dev
 sudo apt-get install libminiupnpc-dev
+
 ```
+
+
 
 ### For linux dependencies can run below scripts;
 ```
 wget https://raw.githubusercontent.com/nexbitproject/nexbit/master/script/deps.sh && sh deps.sh
-``
+
+```
+
+
 
 
                                   ```
