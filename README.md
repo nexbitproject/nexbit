@@ -53,9 +53,8 @@ wget https://raw.githubusercontent.com/nexbitproject/nexbit/master/script/deps.s
 
 
 
-
-                                  ```
+```
                                       NEXBIT Chain(NBC)
                                   (c) 2018-2020 NEXBIT.IO 
                                   
-                                  ```
+```
