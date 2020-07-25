@@ -5,6 +5,10 @@ NEXBIT Core integration/staging repository
 
 ## [Nexbit Chain | A Blockchain Initiative from NEXBIT.IO](https://nexbit.io)
 
+  <a href="https://nexbit.io">
+    <img src="https://raw.githubusercontent.com/nexbitproject/nexbit/master/src/qt/res/images/nexbit-intro.png" alt="NEXBIT Intro" />
+  </a><br />
+
 ## To resolve sync issue for new users:
 *****************************************
 ## How to use bootstrap.zip
